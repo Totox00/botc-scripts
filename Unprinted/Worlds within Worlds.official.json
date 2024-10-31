@@ -1,0 +1,76 @@
+[
+  { "id": "_meta", "author": "Toto", "name": "Worlds within Worlds" },
+  "bounty_hunter",
+  "village_idiot",
+  "mathematician",
+  "savant",
+  {
+    "id": "astrologer",
+    "name": "Astrologer",
+    "team": "townsfolk",
+    "image": "https://www.bloodstar.xyz/p/piglix/Full_Unreleased_Characters/astrologer_full_unreleased_characters.png",
+    "ability": "Each day, ask the storyteller to tell you 1 piece of false information.",
+    "edition": "gos"
+  },
+  {
+    "id": "coachman",
+    "name": "Coachman",
+    "team": "townsfolk",
+    "image": "https://www.bloodstar.xyz/p/piglix/Full_Unreleased_Characters/coachman_full_unreleased_characters.png",
+    "ability": "Each day, choose a 1 word topic on which the Storyteller tells you 1 fact. If your neighbours are different alignments, you get false info.",
+    "edition": "gos"
+  },
+  "amnesiac",
+  "philosopher",
+  {
+    "id": "patient",
+    "name": "Patient",
+    "team": "townsfolk",
+    "image": "https://www.bloodstar.xyz/p/piglix/Full_Unreleased_Characters/patient_full_unreleased_characters.png",
+    "ability": "Once per game, at night, choose a good character ability to gain for each night you have not used this ability: you gain the chosen ones of in-play characters.",
+    "edition": "gsoe",
+    "firstNight": 6,
+    "firstNightReminder": "The Patient might choose one or more good characters. :reminder: :reminder: :reminder: :reminder: :reminder:",
+    "otherNight": 7,
+    "otherNightReminder": "The Patient might choose one or more good characters. :reminder: :reminder: :reminder: :reminder: :reminder:",
+    "reminders": [
+      "Has ability",
+      "Has ability",
+      "Has ability",
+      "Has ability",
+      "Has ability",
+      "No ability"
+    ]
+  },
+  "alchemist",
+  "magician",
+  "poppy_grower",
+  "atheist",
+  "puzzlemaster",
+  "plague_doctor",
+  "drunk",
+  "lunatic",
+  {
+    "id": "hermit",
+    "name": "Hermit",
+    "team": "outsider",
+    "image": "https://www.bloodstar.xyz/p/piglix/Full_Unreleased_Characters/hermit_full_unreleased_characters.png",
+    "ability": "You have the ability of every other outsider. No Outsider modification effects work. [No other outsiders]",
+    "edition": "tt",
+    "setup": true,
+    "jinxes": [
+      {
+        "id": "baron",
+        "reason": "If a hermit and a baron are both in play, there may also be one other outsider in play."
+      }
+    ]
+  },
+  "poisoner",
+  "cerenovus",
+  "baron",
+  "marionette",
+  "lil_monsta",
+  "vortox",
+  "legion",
+  "bootlegger"
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "id": "_meta",
+    "name": "Arkham Intro 1",
+    "author": "Toto"
+  },
+  {
+    "id": "agnesbaker_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/agnesbaker_arkhammayhem.png",
+    "firstNightReminder": "Agnes Baker learns a not-in-play character.",
+    "otherNightReminder": "If Agnes Baker died tonight, they gain the ability of the character they learnt.",
+    "reminders": ["Has Ability"],
+    "remindersGlobal": ["Is Agnes Baker"],
+    "name": "Agnes Baker",
+    "team": "townsfolk",
+    "ability": "You start knowing a not-in-play character. If you die at night, you gain that character's ability for as long as you remain dead.",
+    "firstNight": 29,
+    "otherNight": 38,
+    "special": [{ "type": "reveal", "name": "replace-character" }],
+    "flavor": "She took a deep breath. Agnes began to draw a stronger chalk circle with a steady hand. If this evil was coming to Arkham, it was an evil she had fought before, a long time ago. She needed to be ready for it again."
+  },
+  {
+    "id": "ursuladowns_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/ursuladowns_arkhammayhem.png",
+    "firstNightReminder": "Ursula Downs learns the parity of other Townsfolk.",
+    "name": "Ursula Downs",
+    "team": "townsfolk",
+    "ability": "You start knowing if more Townsfolk are odd or even steps from you clockwise, or that it is equal.",
+    "firstNight": 36,
+    "special": [
+      { "type": "signal", "name": "card", "value": "Odd" },
+      { "type": "signal", "name": "card", "value": "Even" },
+      { "type": "signal", "name": "card", "value": "Equal" }
+    ]
+  },
+  {
+    "id": "silasmarch_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/silasmarch_arkhammayhem.png",
+    "firstNightReminder": "Silas March learns 2 players. Mark those players with \"Known\" reminder tokens. If both players are the same alignment, mark Silas March with the \"Once\" reminder token.",
+    "otherNightReminder": "If both players with \"Known\" reminder tokens are dead, Silas March learns 2 players. Mark those players with \"Known\" reminder tokens. If both players are the same alignment, mark Silas March with the \"Once\" reminder token.",
+    "reminders": ["Known", "Known", "Once"],
+    "setup": true,
+    "name": "Silas March",
+    "team": "townsfolk",
+    "ability": "You start knowing 2 players of different character types. Each night*, if both are dead: you learn a new pair. You learn players of different alignments at most once per game. [+0 to +1 Outsider]",
+    "firstNight": 39,
+    "otherNight": 54
+  },
+  {
+    "id": "agathacrane_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/agathacrane_arkhammayhem.png",
+    "firstNightReminder": "Agatha Crane learns how many times they have been chosen this night.",
+    "otherNightReminder": "Agatha Crane learns how many times they have been chosen this night.",
+    "reminders": ["Chose", "Chose", "Chose", "Chose", "Chose"],
+    "name": "Agatha Crane",
+    "team": "townsfolk",
+    "ability": "Each night, you learn how many players chose you with their abilities this night.",
+    "firstNight": 54,
+    "otherNight": 71
+  },
+  {
+    "id": "fathermateo_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/fathermateo_arkhammayhem.png",
+    "firstNightReminder": "Father Mateo chooses a player and learns between a thumbs down to a thumbs up.",
+    "otherNightReminder": "Father Mateo chooses a player and learns between a thumbs down to a thumbs up.",
+    "name": "Father Mateo",
+    "team": "townsfolk",
+    "ability": "Each night, choose a player: you learn how helpful they are being to their team.",
+    "firstNight": 50,
+    "otherNight": 66
+  },
+  {
+    "id": "montereyjack_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/montereyjack_arkhammayhem.png",
+    "firstNightReminder": "Montery Jacks learns a player, mark that player with the Hanif reminder token. Then, Jack chooses a player and learns their alignment.",
+    "otherNightReminder": "If the player with the Hanif reminder token is alive, Jack chooses a player and learns their alignment.",
+    "reminders": ["Hanif"],
+    "name": "Monterey Jack",
+    "team": "townsfolk",
+    "ability": "You start knowing a player. Each night, as long as they are alive, choose a player (not yourself): you learn their alignment. If the player you originally learnt is evil, you receive false info.",
+    "firstNight": 37,
+    "otherNight": 52
+  },
+  "Fortune Teller",
+  {
+    "id": "wilsonrichards_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/wilsonrichards_arkhammayhem.png",
+    "otherNightReminder": "Wilson Richards chooses a player. Mark that player with the \"Protected\" reminder token. After killing roles act, Wilson Richards wakes again and learns a character.",
+    "reminders": ["Protected"],
+    "name": "Wilson Richards",
+    "team": "townsfolk",
+    "ability": "Each night*, choose another player. If they would die tonight, you learn one of the characters that tried to kill them instead. If not, you learn false info.",
+    "otherNight": 14
+  },
+  {
+    "id": "lilychen_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/lilychen_arkhammayhem.png",
+    "otherNightReminder": "Lily Chen may choose a character. If that character is in play, mark that player with the \"Safe\" reminder token. If not, mark Lily Chen with the \"Drunk\" reminder token for the rest of the game.",
+    "reminders": ["Safe", "Drunk"],
+    "name": "Lily Chen",
+    "team": "townsfolk",
+    "ability": "Each night*, you may choose a character (not your own): they are safe from evils tonight. If not in play, you are drunk.",
+    "otherNight": 17
+  },
+  "Gambler",
+  "Seamstress",
+  {
+    "id": "michaelmcglen_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/michaelmcglen_arkhammayhem.png",
+    "otherNightReminder": "If the Demon killed Michael McGled this night, an alive opposing player dies.",
+    "reminders": ["Dead"],
+    "name": "Michael McGlen",
+    "team": "townsfolk",
+    "ability": "If the Demon kills you, an alive opposing player dies.",
+    "otherNight": 36
+  },
+  "Cannibal",
+  {
+    "id": "valentinorivas_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/valentinorivas_arkhammayhem.png",
+    "firstNightReminder": "Valentino Rivas chooses a player.",
+    "otherNightReminder": "Valentino Rivas chooses a player.",
+    "reminders": [
+      "Chosen",
+      "Chosen",
+      "Chosen",
+      "Chosen",
+      "Chosen",
+      "Chosen",
+      "Chosen",
+      "Chosen",
+      "Chosen",
+      "Chosen",
+      "Chosen",
+      "Chosen",
+      "Chosen",
+      "Chosen",
+      "Chosen"
+    ],
+    "name": "Valentino Rivas",
+    "team": "outsider",
+    "ability": "Each night, choose a living player that you haven't chosen before: the Demon learns who you choose and their character.",
+    "firstNight": 21.5,
+    "otherNight": 12.5,
+    "jinxes": [
+      {
+        "id": "summoner",
+        "reason": "If the Summoner is in play, they learn information given by Valenino Rivas until a Demon is made."
+      },
+      {
+        "id": "sethbishop_arkhammayhem",
+        "reason": "If Seth Bishop is in play, they learn information given by Valenino Rivas until a Demon is made."
+      }
+    ]
+  },
+  "Tinker",
+  {
+    "id": "brownjenkin_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/brownjenkin_arkhammayhem.png",
+    "remindersGlobal": ["Is Brown Jenkin"],
+    "setup": true,
+    "name": "Brown Jenkin",
+    "team": "outsider",
+    "ability": "You think you are a Townsfolk, and you have that ability. Information you receive is false. You might register falsely, even if dead.",
+    "special": [
+      {
+        "type": "selection",
+        "name": "bag-disabled"
+      },
+      { "type": "reveal", "name": "replace-character" }
+    ]
+  },
+  {
+    "id": "haroldwalsted_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/haroldwalsted_arkhammayhem.png",
+    "otherNightReminder": "If Harold Walsted died today or tonight, place the \"Townsfolk are drunk\" reminder token in the centre of the Grimoire.",
+    "reminders": ["Townsfolk are drunk"],
+    "name": "Harold Walsted",
+    "team": "outsider",
+    "ability": "When you die, all Townsfolk are drunk until dusk the next day.",
+    "otherNight": 4
+  },
+  {
+    "id": "sethbishop_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/sethbishop_arkhammayhem.png",
+    "firstNightReminder": "Show Seth Bishop 3 not-in-play characters as bluffs.",
+    "otherNightReminder": "If it is night 3, wake Seth Bishop. They choose a player and a Demon.",
+    "reminders": ["Night 1", "Night 2", "Night 3"],
+    "setup": true,
+    "name": "Seth Bishop",
+    "team": "minion",
+    "ability": "You get 3 bluffs. On your third night, choose a player: they become an evil Demon of your choice. [No Demon]",
+    "firstNight": 20,
+    "otherNight": 21
+  },
+  {
+    "id": "padmaamrita_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/padmaamrita_arkhammayhem.png",
+    "firstNightReminder": "Padma Amrita learns which players are Outsiders.",
+    "reminders": ["No Ability"],
+    "setup": true,
+    "name": "Padma Amrita",
+    "team": "minion",
+    "ability": "You start knowing which players are Outsiders. The last alive Outsider turns evil. [+1 Outsider]",
+    "firstNight": 23
+  },
+  {
+    "id": "keziahmason_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/keziahmason_arkhammayhem.png",
+    "otherNightReminder": "If there is at least one player with a \"Haunted\" reminder token, one of them dies and loses their \"Haunted\" reminder token, even if Keziah Mason is dead.",
+    "reminders": [
+      "Haunted",
+      "Haunted",
+      "Haunted",
+      "Haunted",
+      "Haunted",
+      "Haunted",
+      "Haunted",
+      "Haunted",
+      "Haunted",
+      "Haunted",
+      "Haunted",
+      "Haunted",
+      "Haunted",
+      "Haunted",
+      "Haunted",
+      "Dead"
+    ],
+    "name": "Keziah Mason",
+    "team": "minion",
+    "ability": "If you die by execution, all players who voted for your execution are haunted. Each night, a haunted player dies.",
+    "otherNight": 31
+  },
+  {
+    "id": "jeremiahpierce_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/jeremiahpierce_arkhammayhem.png",
+    "name": "Jeremiah Pierce",
+    "team": "minion",
+    "ability": "Your neighbours might register falsely to good abilities."
+  },
+  {
+    "id": "thespectralwatcher_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/thespectralwatcher_arkhammayhem.png",
+    "otherNightReminder": "The Spectral Watcher chooses a player.",
+    "reminders": ["Dead", "Once"],
+    "setup": true,
+    "name": "The Spectral Watcher",
+    "team": "demon",
+    "ability": "Each night*, choose a player: they die. The 1st time you die while at least 5 players live, choose a player to become evil & The Spectral Watcher instead of to kill tonight. [-1 Minion]",
+    "otherNight": 24,
+    "special": [
+      {
+        "type": "signal",
+        "name": "grimoire",
+        "time": "night"
+      },
+      { "type": "signal", "name": "card", "value": "You died" }
+    ],
+    "jinxes": [
+      {
+        "id": "summoner",
+        "reason": "If the Summoner creates The Spectral Watcher, The Spectral Watcher does not change the alignment of the person they choose after being executed."
+      },
+      {
+        "id": "sethbishop_arkhammayhem",
+        "reason": "If Seth Bishop creates The Spectral Watcher, The Spectral Watcher does not change the alignment of the person they choose after being executed."
+      }
+    ]
+  },
+  {
+    "id": "yig_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/yig_arkhammayhem.png",
+    "otherNightReminder": "Yig chooses a player and if that player should turn evil.",
+    "reminders": ["Dead"],
+    "remindersGlobal": ["Once"],
+    "name": "Yig",
+    "team": "demon",
+    "ability": "Each night*, choose a player: they die. Once per game, you may choose to turn the player you kill evil.",
+    "otherNight": 23,
+    "special": [
+      {
+        "type": "signal",
+        "name": "grimoire",
+        "time": "night"
+      }
+    ]
+  },
+  "No Dashii",
+  "Po"
+]

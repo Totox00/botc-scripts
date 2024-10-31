@@ -1,0 +1,16 @@
+Agnes Baker
+Townsfolk
+You start knowing a not-of-play character. If you die at night, you gain that character's ability for as long as you remain dead.
+
+reminder 1 Has Ability
+globalreminder 1 Is Agnes Baker
+firstnight Agnes Baker learns a not-in-play character.
+othernight If Agnes Baker died tonight, they gain the ability of the character they learnt.
+wakes first after pixie
+wakes other before sage
+
+attribution
+Icon by Delapouite under CC BY 3.0 from game-icons.net
+
+flavour
+She took a deep breath. Agnes began to draw a stronger chalk circle with a steady hand. If this evil was coming to Arkham, it was an evil she had fought before, a long time ago. She needed to be ready for it again.

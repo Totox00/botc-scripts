@@ -1,0 +1,85 @@
+[
+  {
+    "id": "_meta",
+    "name": "The Dead Walk",
+    "author": "Toto00"
+  },
+  {
+    "id": "warlock",
+    "edition": "the_dead_walk",
+    "name": "Warlock",
+    "ability": "Each night*: choose a player. If a dead character with an ability is chosen, they lose their ability for the rest of the game."
+  },
+  {
+    "id": "gravekeeper",
+    "edition": "the_dead_walk",
+    "name": "Gravekeeper",
+    "ability": "Each night: choose a player; if they are dead, you learn their character. If not, you learn a character they are not."
+  },
+  {
+    "id": "guardian",
+    "edition": "the_dead_walk",
+    "name": "Guardian",
+    "ability": "Each night: choose a player; they are unaffected by effects from dead characters tonight."
+  },
+  {
+    "id": "mother",
+    "edition": "the_dead_walk",
+    "name": "Mother",
+    "ability": "You learn how many outsiders are sitting next to evil players."
+  },
+  {
+    "id": "inspector",
+    "edition": "the_dead_walk",
+    "name": "Inspector",
+    "ability": "Each night: choose a player; you learn that they are one of 3 characters."
+  },
+  {
+    "id": "mortician",
+    "edition": "the_dead_walk",
+    "name": "Mortician",
+    "ability": "Each night*: choose a player; if they died last night, you learn their character."
+  },
+  {
+    "id": "benevolent_spirit",
+    "edition": "the_dead_walk",
+    "name": "Benevolent Spirit",
+    "ability": "Each night*: choose a player other than yourself; they are safe from the Demon tonight. You register as dead."
+  },
+  {
+    "id": "ravenkeeper",
+    "edition": "the_dead_walk",
+    "name": "Ravenkeeper",
+    "ability": "If you die at night: choose a player; you learn their character."
+  },
+  {
+    "id": "watcher",
+    "edition": "the_dead_walk",
+    "name": "Watcher",
+    "ability": "Each night: choose 2 players; you learn if either of them chose other players, but not how many or who."
+  },
+  {
+    "id": "trapper",
+    "edition": "the_dead_walk",
+    "name": "Trapper",
+    "ability": "Once per game, at night: choose a player other than yourself. If a player chooses this player during the night, you learn their character."
+  },
+  {
+    "id": "vampire Hunter",
+    "edition": "the_dead_walk",
+    "name": "Vampire Hunter",
+    "ability": "Each night: choose 2 players; you learn if any are evil, but not how many."
+  },
+  {
+    "id": "priest",
+    "edition": "the_dead_walk",
+    "name": "Priest",
+    "ability": "Once per game, at night: choose a player other than yourself; they cannot suffer negative effects tonight."
+  },
+  {
+    "id": "terrified Child",
+    "edition": "the_dead_walk",
+    "name": "Terrified Child",
+    "ability": "If a dead player chooses you during the night, you learn who they are."
+  }
+]

@@ -1,0 +1,315 @@
+[
+  {
+    "id": "_meta",
+    "name": "Elden Distrust",
+    "author": "Toto",
+    "almanac": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/almanac.html"
+  },
+  {
+    "id": "enia_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/enia_eldendistrust.png",
+    "firstNightReminder": "Ask Enia to choose a day number and note it down.",
+    "reminders": ["Day"],
+    "name": "Enia",
+    "team": "townsfolk",
+    "ability": "On your 1st night, choose a day number: if all dead players are good that dawn, they are resurrected as travellers.",
+    "firstNight": 20
+  },
+  {
+    "id": "hermitmerchant_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/hermitmerchant_eldendistrust.png",
+    "firstNightReminder": "Mark each Hermit Merchant with different character types. Then, inform each Hermit Merchant of how many players of that character type neighbour any Hermit Merchant.",
+    "otherNightReminder": "If a Hermit Merchant died and it was the first Hermit Merchant that died, tell them what character type they received.",
+    "reminders": ["Townsfolk", "Outsider", "Minion", "Demon", "First Dead"],
+    "setup": true,
+    "name": "Hermit Merchant",
+    "team": "townsfolk",
+    "ability": "You start knowing how many players of a specific character type neighbour Hermit Merchants. Each Hermit Merchant learns a different character type. The first Hermit Merchant that dies learn what character type they received. [+0 to +3 Hermit Merchants]",
+    "firstNight": 14,
+    "special": [{ "type": "selection", "name": "bag-duplicate" }]
+  },
+  {
+    "id": "fia_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/fia_eldendistrust.png",
+    "firstNightReminder": "Wake Fia and show them 2 characters.",
+    "otherNightReminder": "Wake Fia and show them 2 characters.",
+    "name": "Fia",
+    "team": "townsfolk",
+    "ability": "Each night, you learn 2 characters. At most 1 is in play.",
+    "firstNight": 23,
+    "otherNight": 17
+  },
+  {
+    "id": "melina_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/melina_eldendistrust.png",
+    "firstNightReminder": "Wake Melina and ask them to choose a player. Mark the chosen player with the \"Has Maiden\" reminder token.",
+    "otherNightReminder": "Wake Melina and ask them to choose a player. Mark the chosen player with the \"Has Maiden\" reminder token.",
+    "reminders": ["Has Maiden"],
+    "name": "Melina",
+    "team": "townsfolk",
+    "ability": "Each night, choose a player: they cannot be drunk or poisoned. You cannot be drunk or poisoned.",
+    "firstNight": 12,
+    "otherNight": 4
+  },
+  {
+    "id": "corhyn_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/corhyn_eldendistrust.png",
+    "firstNightReminder": "Wake Corhyn and ask them to choose a player. Inform them of if the chosen player or one of their neighbours is the demon.",
+    "otherNightReminder": "Wake Corhyn and ask them to choose a player. Inform them of if the chosen player or one of their neighbours is the demon.",
+    "name": "Corhyn",
+    "team": "townsfolk",
+    "ability": "Each night, choose a player: you learn if they or one of their neighbours is the demon. Once per game, you get false info.",
+    "reminders": ["Gotten false info"],
+    "firstNight": 22,
+    "otherNight": 16
+  },
+  {
+    "id": "roderika_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/roderika_eldendistrust.png",
+    "firstNightReminder": "Wake Roderika and ask them to choose a player. At the end of the night, if that player was chosen by any evil player tonight, wake Roderika again and tell them one of the characters that chose the chosen player.",
+    "otherNightReminder": "Wake Roderika and ask them to choose a player. At the end of the night, if that player was chosen by any evil player tonight, wake Roderika again and tell them one of the characters that chose the chosen player.",
+    "name": "Roderika",
+    "team": "townsfolk",
+    "ability": "Each night, choose a player. If they are chosen by any evil players tonight, you learn one of their characters.",
+    "reminders": ["Scouted"],
+    "firstNight": 13,
+    "otherNight": 5
+  },
+  {
+    "id": "blaidd_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/blaidd_eldendistrust.png",
+    "firstNightReminder": "Wake Blaidd and inform them of their number.",
+    "otherNightReminder": "Wake Blaidd and inform them of their number.",
+    "name": "Blaidd",
+    "team": "townsfolk",
+    "ability": "Each night, you learn how many players are between you and the nearest living player targeted by an evil ability tonight.",
+    "firstNight": 24,
+    "otherNight": 18
+  },
+  {
+    "id": "yura_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/yura_eldendistrust.png",
+    "firstNightReminder": "Mark a player as \"Eleonora\". Wake Yura and ask them to choose a player. If they choose the player with the \"Eleonora\" reminder token, place the \"Poisoned\" reminder token on Yura. Then, inform Yura of the alignment of the chosen player.",
+    "otherNightReminder": "Wake Yura and ask them to choose a player. If they choose the player with the \"Eleonora\" reminder token, place the \"Poisoned\" reminder token on Yura. Then, inform Yura of the alignment of the chosen player.",
+    "reminders": ["Eleonora", "Poisoned"],
+    "name": "Yura",
+    "team": "townsfolk",
+    "ability": "At the start of the game, one player is marked as Eleonora. Each night, choose a player: if they are Eleonora, you become poisoned for the rest of the game. Then, you learn their alignment.",
+    "firstNight": 25,
+    "otherNight": 19
+  },
+  {
+    "id": "sorceresssellen_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/sorceresssellen_eldendistrust.png",
+    "otherNightReminder": "If a player died tonight, wake Sellen and inform them of the dead player's character",
+    "name": "Sorceress Sellen",
+    "team": "townsfolk",
+    "ability": "Each night*, learn a character that died tonight.",
+    "otherNight": 20
+  },
+  {
+    "id": "miriel_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/miriel_eldendistrust.png",
+    "name": "Miriel",
+    "team": "townsfolk",
+    "ability": "Each day, ask the Storyteller to tell you 1 piece of false information."
+  },
+  {
+    "id": "hewg_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/hewg_eldendistrust.png",
+    "firstNightReminder": "Wake Hewg and ask if they want to use their ability. If they do, ask them to choose a character. If that character is in play, mark them with the \"Protected\" reminder token.",
+    "otherNightReminder": "Wake Hewg and ask if they want to use their ability. If they do, ask them to choose a character. If that character is in play, mark them with the \"Protected\" reminder token.",
+    "reminders": ["Protected"],
+    "name": "Hewg",
+    "team": "townsfolk",
+    "ability": "Once per game, at night, choose a character (not Hewg): they are not affected in any way by evil abilities.",
+    "firstNight": 11,
+    "otherNight": 3
+  },
+  {
+    "id": "gostoc_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/gostoc_eldendistrust.png",
+    "otherNightReminder": "If both of Gostocs neighbours are dead and they have not yet woken due to their ability, wake Gostoc and tell them 2 players, one of which is the demon.",
+    "name": "Gostoc",
+    "team": "townsfolk",
+    "ability": "If both your neighbours die, you learn that the demon is one of 2 players.",
+    "otherNight": 15
+  },
+  {
+    "id": "alexander_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/alexander_eldendistrust.png",
+    "otherNightReminder": "If the demon killed Alexander, wake them and ask them to choose a player. Inform the chosen player who Alexander is and mark them with the \"Has Ability\" reminder token.",
+    "reminders": [
+      "Has Ability",
+      "Has Ability",
+      "Has Ability",
+      "Has Ability",
+      "Has Ability",
+      "Has Ability",
+      "Has Ability",
+      "Has Ability"
+    ],
+    "name": "Alexander",
+    "team": "townsfolk",
+    "ability": "If the demon kills you, choose a player. They learn who you are and gain this ability.",
+    "otherNight": 14
+  },
+  {
+    "id": "hyetta_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/hyetta_eldendistrust.png",
+    "otherNightReminder": "If the first execution happened yesterday, inform Hyetta of their alignment.",
+    "reminders": ["First executee"],
+    "name": "Hyetta",
+    "team": "outsider",
+    "ability": "At night, you become the alignment of the 1st player to be executed this game.",
+    "otherNight": 2
+  },
+  {
+    "id": "boctheseamster_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/boctheseamster_eldendistrust.png",
+    "firstNightReminder": "Wake Boc and ask them if they want to use their ability. If so, mark them with the \"No Ability\" reminder token and ask them to choose a player. If they choose a townsfolk, mark them with a \"Drunk\" reminder token, if they are evil, mark any 2 players with \"Drunk\" reminder tokens instead",
+    "otherNightReminder": "If Boc has not used their ability, wake Boc and ask them if they want to use their ability. If so, mark them with the \"No Ability\" reminder token and ask them to choose a player. If they choose a townsfolk, mark them with the \"Drunk\" reminder token, if they are evil, mark any 2 players with \"Drunk\" reminder tokens instead",
+    "reminders": ["Drunk", "No Ability"],
+    "name": "Boc the Seamster",
+    "team": "outsider",
+    "ability": "Once per game, at night, choose a living player (not yourself): if they are a townsfolk, they are drunk, even if you die. If a chosen player is evil, or if you die before you use your ability, 2 players are drunk instead, even if you die. If the game ends before you use your ability or die, your team loses.",
+    "firstNight": 19,
+    "otherNight": 9
+  },
+  {
+    "id": "kennethhaight_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/kennethhaight_eldendistrust.png",
+    "reminders": ["Drunk", "Drunk"],
+    "name": "Kenneth Haight",
+    "team": "outsider",
+    "ability": "If you are \"mad\" that you are an outsider, your alive good townsfolk neighbours might be drunk until dusk tomorrow."
+  },
+  {
+    "id": "patches1_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/patches1_eldendistrust.png",
+    "remindersGlobal": [
+      "Is Patches",
+      "Is Patches",
+      "Is Patches",
+      "Is Patches",
+      "Is Patches",
+      "Is Patches",
+      "Is Patches",
+      "Is Patches"
+    ],
+    "setup": true,
+    "name": "Patches",
+    "team": "outsider",
+    "ability": "You think you are a townsfolk and have the ability of that townsfolk. Information you receive is false. If you die by execution, an alive good player becomes Patches.",
+    "special": [{ "type": "selection", "name": "bag-disabled" }]
+  },
+  {
+    "id": "gideonofnir_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/gideonofnir_eldendistrust.png",
+    "firstNightReminder": "Inform Gideon of what ability they have.",
+    "name": "Gideon Ofnir",
+    "team": "minion",
+    "remindersGlobal": ["Is Gideon Ofnir"],
+    "ability": "You have the ability of an in-play Minion. If no others exist, you start by choosing a Minion: gain their ability.",
+    "firstNight": 15
+  },
+  {
+    "id": "tanith_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/tanith_eldendistrust.png",
+    "firstNightReminder": "Wake Tanith and ask them to choose a player. Mark the chosen player with the \"Recusant\" reminder token.",
+    "otherNightReminder": "Wake Tanith and ask them to choose a player. Mark the chosen player with the \"Recusant\" reminder token.",
+    "reminders": ["Recusant"],
+    "setup": true,
+    "name": "Tanith",
+    "team": "minion",
+    "ability": "Each night, choose a player: A chosen player might register falsely to good abilities once until dusk. [+1 Outsider]",
+    "firstNight": 17,
+    "otherNight": 7
+  },
+  {
+    "id": "shabriri_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/shabriri_eldendistrust.png",
+    "firstNightReminder": "Wake Shabriri and ask them to choose a player. Inform them of the character of the chosen player and ask if they want to poison them. If they do, mark the chosen player with the \"Possessed\" reminder token.",
+    "otherNightReminder": "If there is not an alive player with the \"Possessed\" reminder token, wake Shabriri and ask them to choose a player. Inform them of the character of the chosen player and ask if they want to poison them. If they do, mark the chosen player with the \"Possessed\" reminder token.",
+    "reminders": ["Possessed"],
+    "name": "Shabriri",
+    "team": "minion",
+    "ability": "Each night, choose a player: you learn who they are and may choose for them to become poisoned. If you do, you no longer wake until the chosen player dies.",
+    "firstNight": 16,
+    "otherNight": 6
+  },
+  {
+    "id": "seluvius_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/seluvius_eldendistrust.png",
+    "firstNightReminder": "Wake Seluvious and ask them to choose a player. Mark the chosen player with the \"Chosen\" reminder token.",
+    "otherNightReminder": "Wake Seluvious and ask them to choose a player. Mark the chosen player with the \"Chosen\" reminder token.",
+    "reminders": ["Chosen", "Poisoned", "Poisoned", "No Ability"],
+    "name": "Seluvius",
+    "team": "minion",
+    "ability": "Each night, choose a player. Tomorrow, if a good player nominates the chosen player, both the nominator and the nominee become poisoned and you lose this ability.",
+    "firstNight": 18,
+    "otherNight": 8
+  },
+  {
+    "id": "blackknife_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/blackknife_eldendistrust.png",
+    "otherNightReminder": "Kill a player",
+    "reminders": ["Dead"],
+    "setup": true,
+    "name": "Black Knife",
+    "team": "demon",
+    "ability": "Each night*, a player dies. [All evil players are Black Knives. +1 evil player]",
+    "otherNight": 10,
+    "special": [{ "type": "selection", "name": "bag-duplicate" }]
+  },
+  {
+    "id": "mogh_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/mogh_eldendistrust.png",
+    "otherNightReminder": "Wake Mogh and ask them to choose a player. That player dies. Mark the chosen player with a \"Registers falsely\" reminder token.",
+    "reminders": [
+      "Dead",
+      "Registers falsely",
+      "Registers falsely",
+      "Registers falsely",
+      "Registers falsely",
+      "Registers falsely",
+      "Registers falsely",
+      "Registers falsely",
+      "Registers falsely"
+    ],
+    "name": "Mogh",
+    "team": "demon",
+    "ability": "Each night*, choose a player: they die. Dead players might register falsely to good abilities.",
+    "otherNight": 12
+  },
+  {
+    "id": "frenziedflame_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/frenziedflame_eldendistrust.png",
+    "otherNightReminder": "Wake the Frenzied Flame and ask them to choose 2 players. Choose one to kill and mark the other with the \"Poisoned\" reminder token,",
+    "reminders": ["Dead", "Poisoned"],
+    "name": "Frenzied Flame",
+    "team": "demon",
+    "ability": "Each night*: choose 2 players; one dies and the other is poisoned until dusk.",
+    "otherNight": 13
+  },
+  {
+    "id": "rykard_eldendistrust",
+    "image": "https://www.bloodstar.xyz/p/Toto00/EldenDistrust/rykard_eldendistrust.png",
+    "otherNightReminder": "Wake Rykard and ask them to choose a player. The chosen player dies. Inform Rykard of what the chosen player was and ask if they want to gain their ability. If they do, mark the chosen player with a \"Devoured\" reminder token.",
+    "reminders": [
+      "Dead",
+      "Devoured",
+      "Devoured",
+      "Devoured",
+      "Devoured",
+      "Devoured",
+      "Devoured",
+      "Devoured",
+      "Devoured"
+    ],
+    "name": "Rykard",
+    "team": "demon",
+    "ability": "Each night*, choose a player: they die. You learn who they are and may choose to gain their ability.",
+    "otherNight": 11
+  }
+]

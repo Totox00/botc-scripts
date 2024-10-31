@@ -1,0 +1,104 @@
+[
+  {
+    "id": "_meta",
+    "name": "A Nightmare at the House of the Damned",
+    "author": "Toto00"
+  },
+  "pixie",
+  "king",
+  "cultleader",
+  "villageidiot",
+  {
+    "id": "nathotd_genius",
+    "image": "https://www.bloodstar.xyz/p/piglix/Full_Unreleased_Characters/genius_full_unreleased_characters.png",
+    "firstNightReminder": "Ask the Genius to choose a good character.",
+    "otherNightReminder": "Ask the Genius to choose a good character.",
+    "name": "Genius",
+    "team": "townsfolk",
+    "ability": "Each night, choose a good character: you have that ability until you choose again. You are drunk every other night.",
+    "firstNight": 6,
+    "otherNight": 7
+  },
+  "bountyhunter",
+  "lycanthrope",
+  "amnesiac",
+  "huntsman",
+  {
+    "id": "nathotd_apothecary",
+    "image": "https://www.bloodstar.xyz/p/piglix/Full_Unreleased_Characters/apothecary_full_unreleased_characters.png",
+    "name": "Apothecary",
+    "team": "townsfolk",
+    "ability": "Once per game, publicly change one game rule, if the Storyteller agrees."
+  },
+  "alchemist",
+  "magician",
+  "choirboy",
+  "atheist",
+  {
+    "id": "nathotd_mole",
+    "team": "townsfolk",
+    "firstNight": 7,
+    "firstNightReminder": "Show the *YOU ARE* token and the character token of a not in play Minion.",
+    "remindersGlobal": ["Is the Mole", "Guess used"],
+    "setup": true,
+    "name": "Mole",
+    "ability": "You are a minion too. You register as evil. If the demon publicly guesses you (once), your team loses, even if you have no ability."
+  },
+  "lunatic",
+  "politician",
+  "damsel",
+  "plaguedoctor",
+  "drunk",
+  "poisoner",
+  "godfather",
+  {
+    "id": "nathotd_vatdweller",
+    "team": "minion",
+    "setup": true,
+    "name": "Vat Dweller",
+    "ability": "On your 1st night, choose an Outsider. Every Outsider is a copy of that Outsider. [Any number of Outsiders]",
+    "firstNight": 1,
+    "firstNightReminder": "Ask the Vat Dweller to choose an outsider."
+  },
+  "goblin",
+  {
+    "id": "nathotd_wizard",
+    "team": "minion",
+    "reminders": ["Used wish"],
+    "name": "Wizard",
+    "ability": "Once per game, choose to make a wish. If granted, your wish may have a price & leaves a clue as to its nature."
+  },
+  "organgrinder",
+  {
+    "id": "nathotd_imposter",
+    "image": "https://www.bloodstar.xyz/p/piglix/Full_Unreleased_Characters/imposter_full_unreleased_characters.png",
+    "name": "Imposter",
+    "team": "minion",
+    "ability": "You poison and gain the ability of the 1st in-play character that you are mad about being each day."
+  },
+  "vortox",
+  "legion",
+  {
+    "id": "nathotd_zeitghast",
+    "image": "https://www.bloodstar.xyz/p/piglix/Full_Unreleased_Characters/zeitghast_full_unreleased_characters.png",
+    "otherNightReminder": "Choose a player, that player dies.",
+    "reminders": ["Dead"],
+    "setup": true,
+    "name": "Zeitghast",
+    "team": "demon",
+    "ability": "Each night*, choose a player: they die. You act last every night. [+1 Minion]",
+    "otherNight": 30
+  },
+  {
+    "id": "nathotd_jnak",
+    "image": "https://www.bloodstar.xyz/p/piglix/Full_Unreleased_Characters/jnak_full_unreleased_characters.png",
+    "firstNightReminder": "Wake a good player and show them the jnak and one other player.",
+    "otherNightReminder": "Choose a player, that player dies",
+    "reminders": ["Dead"],
+    "name": "J'Nak",
+    "team": "demon",
+    "ability": "Each night*, choose a player: they die. 1 good player knows you are 1 of 2 players. If executed while a minion lives, your team wins.",
+    "firstNight": 33,
+    "otherNight": 30
+  }
+]

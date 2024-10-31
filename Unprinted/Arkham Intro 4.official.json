@@ -1,0 +1,230 @@
+[
+  {
+    "id": "_meta",
+    "name": "Arkham Intro 4",
+    "author": "Toto"
+  },
+  {
+    "id": "dexterdrake_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/dexterdrake_arkhammayhem.png",
+    "firstNightReminder": "Dexter Drake learns an in-play character. Mark the player with that character with the \"Scrap\" reminder token.",
+    "otherNightReminder": "Dexter Drake may guess a player. If that player has the \"Scrap\" reminder token, Dexter learns who the Demon is. If not, Dexter learns a player who is not the Demon.",
+    "reminders": ["Scrap", "No Ability"],
+    "name": "Dexter Drake",
+    "team": "townsfolk",
+    "ability": "You start knowing an in-play character. Once per game, at night, guess what player is that character. If correct, you learn who the Demon is. If incorrect, you receive false info.",
+    "firstNight": 30,
+    "otherNight": 49
+  },
+  {
+    "id": "carolynfern_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/carolynfern_arkhammayhem.png",
+    "firstNightReminder": "Carolyn Fern learns how many in-play characters can make players \"mad\" or do something in response to a player being \"mad\".",
+    "name": "Carolyn Fern",
+    "team": "townsfolk",
+    "ability": "You start knowing how many \"madness\" related characters are in play.",
+    "firstNight": 33
+  },
+  {
+    "id": "darrelsimmons_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/darrelsimmons_arkhammayhem.png",
+    "firstNightReminder": "Darrel Simmons chooses a player.",
+    "otherNightReminder": "Darrel Simmons chooses a player.",
+    "reminders": [
+      "Unnameable",
+      "Unnameable",
+      "Unnameable",
+      "Unnameable",
+      "Unnameable",
+      "Unnameable",
+      "Unnameable",
+      "Unnameable"
+    ],
+    "name": "Darrel Simmons",
+    "team": "townsfolk",
+    "ability": "Each night, choose a player: you learn every good character that chose them, or none if an evil player chose them.",
+    "firstNight": 53,
+    "otherNight": 69
+  },
+  {
+    "id": "amandasharpe_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/amandasharpe_arkhammayhem.png",
+    "firstNightReminder": "Amandra Sharpe chooses a player. Mark the chosen player with the \"Has Ability\" reminder token. If the chosen player is evil, mark Amanda Sharpe with the \"Drunk\" reminder token.",
+    "otherNightReminder": "Amandra Sharpe chooses a player. Mark the chosen player with the \"Has Ability\" reminder token. If the chosen player is evil, mark Amanda Sharpe with the \"Drunk\" reminder token.",
+    "reminders": ["Has Ability", "Drunk"],
+    "name": "Amanda Sharpe",
+    "team": "townsfolk",
+    "ability": "Each night, choose a player (different to last night): you gain their ability until dusk. If they are evil, you are drunk until dusk.",
+    "firstNight": 5,
+    "otherNight": 8
+  },
+  {
+    "id": "randolphcarter_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/randolphcarter_arkhammayhem.png",
+    "firstNightReminder": "Randolph Carter chooses a statement.",
+    "otherNightReminder": "If Randolph Carter was \"mad\" that the chosen statement is true, they learn if it was. Then, Randolph chooses a statement.",
+    "name": "Randolph Carter",
+    "team": "townsfolk",
+    "ability": "Each night, choose a statement. Tomorrow, if you are \"mad\" that that statement is true, you learn if it was the next night.",
+    "firstNight": 47.5,
+    "otherNight": 63.5
+  },
+  {
+    "id": "agentariquinn_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/agentariquinn_arkhammayhem.png",
+    "firstNightReminder": "Agent Ari Quinn chooses a player and learns their alignment.",
+    "otherNightReminder": "If Agent Ari Quinn has not broken madness, they choose a player and learn their alignment.",
+    "reminders": ["No Ability", "Once"],
+    "name": "Agent Ari Quinn",
+    "team": "townsfolk",
+    "ability": "Each night, choose a player: you learn their alignment. Demons might register falsely to you once. If you are \"mad\" that you are Agent Ari Quinn, you might lose this ability.",
+    "firstNight": 47,
+    "otherNight": 63
+  },
+  "highpriestess",
+  {
+    "id": "minhthiphan_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/minhthiphan_arkhammayhem.png",
+    "otherNightReminder": "Wake Minh Thi Phan and inform them of their number.",
+    "reminders": [
+      "Nominated Own",
+      "Nominated Own",
+      "Nominated Own",
+      "Nominated Own",
+      "Nominated Own",
+      "Nominated Own",
+      "Nominated Own",
+      "Nominated Own",
+      "Nominated Own",
+      "Nominated Own"
+    ],
+    "name": "Minh Thi Phan",
+    "team": "townsfolk",
+    "ability": "Each night*, learn how many nominators had the same alignment as their nominees yesterday.",
+    "otherNight": 53
+  },
+  {
+    "id": "jacquelinefine_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/jacquelinefine_arkhammayhem.png",
+    "firstNightReminder": "Evils learn that Jacqueline Fine is in play.",
+    "otherNightReminder": "If no evil player was \"mad\" about being evil yesterday, Jacqueline Fine wakes to learn an in-play character,",
+    "reminders": ["Mad", "Mad", "Mad", "Mad", "Mad", "Mad"],
+    "name": "Jacqueline Fine",
+    "team": "townsfolk",
+    "ability": "Each night*, if no evil player was \"mad\" about being evil yesterday, you learn an in-play character. Evils learn you are in play.",
+    "firstNight": 8,
+    "otherNight": 61
+  },
+  "undertaker",
+  {
+    "id": "bobjenkins_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/bobjenkins_arkhammayhem.png",
+    "name": "Bob Jenkins",
+    "team": "townsfolk",
+    "ability": "Each day, you may ask the Storyteller to tell you a piece of information about the person most \"mad\" about being Bob Jenkins."
+  },
+  "ravenkeeper",
+  "virgin",
+  {
+    "id": "jordanperry_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/jordanperry_arkhammayhem.png",
+    "firstNightReminder": "Jordan Perry learns an in-play Townsfolk.",
+    "otherNightReminder": "If Jordan Perry was mad that that Townsfolk is in play, they might die.",
+    "reminders": ["Mad", "Dead"],
+    "name": "Jordan Perry",
+    "team": "outsider",
+    "ability": "You start knowing an in-play Townsfolk. If you are \"mad\" that that Townsfolk is in play, they might die.",
+    "firstNight": 26,
+    "otherNight": 32
+  },
+  {
+    "id": "constancedumaine_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/constancedumaine_arkhammayhem.png",
+    "name": "Constance Dumaine",
+    "team": "outsider",
+    "ability": "You might be executed unless you are \"mad\" about learning something new every day. Once per game, when you visit the Storyteller, you learn a fact."
+  },
+  "mutant",
+  {
+    "id": "harlanearnstone_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/harlanearnstone_arkhammayhem.png",
+    "reminders": ["Drunk", "Drunk"],
+    "name": "Harlan Earnstone",
+    "team": "outsider",
+    "ability": "If you are \"mad\" about being an Outsider, your townsfolk neighbours might be drunk."
+  },
+  {
+    "id": "peterwarren_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/peterwarren_arkhammayhem.png",
+    "firstNightReminder": "Show the Grimoire for as long as Peter Warren needs. Peter Warren chooses a player and a statement.",
+    "otherNightReminder": "If the previous \"madness\" was broken, Peter Warren learns if it became true and chooses a statement.",
+    "reminders": ["Mad"],
+    "name": "Peter Warren",
+    "team": "minion",
+    "ability": "On your 1st night, view the Grimoire & choose a player & a statement: they are \"mad\" that that statement is true or you choose a new statement & it might become true (you learn if it did).",
+    "firstNight": 24,
+    "otherNight": 44,
+    "special": [
+      {
+        "type": "signal",
+        "name": "grimoire",
+        "time": "night"
+      }
+    ]
+  },
+  "harpy",
+  {
+    "id": "diannedivine_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/diannedivine_arkhammayhem.png",
+    "reminders": ["Impersonated"],
+    "name": "Dianne Divine",
+    "team": "minion",
+    "ability": "You poison and gain the ability of the 1st in-play character that you are \"mad\" about being each day."
+  },
+  "baron",
+  {
+    "id": "nyarlathotep_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/nyarlathotep_arkhammayhem.png",
+    "otherNightReminder": "Nyarlathotep chooses a player. Then, they may choose a second player. Inform the second choice who Nyarlathotep is.",
+    "reminders": ["Dead", "Mad", "Once"],
+    "name": "Nyarlathotep",
+    "team": "demon",
+    "ability": "Each night*, choose a player: they die. Then, once per game, choose a player: tomorrow they are \"mad\" that you are not the Demon or their team loses.",
+    "otherNight": 27,
+    "special": [
+      {
+        "type": "signal",
+        "name": "grimoire",
+        "time": "night"
+      }
+    ]
+  },
+  "ojo",
+  "vigormortis",
+  {
+    "id": "hastur_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/hastur_arkhammayhem.png",
+    "otherNightReminder": "A player might die.",
+    "remindersGlobal": [
+      "Is Hastur",
+      "Is Hastur",
+      "Is Hastur",
+      "Is Hastur",
+      "Is Hastur"
+    ],
+    "setup": true,
+    "name": "Hastur",
+    "team": "demon",
+    "ability": "You think you are a good Townsfolk, have that ability, and register as that Townsfolk to other Hastur. Each night*, a player might die. When you die, you learn all other Hastur. [All evil players are Hastur. +1 evil]",
+    "otherNight": 29,
+    "special": [
+      { "type": "selection", "name": "bag-disabled" },
+      {
+        "type": "signal",
+        "name": "grimoire",
+        "time": "night"
+      },
+      { "type": "reveal", "name": "replace-character" }
+    ]
+  }
+]

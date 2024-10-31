@@ -1,0 +1,61 @@
+[
+  {
+    "id": "_meta",
+    "author": "The Pandemonium Institute",
+    "name": "Sects & Violets Plus 1",
+    "background": "https://i.imgur.com/caxMjju.png"
+  },
+  "clockmaker",
+  "dreamer",
+  "snake_charmer",
+  "mathematician",
+  "flowergirl",
+  "town_crier",
+  "oracle",
+  "savant",
+  "seamstress",
+  "philosopher",
+  "artist",
+  "juggler",
+  "sage",
+  "mutant",
+  "sweetheart",
+  "barber",
+  "klutz",
+  "evil_twin",
+  "witch",
+  "cerenovus",
+  "pit-hag",
+  "fang_gu",
+  "vigormortis",
+  "no_dashii",
+  "vortox",
+  {
+    "id": "t+1",
+    "name": "Townsfolk + 1",
+    "team": "townsfolk",
+    "ability": "You are an off-script Townsfolk.",
+    "reminders": ["1", "2", "3", "4", "5"]
+  },
+  {
+    "id": "o+1",
+    "name": "Outsider + 1",
+    "team": "outsider",
+    "ability": "You are an off-script Outsider.",
+    "reminders": ["1", "2", "3", "4", "5"]
+  },
+  {
+    "id": "m+1",
+    "name": "Minion + 1",
+    "team": "minion",
+    "ability": "You are an off-script Minion.",
+    "reminders": ["1", "2", "3", "4", "5"]
+  },
+  {
+    "id": "d+1",
+    "name": "Demon + 1",
+    "team": "demon",
+    "ability": "You are an off-script Demon.",
+    "reminders": ["1", "2", "3", "4", "5"]
+  }
+]

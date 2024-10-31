@@ -1,0 +1,164 @@
+[
+  {
+    "id": "profwarrenrice_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/profwarrenrice_arkhammayhem.png",
+    "firstNightReminder": "Prof. Warren Rice learns an in-play Outsider and may choose to use their ability.",
+    "otherNightReminder": "Prof. Warren Rice may choose to use their ability if they haven't already.",
+    "reminders": ["Known", "No Ability"],
+    "setup": true,
+    "name": "Prof. Warren Rice",
+    "team": "townsfolk",
+    "ability": "You start knowing an in-play Outsider. Once per game, at night, choose a player: if they are an Outsider, they become a not-in-play Townsfolk. [+0 to +1 Outsiders]",
+    "firstNight": 7,
+    "otherNight": 9
+  },
+  {
+    "id": "mandythompson_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/mandythompson_arkhammayhem.png",
+    "firstNightReminder": "Mandy Thompson chooses a player. Mark that player with the next \"Choice\" reminder token. If Mandy Tompson has not yet used their once per game ability, they may,",
+    "otherNightReminder": "Mandy Thompson chooses a player. Mark that player with the next \"Choice\" reminder token. If Mandy Tompson has not yet used their once per game ability, they may,",
+    "reminders": [
+      "Choice 1",
+      "Choice 2",
+      "Choice 3",
+      "Choice 4",
+      "Choice 5",
+      "No Ability"
+    ],
+    "name": "Mandy Thompson",
+    "team": "townsfolk",
+    "ability": "Each night, choose a player. Then, once per game, choose to learn the character types of every player you have chosen in order.",
+    "firstNight": 28,
+    "otherNight": 48
+  },
+  {
+    "id": "skidsotoole_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/skidsotoole_arkhammayhem.png",
+    "firstNightReminder": "\"Skids\" O'Toole chooses a player and a character. If they guess incorrectly, mark them with the \"Drunk\" reminder token. Then, show \"Skids\" a player and their character.",
+    "otherNightReminder": "\"Skids\" O'Toole chooses a player and a character. If they guess incorrectly, mark them with the \"Drunk\" reminder token. Then, show \"Skids\" a player and their character.",
+    "reminders": ["Drunk"],
+    "name": "\"Skids\" O'Toole",
+    "team": "townsfolk",
+    "ability": "Each night: choose a player & guess their character: if you guess wrong you are drunk until dawn. Then, learn the character of one player.",
+    "firstNight": 42,
+    "otherNight": 56
+  },
+  {
+    "id": "jennybarnes_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/jennybarnes_arkhammayhem.png",
+    "firstNightReminder": "Jenny Barnes learns how many alive neighbours of the player with the \"Izzie\" reminder token are evil.",
+    "otherNightReminder": "Jenny Barnes learns how many alive neighbours of the player with the \"Izzie\" reminder token are evil.",
+    "reminders": ["Izzie"],
+    "setup": true,
+    "name": "Jenny Barnes",
+    "team": "townsfolk",
+    "ability": "Each night, learn how many of Izzie's alive neighbours are evil. [An evil player keeps Izzie captive]",
+    "firstNight": 45,
+    "otherNight": 59
+  },
+  {
+    "id": "drhenryarmitage_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/drhenryarmitage_arkhammayhem.png",
+    "firstNightReminder": "Dr. Henry Armitage chooses a player.",
+    "otherNightReminder": "Dr. Henry Armitage chooses a player.",
+    "name": "Dr. Henry Armitage",
+    "team": "townsfolk",
+    "ability": "Each night, choose a player: you learn a Minion character that chose them tonight, or that none did.",
+    "firstNight": 49,
+    "otherNight": 65
+  },
+  {
+    "id": "zoeysamaras_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/zoeysamaras_arkhammayhem.png",
+    "otherNightReminder": "Zoey Samaras chooses a player. Mark them with the \"Guarded\" reminder token.",
+    "reminders": ["Guarded"],
+    "name": "Zoey Samaras",
+    "team": "townsfolk",
+    "ability": "Each night*, choose a player: the next non-Demon player to choose them tonight dies instead.",
+    "otherNight": 19
+  },
+  {
+    "id": "hanksamson_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/hanksamson_arkhammayhem.png",
+    "firstNightReminder": "Place the \"Pa\" reminder token on a good player that neighbours 2 good players.",
+    "otherNightReminder": "If the player with the \"Pa\" reminder token neighbours an evil player and the \"No Ability\" reminder token is not placed, place the \"No Ability\" reminder token on Hank Samson and wake them.",
+    "reminders": ["Pa", "No Ability"],
+    "setup": true,
+    "name": "Hank Samson",
+    "team": "townsfolk",
+    "ability": "You learn the first time one of your Pa's alive neighbours is evil. [A good player is your Pa, they neighbour 2 good players.]",
+    "firstNight": 43,
+    "otherNight": 57
+  },
+  {
+    "id": "danielchesterfield_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/danielchesterfield_arkhammayhem.png",
+    "name": "Daniel Chesterfield",
+    "team": "outsider",
+    "ability": "If you are \"mad\" that the Demon is evil, you might turn evil."
+  },
+  {
+    "id": "jazzmulligan_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/jazzmulligan_arkhammayhem.png",
+    "firstNightReminder": "All players learn that \"Jazz\" Mulligan is in play.",
+    "otherNightReminder": "If \"Jazz\" Mulligan died, inform them who they are.",
+    "remindersGlobal": ["Is \"Jazz\" Mulligan"],
+    "setup": true,
+    "name": "\"Jazz\" Mulligan",
+    "team": "outsider",
+    "ability": "You think you are a Townsfolk, but you are not. All players know \"Jazz\" Mulligan is in play. If the Demon is executed, evil wins. You learn that you were \"Jazz\" Mulligan when you die.",
+    "firstNight": 100,
+    "otherNight": 42,
+    "special": [
+      {
+        "type": "selection",
+        "name": "bag-disabled"
+      },
+      { "type": "reveal", "name": "replace-character" }
+    ]
+  },
+  {
+    "id": "adamlynch_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/adamlynch_arkhammayhem.png",
+    "otherNightReminder": "If Adam Lynch died today or tonight, mark a Minion with the \"Minion\" reminder token. That Minion chooses a player. The chosen player is marked with the \"Poisoned\" reminder token.",
+    "reminders": ["Minion", "Poisoned"],
+    "name": "Adam Lynch",
+    "team": "outsider",
+    "ability": "If you died today or tonight, an alive Minion may choose a player. That player is poisoned for as long as that Minion is alive.",
+    "otherNight": 3
+  },
+  {
+    "id": "billycooper_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/billycooper_arkhammayhem.png",
+    "otherNightReminder": "If a player died by execution yesterday, Billy Cooper chooses a player and an alignment.",
+    "reminders": ["Mad 1", "Mad 1", "Mad 2", "Mad 2", "Dead", "Dead"],
+    "name": "Billy Cooper",
+    "team": "minion",
+    "ability": "Each night*, if a player died by execution yesterday, choose a player and an alignment. For 2 nights & days, the chosen player is \"mad\" that the executed player is of that alignment or might die in the night.",
+    "otherNight": 45
+  },
+  {
+    "id": "theredglovedman_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/theredglovedman_arkhammayhem.png",
+    "firstNightReminder": "Evil players do not learn each other.",
+    "setup": true,
+    "name": "The Red-Gloved Man",
+    "team": "minion",
+    "ability": "Minions and Demons do not know each other. [-1 Minion. +1 Demon type]",
+    "firstNight": 9
+  },
+  {
+    "id": "nathanwick_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/nathanwick_arkhammayhem.png",
+    "reminders": [
+      "Initiated",
+      "Initiated",
+      "Initiated",
+      "Initiated",
+      "Initiated"
+    ],
+    "name": "Nathan Wick",
+    "ability": "If an evil player you nominate would die by execution while at least 5 players live, they live but register as dead, even if you are dead.",
+    "team": "minion"
+  }
+]

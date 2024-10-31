@@ -1,0 +1,204 @@
+[
+  {
+    "id": "_meta",
+    "name": "Arkham Intro 3",
+    "author": "Toto"
+  },
+  {
+    "id": "tommymuldoon_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/tommymuldoon_arkhammayhem.png",
+    "firstNightReminder": "Tommy Muldoon learns the characters of both of Tommy's neighbours and a not-in-play character in any order.",
+    "name": "Tommy Muldoon",
+    "team": "townsfolk",
+    "ability": "You start knowing your neighbours' characters and a not-in-play character.",
+    "firstNight": 41
+  },
+  {
+    "id": "rolandbanks_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/rolandbanks_arkhammayhem.png",
+    "firstNightReminder": "Roland Banks chooses a player and learns a player.",
+    "otherNightReminder": "Roland Banks chooses a player and learns a player.",
+    "name": "Roland Banks",
+    "team": "townsfolk",
+    "ability": "Each night, choose a player: if they chose any players this night, you learn one of them; if not, you receive false info.",
+    "firstNight": 51,
+    "otherNight": 67
+  },
+  "mathematician",
+  "villageidiot",
+  {
+    "id": "sistermary_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/sistermary_arkhammayhem.png",
+    "firstNightReminder": "Wake Sister Mary and have them choose a player. Mark that player with the \"Blessed\" reminder token.",
+    "otherNightReminder": "Wake Sister Mary and have them choose a player. Mark that player with the \"Blessed\" reminder token.",
+    "reminders": ["Blessed"],
+    "name": "Sister Mary",
+    "team": "townsfolk",
+    "ability": "Each night, choose a player: they are sober, healthy, and receive true information until dusk.",
+    "firstNight": 3,
+    "otherNight": 6
+  },
+  {
+    "id": "markharrigan_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/markharrigan_arkhammayhem.png",
+    "otherNightReminder": "Mark Harrigan chooses a player. Mark that player with the \"Safe\" reminder token.",
+    "reminders": ["Safe", "Dead"],
+    "name": "Mark Harrigan",
+    "team": "townsfolk",
+    "ability": "Each night*, choose a player: That player is safe from evil players until dusk. You die if a death is prevented this way.",
+    "otherNight": 18
+  },
+  {
+    "id": "normanwithers_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/normanwithers_arkhammayhem.png",
+    "name": "Norman Withers",
+    "team": "townsfolk",
+    "ability": "Each day, you may ask the Storyteller to tell you a piece of false information."
+  },
+  {
+    "id": "georgebarnaby_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/georgebarnaby_arkhammayhem.png",
+    "name": "George Barnaby",
+    "team": "townsfolk",
+    "ability": "Each day, you may visit the Storyteller to make a private statement. You learn an equally true statement."
+  },
+  "savant",
+  "seamstress",
+  {
+    "id": "gloriagoldberg_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/gloriagoldberg_arkhammayhem.png",
+    "firstNightReminder": "Gloria chooses a Townsfolk and gains an ability.",
+    "name": "Gloria Goldberg",
+    "team": "townsfolk",
+    "ability": "You start by choosing an off-script official Townsfolk. You gain an ability inspired by that Townsfolk but do not learn what it is.",
+    "firstNight": 1
+  },
+  {
+    "id": "lolahayes_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/lolahayes_arkhammayhem.png",
+    "name": "Lola Hayes",
+    "team": "townsfolk",
+    "ability": "You have 3 Townsfolk abilities, one of which yields abnormal information."
+  },
+  {
+    "id": "rexmurphy_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/rexmurphy_arkhammayhem.png",
+    "otherNightReminder": "If the Demon killed Rex Murphy, they choose an number of players. Tell them each Minion and Demon character among the choices in an arbitrary order, or that none are among them.",
+    "name": "Rex Murphy",
+    "team": "townsfolk",
+    "ability": "If the Demon kills you, choose any number of players: you learn all Minion and Demon characters among the chosen players.",
+    "otherNight": 39
+  },
+  "puzzlemaster",
+  {
+    "id": "sebastienmoreau_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/sebastienmoreau_arkhammayhem.png",
+    "otherNightReminder": "If Sebastien Moreau died today or tonight, show the Demon the Grimoire.",
+    "reminders": ["The Show Begins"],
+    "name": "Sebastien Moreau",
+    "team": "outsider",
+    "ability": "If you died today or tonight, the Demon sees the Grimoire.",
+    "otherNight": 41
+  },
+  {
+    "id": "silasbishop_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/silasbishop_arkhammayhem.png",
+    "name": "Silas Bishop",
+    "team": "outsider",
+    "ability": "You might register as evil and as a Demon. If the Demon dies (ending the game) while the living outnumber the dead, you become an evil Demon.",
+    "jinxes": [
+      {
+        "id": "cnidathqua_arkhammayhem",
+        "reason": "If Cnidathqua is in play and the last Minion dies while the living outnumber the dead, you become an evil Minion"
+      }
+    ]
+  },
+  {
+    "id": "jeromedavids_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/jeromedavids_arkhammayhem.png",
+    "firstNightReminder": "A player learns that Jerome Davids is in play.",
+    "remindersGlobal": [
+      "is Jerome Davids",
+      "Drunk",
+      "Drunk",
+      "Drunk",
+      "Drunk",
+      "Drunk",
+      "Knows"
+    ],
+    "setup": true,
+    "name": "Jerome Davids",
+    "team": "outsider",
+    "ability": "You think you are a Townsfolk, but you have a different ability with the same choices. Good players you choose with this ability are drunk until dusk. 1 good player knows you're in play.",
+    "firstNight": 27,
+    "special": [
+      {
+        "type": "selection",
+        "name": "bag-disabled"
+      },
+      { "type": "reveal", "name": "replace-character" }
+    ]
+  },
+  {
+    "id": "almahill1_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/almahill1_arkhammayhem.png",
+    "firstNightReminder": "Alma Hill chooses a player.",
+    "otherNightReminder": "Alma Hill chooses a player.",
+    "reminders": ["Poisoned & Cannot die."],
+    "name": "Alma Hill",
+    "team": "minion",
+    "ability": "Each night, choose a player (different to last night): they are poisoned & cannot die until dusk.",
+    "firstNight": 21,
+    "otherNight": 11
+  },
+  {
+    "id": "hermancollins_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/hermancollins_arkhammayhem.png",
+    "otherNightReminder": "If a player was executed, inform Herman Collins of their character.",
+    "name": "Herman Collins",
+    "team": "minion",
+    "ability": "You learn the characters of killed executees and gain their abilities if they are Townsfolk or Minions.",
+    "otherNight": 2
+  },
+  "goblin",
+  "scarletwoman",
+  "kazali",
+  {
+    "id": "ithaqua_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/ithaqua_arkhammayhem.png",
+    "otherNightReminder": "Ithaqua chooses a player. If the chosen player dies and is an Outsider, poison one of their Townsfolk neighbours.",
+    "reminders": [
+      "Dead",
+      "Poisoned",
+      "Poisoned",
+      "Poisoned",
+      "Poisoned",
+      "Poisoned"
+    ],
+    "setup": true,
+    "name": "Ithaqua",
+    "team": "demon",
+    "ability": "Each night*, choose a player: they die. Outsiders you kill poison one Townsfolk neighbour. [+1 Outsider]",
+    "otherNight": 22,
+    "special": [
+      {
+        "type": "signal",
+        "name": "grimoire",
+        "time": "night"
+      }
+    ]
+  },
+  "vortox",
+  {
+    "id": "cnidathqua_arkhammayhem",
+    "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/cnidathqua_arkhammayhem.png",
+    "otherNightReminder": "A player might die.",
+    "remindersGlobal": ["Dead"],
+    "setup": true,
+    "name": "Cnidathqua",
+    "team": "demon",
+    "ability": "Each night*, a player might die. No player is Cnidathqua. Evil cannot lose while a Minion is alive. [1 good player is evil]",
+    "otherNight": 28,
+    "special": [{ "type": "selection", "name": "bag-disabled" }]
+  }
+]
