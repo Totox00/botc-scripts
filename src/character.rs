@@ -79,6 +79,7 @@ pub struct AppSpecial {
     bag_disabled: bool,
     bag_duplicate: bool,
     grimoire: bool,
+    grimoire_global_demon: bool,
     cards: Vec<String>,
     replace_reveal: bool,
 }
@@ -146,6 +147,7 @@ impl Character {
                 "bagduplicate" => special.bag_duplicate = true,
                 "grimoire" => special.grimoire = true,
                 "replacereveal" => special.replace_reveal = true,
+                "grimoire_global_demon" => special.grimoire_global_demon = true,
                 "attribution" => {
                     for line in lines.by_ref() {
                         if line.is_empty() {
@@ -348,6 +350,7 @@ impl AppSpecial {
         self.bag_disabled
             || self.bag_duplicate
             || self.grimoire
+            || self.grimoire_global_demon
             || self.replace_reveal
             || !self.cards.is_empty()
     }
@@ -389,6 +392,18 @@ impl AppSpecial {
                 Value::String(String::from("grimoire")),
             );
             map.insert(String::from("time"), Value::String(String::from("night")));
+            out.push(Value::Object(map));
+        }
+
+        if self.grimoire_global_demon {
+            let mut map = Map::new();
+            map.insert(String::from("type"), Value::String(String::from("signal")));
+            map.insert(
+                String::from("name"),
+                Value::String(String::from("grimoire")),
+            );
+            map.insert(String::from("time"), Value::String(String::from("night")));
+            map.insert(String::from("global"), Value::String(String::from("demon")));
             out.push(Value::Object(map));
         }
 
