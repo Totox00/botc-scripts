@@ -7,6 +7,7 @@ reminder 1 Once
 othernight The Spectral Watcher chooses a player.
 wakes other after imp
 setup
+card You Died
 
 attribution
 Icon by Lorc under CC BY 3.0 from game-icons.net
@@ -30,3 +31,6 @@ howtorun
 Each night except the first, wake The Spectral Watcher. They point at any player. That player dies - mark them with the DEAD reminder. Put The Spectral Watcher to sleep.
 If The Spectral Watcher dies during the day while at least 5 players are alive and the ONCE token is not placed in the Grimoire, place the ONCE token in the Grimoire and the game continues. Wake The Spectral Watcher the next night. They point at any player. Replace that player's character token with a The Spectral Watcher token. Put The Spectral Watcher to sleep. Wake the new The Spectral Watcher token and show them the YOU ARE info token, a thumbs down, and the The Spectral Watcher character token. Put them to sleep. Do not wake the new The Spectral Watcher again this night
 If The Spectral Watcher dies in the night while at least 5 players are alive and the ONCE token is not placed in the Grimoire, place the ONCE token in the Grimoire and the game continues. Wake The Spectral Watcher the next night and show them the YOU DIED info token. They point at any player. Replace that player's character token with a The Spectral Watcher token. Put The Spectral Watcher to sleep. Wake the new The Spectral Watcher token and show them the YOU ARE info token, a thumbs down, and the The Spectral Watcher character token. Put them to sleep. If this happened before The Spectral Watcher would normally wake, do not wake either The Spectral Watcher again this night. 
+
+jinx summoner If the Summoner creates The Spectral Watcher, The Spectral Watcher does not change the alignment of the person they choose after being executed.
+jinx sethbishop If Seth Bishop creates The Spectral Watcher, The Spectral Watcher does not change the alignment of the person they choose after being executed.

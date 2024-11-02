@@ -7,6 +7,8 @@ globalreminder 1 Is Gavriella Mizrah
 othernight If one of Gavriella Mizrah's neighbours died, Gavriella also dies.
 wakes other after gossip
 setup
+bagdisabled
+replacereveal
 
 attribution
 Icon by Skoll under CC BY 3.0 from game-icons.net

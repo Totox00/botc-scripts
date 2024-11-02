@@ -6,7 +6,7 @@ use std::{
 
 use serde_json::{Map, Value};
 
-use crate::character::Character;
+use crate::character::{Character, Team};
 
 #[derive(Debug)]
 pub struct Script<'a> {
@@ -58,8 +58,13 @@ impl Script<'_> {
         T: Write,
     {
         let mut out: Vec<Value> = vec![self.meta()];
+        let mut included_fabled = vec![];
 
         for character in self.characters {
+            if character.team == Team::Fabled {
+                included_fabled.push(character.id.to_owned());
+            }
+
             if character.official {
                 out.push(Value::String(character.id.to_owned()));
             } else {
@@ -68,6 +73,13 @@ impl Script<'_> {
                         panic!("Failed to serialize character {}", character.id)
                     }),
                 );
+            }
+
+            for fabled in &character.required_fabled {
+                if !included_fabled.contains(fabled) {
+                    included_fabled.push(fabled.to_owned());
+                    out.push(Value::String(fabled.to_owned()));
+                }
             }
         }
 

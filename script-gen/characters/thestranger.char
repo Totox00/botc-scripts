@@ -3,6 +3,7 @@ Minion
 Townsfolk might receive incorrect character tokens in setup.
 
 setup
+requires gardener
 
 attribution
 Ability originally part of New World Chaos.

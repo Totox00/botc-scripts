@@ -884,6 +884,7 @@
     "id": "gavriellamizrah_arkhammayhem",
     "image": "https://www.bloodstar.xyz/p/Toto00/ArkhamMayhem/gavriellamizrah_arkhammayhem.png",
     "otherNightReminder": "If one of Gavriella Mizrah's neighbours died, Gavriella also dies.",
+    "remindersGlobal": ["Is Gavriella Mizrah"],
     "reminders": ["Dead"],
     "setup": true,
     "name": "Gavriella Mizrah",
@@ -894,7 +895,8 @@
       {
         "type": "selection",
         "name": "bag-disabled"
-      }
+      },
+      { "type": "reveal", "name": "replace-character" }
     ]
   },
   {

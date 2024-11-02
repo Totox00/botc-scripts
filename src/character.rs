@@ -7,6 +7,7 @@ use std::{
 
 use base64::{prelude::BASE64_STANDARD, Engine};
 use serde::{Deserialize, Serialize};
+use serde_json::{Map, Value};
 
 #[derive(Debug, Deserialize, Serialize)]
 pub struct Character {
@@ -47,9 +48,14 @@ pub struct Character {
     #[serde(default)]
     pub attribution: String,
     pub image: Option<String>,
+    pub special: Option<Value>,
+    #[serde(default)]
+    pub jinxes: Vec<Jinx>,
+    #[serde(skip)]
+    pub required_fabled: Vec<String>,
 }
 
-#[derive(Debug, Deserialize, Serialize, Default)]
+#[derive(Debug, Deserialize, Serialize, Default, PartialEq, Eq)]
 pub enum Team {
     #[serde(rename = "townsfolk")]
     Townsfolk,
@@ -66,6 +72,21 @@ pub enum Team {
     #[default]
     #[serde(rename = "special")]
     Special,
+}
+
+#[derive(Debug, Deserialize, Serialize, Default)]
+pub struct AppSpecial {
+    bag_disabled: bool,
+    bag_duplicate: bool,
+    grimoire: bool,
+    cards: Vec<String>,
+    replace_reveal: bool,
+}
+
+#[derive(Debug, Deserialize, Serialize)]
+pub struct Jinx {
+    id: String,
+    reason: String,
 }
 
 impl Character {
@@ -114,12 +135,17 @@ impl Character {
         let mut how_to_run = String::new();
         let mut advice = String::new();
         let mut attribution = String::new();
+        let mut special = AppSpecial::default();
+        let mut jinxes = vec![];
+        let mut required_fabled = vec![];
 
         while let Some(line) = lines.next() {
             match line {
-                "setup" => {
-                    setup = true;
-                }
+                "setup" => setup = true,
+                "bagdisabled" => special.bag_disabled = true,
+                "bagduplicate" => special.bag_duplicate = true,
+                "grimoire" => special.grimoire = true,
+                "replacereveal" => special.replace_reveal = true,
                 "attribution" => {
                     for line in lines.by_ref() {
                         if line.is_empty() {
@@ -175,14 +201,18 @@ impl Character {
                         match key {
                             "reminder" => {
                                 if let Some((count, value)) = value.split_once(' ') {
-                                    for _ in 0..count.parse().unwrap_or_else(|_| panic!("Reminder for {source} does not have a count")) {
+                                    for _ in 0..count.parse().unwrap_or_else(|_| {
+                                        panic!("Reminder for {source} does not have a count")
+                                    }) {
                                         reminders.push(value.to_owned());
                                     }
                                 }
                             }
                             "globalreminder" => {
                                 if let Some((count, value)) = value.split_once(' ') {
-                                    for _ in 0..count.parse().unwrap_or_else(|_| panic!("Reminder for {source} does not have a count")) {
+                                    for _ in 0..count.parse().unwrap_or_else(|_| {
+                                        panic!("Reminder for {source} does not have a count")
+                                    }) {
                                         reminders_global.push(value.to_owned());
                                     }
                                 }
@@ -233,7 +263,18 @@ impl Character {
                                     }
                                 }
                             }
-
+                            "requires" => required_fabled.push(value.to_owned()),
+                            "card" => special.cards.push(value.to_owned()),
+                            "jinx" => {
+                                if let Some((id, reason)) = value.split_once(' ') {
+                                    jinxes.push(Jinx {
+                                        id: id.to_owned(),
+                                        reason: reason.to_owned(),
+                                    });
+                                } else {
+                                    panic!("Invalid jinx for {source}");
+                                }
+                            }
                             _ => panic!("Invalid key {key} in character {source}"),
                         }
                     }
@@ -276,6 +317,13 @@ impl Character {
             advice: advice.trim().to_owned(),
             attribution: attribution.trim().to_owned(),
             image,
+            required_fabled,
+            special: if special.any() {
+                Some(special.as_serializable())
+            } else {
+                None
+            },
+            jinxes,
         }
     }
 }
@@ -292,5 +340,76 @@ impl From<&str> for Team {
             "Special" => Team::Special,
             _ => panic!("Invalid team {value}"),
         }
+    }
+}
+
+impl AppSpecial {
+    pub fn any(&self) -> bool {
+        self.bag_disabled
+            || self.bag_duplicate
+            || self.grimoire
+            || self.replace_reveal
+            || !self.cards.is_empty()
+    }
+
+    pub fn as_serializable(&self) -> Value {
+        let mut out = vec![];
+
+        if self.bag_disabled {
+            let mut map = Map::new();
+            map.insert(
+                String::from("type"),
+                Value::String(String::from("selection")),
+            );
+            map.insert(
+                String::from("name"),
+                Value::String(String::from("bag-disabled")),
+            );
+            out.push(Value::Object(map));
+        }
+
+        if self.bag_duplicate {
+            let mut map = Map::new();
+            map.insert(
+                String::from("type"),
+                Value::String(String::from("selection")),
+            );
+            map.insert(
+                String::from("name"),
+                Value::String(String::from("bag-duplicate")),
+            );
+            out.push(Value::Object(map));
+        }
+
+        if self.grimoire {
+            let mut map = Map::new();
+            map.insert(String::from("type"), Value::String(String::from("signal")));
+            map.insert(
+                String::from("name"),
+                Value::String(String::from("grimoire")),
+            );
+            map.insert(String::from("time"), Value::String(String::from("night")));
+            out.push(Value::Object(map));
+        }
+
+        if self.replace_reveal {
+            let mut map = Map::new();
+            map.insert(String::from("type"), Value::String(String::from("reveal")));
+            map.insert(
+                String::from("name"),
+                Value::String(String::from("replace-character")),
+            );
+            out.push(Value::Object(map));
+        }
+
+        for card in &self.cards {
+            let mut map = Map::new();
+            map.insert(String::from("type"), Value::String(String::from("signal")));
+            map.insert(String::from("name"), Value::String(String::from("card")));
+            map.insert(String::from("value"), Value::String(card.to_owned()));
+            out.push(Value::Object(map));
+        }
+
+        Value::Array(out)
     }
 }

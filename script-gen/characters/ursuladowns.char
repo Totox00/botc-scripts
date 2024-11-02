@@ -4,6 +4,9 @@ You start knowing if more Townsfolk are odd or even steps from you clockwise, or
 
 firstnight Ursula Downs learns the parity of other Townsfolk.
 wakes first after washerwoman
+card Odd
+card Even
+card Equal
 
 flavor
 "Let's go." She had traveled so far already, been through so much; she would not let anything ― or anyone ― take this away from her now.
