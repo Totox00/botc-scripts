@@ -83,7 +83,7 @@ impl Script<'_> {
             }
         }
 
-        serde_json::to_writer_pretty(writer, &out)
+        serde_json::to_writer(writer, &out)
             .unwrap_or_else(|_| panic!("Failed to generate json for script {}", self.name))
     }
 

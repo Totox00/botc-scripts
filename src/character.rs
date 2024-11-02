@@ -17,39 +17,52 @@ pub struct Character {
     pub team: Team,
     #[serde(default)]
     pub ability: String,
-    #[serde(default)]
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub reminders: Vec<String>,
-    #[serde(rename = "remindersGlobal", default)]
+    #[serde(
+        rename = "remindersGlobal",
+        default,
+        skip_serializing_if = "Vec::is_empty"
+    )]
     pub reminders_global: Vec<String>,
-    #[serde(rename = "firstNightReminder", default)]
+    #[serde(
+        rename = "firstNightReminder",
+        default,
+        skip_serializing_if = "String::is_empty"
+    )]
     pub first_night_reminder: String,
-    #[serde(rename = "otherNightReminder", default)]
+    #[serde(
+        rename = "otherNightReminder",
+        default,
+        skip_serializing_if = "String::is_empty"
+    )]
     pub other_night_reminder: String,
-    #[serde(rename = "firstNight", default)]
+    #[serde(rename = "firstNight", default, skip_serializing_if = "is_zero")]
     pub first_night: f32,
-    #[serde(rename = "otherNight", default)]
+    #[serde(rename = "otherNight", default, skip_serializing_if = "is_zero")]
     pub other_night: f32,
-    #[serde(default)]
+    #[serde(default, skip_serializing_if = "is_false")]
     pub setup: bool,
-    #[serde(default)]
+    #[serde(default, skip_serializing)]
     pub official: bool,
-    #[serde(rename = "flavor", default)]
+    #[serde(rename = "flavor", default, skip_serializing_if = "String::is_empty")]
     pub flavour: String,
-    #[serde(default)]
+    #[serde(default, skip_serializing)]
     pub overview_short: String,
-    #[serde(default)]
+    #[serde(default, skip_serializing)]
     pub overview_long: String,
-    #[serde(default)]
+    #[serde(default, skip_serializing)]
     pub examples: String,
-    #[serde(default)]
+    #[serde(default, skip_serializing)]
     pub how_to_run: String,
-    #[serde(default)]
+    #[serde(default, skip_serializing)]
     pub advice: String,
-    #[serde(default)]
+    #[serde(default, skip_serializing)]
     pub attribution: String,
     pub image: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub special: Option<Value>,
-    #[serde(default)]
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub jinxes: Vec<Jinx>,
     #[serde(skip)]
     pub required_fabled: Vec<String>,
@@ -427,4 +440,12 @@ impl AppSpecial {
 
         Value::Array(out)
     }
+}
+
+fn is_zero(n: &f32) -> bool {
+    *n == 0f32
+}
+
+fn is_false(b: &bool) -> bool {
+    !b
 }
