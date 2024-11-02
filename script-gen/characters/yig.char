@@ -3,7 +3,7 @@ Demon
 Each night*, choose a player: they die. Once per game, you may choose to turn the player you kill evil.
 
 reminder 1 Dead
-globalreminder 1 Once
+reminder 1 Once
 othernight Yig chooses a player and if that player should turn evil.
 wakes other after imp
 

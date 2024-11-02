@@ -4,7 +4,8 @@ Each night, choose a living player that you haven't chosen before: the Demon lea
 
 reminder 15 Chosen
 everynight Valentino Rivas chooses a player.
-wakes every before legion
+wakes first after demoninfo
+wakes other before legion
 
 attribution
 Icon by Delapouite under CC BY 3.0 from game-icons.net
@@ -29,5 +30,5 @@ Each night, wake Valentino Rivas. They point at a player. Mark that player with 
 If the player Valentino Rivas chooses is already dead or already has a CHOSEN reminder, have them choose again.
 Wake the Demon and show them the THIS PLAYER IS info token, then the character token of the player Valentino Rivas chose, then point to the player Valentino Rivas chose. Then, put the Demon to sleep.
 
-jinx summoner If the Summoner is in play, they learn information given by Valenino Rivas until a Demon is made.
-jinx sethbishop If Seth Bishop is in play, they learn information given by Valenino Rivas until a Demon is made.
+jinx summoner If the Summoner is in play, they learn information given by Valentino Rivas until a Demon is made.
+jinx sethbishop If Seth Bishop is in play, they learn information given by Valentino Rivas until a Demon is made.
