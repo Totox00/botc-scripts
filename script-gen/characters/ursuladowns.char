@@ -1,0 +1,23 @@
+Ursula Downs
+Townsfolk
+You start knowing if more Townsfolk are odd or even steps from you clockwise, or that it is equal.
+
+firstnight Ursula Downs learns the parity of other Townsfolk.
+wakes first after washerwoman
+
+flavor
+"Let's go." She had traveled so far already, been through so much; she would not let anything ― or anyone ― take this away from her now.
+
+overview Ursula Downs learns where fellow Townsfolk are seated.
+On the first night, Ursula downs learns if there are more townsfolk starting from their clockwise neighbour, counting every other player (i.e. skipping one player then counting the next) in a clockwise direction, or if there are more townsfolk among all remaining players, or if both counts are equal. Ursula Downs themselves do not count towards either count.
+If a player gains Ursula Downs's ability later in the game, they learn their information that night. Dead players will be counted for the information they receive.
+A way to communicate this information at night would be to show 1 for "odd", 2 for "even", and 0 for "equal".
+
+examples
+In a clockwise direction, the characters of a 9 player game are Ursula Downs, Po, Goon, Empath, Gambler, Puzzlemaster, Spy, Innkeeper, Clockmaker and then the circle is complete. The "odd" characters are the Po, the Empath, the Puzzlemaster, and the Innkeeper, so the "odd" Townsfolk count is 2. The "even" characters are the Goon, the Gambler, the Spy, and the Clockmaker, so the "even" Townsfolk count is 2. This means that Ursula Downs learns "equal", but if the Storyteller chooses to register the Spy as a Townsfolk, the "even" Townsfolk count is 3 and Ursula Downs learns "even" instead.
+
+howtorun
+Count how many Townsfolk there are, starting from Ursula Downs's clockwise neighbour, and then for every other player in a clockwise direction (i.e., skip over one player then count the next) until Ursula Downs is reached (or skipped over) (Ursula Downs will not be counted). Then, count how many Townsfolk are among the players that were not counted so far (excluding Ursula Downs). Wake Ursula Downs. If the first count is greater than the second, they learn "odd". If the second is greater, Ursula Downs learns "even". If the counts are equal, they learn "equal". Put Ursula Downs to sleep.
+
+attribution
+Icon by Lorc under CC BY 3.0 from game-icons.net

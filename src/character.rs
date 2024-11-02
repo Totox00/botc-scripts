@@ -16,9 +16,9 @@ pub struct Character {
     pub team: Team,
     #[serde(default)]
     pub ability: String,
-    #[serde(default = "Vec::new")]
+    #[serde(default)]
     pub reminders: Vec<String>,
-    #[serde(rename = "remindersGlobal", default = "Vec::new")]
+    #[serde(rename = "remindersGlobal", default)]
     pub reminders_global: Vec<String>,
     #[serde(rename = "firstNightReminder", default)]
     pub first_night_reminder: String,
@@ -29,9 +29,21 @@ pub struct Character {
     #[serde(rename = "otherNight", default)]
     pub other_night: f32,
     #[serde(default)]
+    pub setup: bool,
+    #[serde(default)]
     pub official: bool,
     #[serde(rename = "flavor", default)]
     pub flavour: String,
+    #[serde(default)]
+    pub overview_short: String,
+    #[serde(default)]
+    pub overview_long: String,
+    #[serde(default)]
+    pub examples: String,
+    #[serde(default)]
+    pub how_to_run: String,
+    #[serde(default)]
+    pub advice: String,
     #[serde(default)]
     pub attribution: String,
     pub image: Option<String>,
@@ -94,11 +106,20 @@ impl Character {
         let mut other_night_reminder = String::new();
         let mut first_night = 0f32;
         let mut other_night = 0f32;
-        let mut attribution = String::new();
+        let mut setup = false;
         let mut flavour = String::new();
+        let mut overview_short = String::new();
+        let mut overview_long = String::new();
+        let mut examples = String::new();
+        let mut how_to_run = String::new();
+        let mut advice = String::new();
+        let mut attribution = String::new();
 
         while let Some(line) = lines.next() {
             match line {
+                "setup" => {
+                    setup = true;
+                }
                 "attribution" => {
                     for line in lines.by_ref() {
                         if line.is_empty() {
@@ -119,25 +140,59 @@ impl Character {
                         }
                     }
                 }
+                "examples" => {
+                    for line in lines.by_ref() {
+                        if line.is_empty() {
+                            break;
+                        } else {
+                            examples.push_str(line);
+                            examples.push('\n');
+                        }
+                    }
+                }
+                "howtorun" => {
+                    for line in lines.by_ref() {
+                        if line.is_empty() {
+                            break;
+                        } else {
+                            how_to_run.push_str(line);
+                            how_to_run.push('\n');
+                        }
+                    }
+                }
+                "advice" => {
+                    for line in lines.by_ref() {
+                        if line.is_empty() {
+                            break;
+                        } else {
+                            advice.push_str(line);
+                            advice.push('\n');
+                        }
+                    }
+                }
                 _ => {
                     if let Some((key, value)) = line.split_once(' ') {
                         match key {
                             "reminder" => {
                                 if let Some((count, value)) = value.split_once(' ') {
-                                    for _ in 0..count.parse().unwrap() {
+                                    for _ in 0..count.parse().unwrap_or_else(|_| panic!("Reminder for {source} does not have a count")) {
                                         reminders.push(value.to_owned());
                                     }
                                 }
                             }
                             "globalreminder" => {
                                 if let Some((count, value)) = value.split_once(' ') {
-                                    for _ in 0..count.parse().unwrap() {
+                                    for _ in 0..count.parse().unwrap_or_else(|_| panic!("Reminder for {source} does not have a count")) {
                                         reminders_global.push(value.to_owned());
                                     }
                                 }
                             }
                             "firstnight" => first_night_reminder = value.to_owned(),
                             "othernight" => other_night_reminder = value.to_owned(),
+                            "everynight" => {
+                                first_night_reminder = value.to_owned();
+                                other_night_reminder = value.to_owned();
+                            }
                             "wakes" => {
                                 let mut split = value.split(' ');
                                 let night = split.next().unwrap_or_else(|| {
@@ -160,7 +215,22 @@ impl Character {
                                 match night {
                                     "first" => first_night = other_char.first_night + offset,
                                     "other" => other_night = other_char.other_night + offset,
+                                    "every" => {
+                                        first_night = other_char.first_night + offset;
+                                        other_night = other_char.other_night + offset;
+                                    }
                                     _ => panic!("Invalid night for character {source}"),
+                                }
+                            }
+                            "overview" => {
+                                overview_short = value.to_owned();
+                                for line in lines.by_ref() {
+                                    if line.is_empty() {
+                                        break;
+                                    } else {
+                                        overview_long.push_str(line);
+                                        overview_long.push('\n');
+                                    }
                                 }
                             }
 
@@ -196,9 +266,15 @@ impl Character {
             other_night_reminder,
             first_night,
             other_night,
+            setup,
             official: false,
-            attribution: attribution.trim().to_owned(),
             flavour: flavour.trim().to_owned(),
+            overview_short: overview_short.trim().to_owned(),
+            overview_long: overview_long.trim().to_owned(),
+            examples: examples.trim().to_owned(),
+            how_to_run: how_to_run.trim().to_owned(),
+            advice: advice.trim().to_owned(),
+            attribution: attribution.trim().to_owned(),
             image,
         }
     }

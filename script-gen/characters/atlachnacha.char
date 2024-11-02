@@ -1,0 +1,13 @@
+Atlach-Nacha
+Demon
+Each night, choose a player: they are poisoned until dusk & are webbed. If a webbed player neighbours a webbed player, both die.
+
+reminder 15 Webbed
+reminder 3 Dead
+reminder 1 Poisoned
+firstnight Atlach-Nacha chooses a player. Mark that player with a "Webbed" reminder token and a "Poisoned" reminder token.
+othernight Remove the previous "Poisoned" reminder token. Atlach-Nacha chooses a player. Mark that player with a "Webbed" reminder token and a "Poisoned" reminder token. Then, kill any players with a "Webbed" reminder token that neighbour a player with a "Webbed" reminder token.
+wakes every after pukka
+
+attribution
+Icon by Lorc under CC BY 3.0 from game-icons.net

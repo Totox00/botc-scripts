@@ -1,0 +1,35 @@
+Silas March
+Townsfolk
+You start knowing 2 players of different character types. Each night*, if both are dead: you learn a new pair. You learn players of different alignments at most once per game. [+0 to +1 Outsider]
+
+reminder 2 Known
+reminder 1 Once
+firstnight Silas March learns 2 players. Mark those players with "Known" reminder tokens. If both players are the same alignment, mark Silas March with the "Once" reminder token.
+othernight If both players with "Known" reminder tokens are dead, Silas March learns 2 players. Mark those players with "Known" reminder tokens. If both players are the same alignment, mark Silas March with the "Once" reminder token.
+wakes every after fortuneteller
+setup
+
+attribution
+Icon by Lorc under CC BY 3.0 from game-icons.net
+
+flavour
+What could he say about his ancestral home that Hansen would believe? Where to even start? How could he express to Hansen, a mere child born in another land, the awfulness of Innsmouth?
+
+overview Silas March learns pairs of players who are of different character types, but of the same alignment - usually.
+On their first night, Silas March learns two players who are of different character types.
+Whenever both players that Silas March most recently learned about are dead, they wake the next night to learn 2 more players of different character types. The character types of the old pair do not influence the character types of the new pair.
+If Silas March learns 2 players that are of different alignments at the moment Silas March learns about them, Silas March will not learn another pair of players that are of different alignments. If the pair started as the same alignment but one of the players changes alignments, this does not count. Similarily, if they started out having different alignments but then became of the same alignment, Silas March cannot learn a pair of players that are of different alignments again.
+If Silas March is drunk or poisoned when they learn a new pair, they may learn players that are of the same character types, or players that are of different alignments if they otherwise couldn't, or without using up the one time they are allowed to learn of players of different alignments. However, even if Silas March becomes sober & healthy afterwards, they only learn a new pair of players if the last 2 players they were shown are dead.
+If Silas March is in play, there may be one extra Outsider in play.
+
+examples
+Silas March learns 2 players, who are the Fortune Teller and "Jazz" Mulligan, who thinks they are the Gambler. Both die, and Silas March learns 2 players who are The Spectral Watcher and the Seamstress. Both of them die, and Silas March learns 2 players, who are Padma Amrita, and the new Spectral Watcher.
+Silas March learns 2 players, who are Seth Bishop and Brown Jenkin, who registers as evil to Silas March. Both of them die, and Silas March learns 2 new players. One of them is Jeremiah Pierce, who causes their neighbour, who is the other player Silas March has learned, to register as evil. When both of them are dead, Silas March learns the player who is Father Mateo, and the player who is Yig. Silas March may not learn another pair of differently aligned players now.
+
+howtorun
+While setting up the game, before putting the character tokens in the bag, you may remove one Townsfolk and add one Outsider. 
+During the first night, mark the character tokens of 2 players who are of different character types with the KNOW reminders. If they are of different alignments, mark Silas March's character token with the ONCE reminder. Wake Silas March and point to the two players maked KNOW. Put Silas March to sleep.
+If both players marked KNOW are dead, that night, remove them and mark the character tokens of 2 players who are of different character types with the KNOW reminders; if Silas March is marked with the ONCE reminder, they must also be of the same alignment. (It is recommended that at least one of them is alive). If the 2 players marked KNOW are of different alignments, mark Silas March's character token with the ONCE reminder.
+
+advice
+It is recommended to only add an Outsider if there would be none in play otherwise, as having 0 Outsiders would potentially make Silas March's information a bit too powerful.

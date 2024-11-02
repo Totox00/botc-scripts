@@ -1,0 +1,28 @@
+Agatha Crane
+Townsfolk
+Each night, you learn how many players chose you with their abilities this night.
+
+reminder 5 Chose
+everynight Agatha Crane learns how many times they have been chosen this night.
+wakes every after mathematician
+
+attribution
+Icon by Delapouite under CC BY 3.0 from game-icons.net
+
+flavour
+She turned and scrutinized the floor, searching every inch of the rest of the room. There was not a single bit of powder anywhere. A small smile spread across her lips. At dawn, she packed her equipment and left the room with more proof than she had had before.
+
+overview Agatha Crane learns if they were visited at night.
+Agatha Crane learns how many players chose them with their ability tonight.
+Players that were drunk or poisoned when choosing Agatha Crane count.
+Players that learn information about Agatha Crane or interact with them in some other way without choosing them do not count.
+If a player is chosen by another player, and that first player then becomes Agatha Crane during that night, that second player's choice does count.
+
+examples
+The Monk and the Demon chose Agatha Crane tonight. Agatha Crane learns a 2.
+Agatha Crane learns a 1. Ben claims to be Sister Mary who chose Agatha Crane, and David claims to be Father Mateo who chose Agatha Crane. Agatha Crane concludes that one of them is lying.
+The Barista causes Agatha Crane to learn sober, healthy & true information, Silas March is shown Agatha Crane and another player, and Jeremiah Pierce causes Agatha Crane to misregister to Silas March. Agatha Crane learns a 0.
+
+howtorun
+Whenever someone chooses Agatha Crane with their own ability at night, mark them with a CHOSE reminder.
+Each night, wake Agatha Crane. Show them fingers equaling the number of CHOSE reminders. Put Agatha Crane to sleep and remove all CHOSE reminders.

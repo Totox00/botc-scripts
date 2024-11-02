@@ -1,0 +1,32 @@
+The Spectral Watcher
+Demon
+Each night*, choose a player: they die. The 1st time you die while at least 5 players live, choose a player to become evil & The Spectral Watcher instead of to kill tonight. [-1 Minion]
+
+reminder 1 Dead
+reminder 1 Once
+othernight The Spectral Watcher chooses a player.
+wakes other after imp
+setup
+
+attribution
+Icon by Lorc under CC BY 3.0 from game-icons.net
+
+flavour
+There is no escaping fate.
+
+overview The Spectral Watcher always has an escape.
+The first time The Spectral Watcher dies, it chooses a player to become evil and The Spectral Watcher instead of to kill.
+The Spectral Watcher only creates a new The Spectral Watcher if there were at least 5 players alive when they died, counting themselves.
+If The Spectral Watcher dies during the day, it chooses a player to become The Spectral Watcher the following night.
+If The Spectral Watcher dies during the night, it chooses a player to become The Spectral Watcher immediately in the night, and if it would kill later in that night it does not.
+
+examples
+The Spectral Watcher is executed and dies on the first day. The second night, The Spectral Watcher chooses to make the Gossip the new The Spectral Watcher.
+The Spectral Watcher is executed and dies while only 3 players live. Good wins.
+The Spectral Watcher kills Michael McGlen in the night and dies. In the same night, The Spectral Watcher chooses to make the Washerwoman the new The Spectral Watcher.
+The Minstrel is in play and a Minion is executed. The following day, The Spectral Watcher is executed and dies. Good wins.
+
+howtorun
+Each night except the first, wake The Spectral Watcher. They point at any player. That player dies - mark them with the DEAD reminder. Put The Spectral Watcher to sleep.
+If The Spectral Watcher dies during the day while at least 5 players are alive and the ONCE token is not placed in the Grimoire, place the ONCE token in the Grimoire and the game continues. Wake The Spectral Watcher the next night. They point at any player. Replace that player's character token with a The Spectral Watcher token. Put The Spectral Watcher to sleep. Wake the new The Spectral Watcher token and show them the YOU ARE info token, a thumbs down, and the The Spectral Watcher character token. Put them to sleep. Do not wake the new The Spectral Watcher again this night
+If The Spectral Watcher dies in the night while at least 5 players are alive and the ONCE token is not placed in the Grimoire, place the ONCE token in the Grimoire and the game continues. Wake The Spectral Watcher the next night and show them the YOU DIED info token. They point at any player. Replace that player's character token with a The Spectral Watcher token. Put The Spectral Watcher to sleep. Wake the new The Spectral Watcher token and show them the YOU ARE info token, a thumbs down, and the The Spectral Watcher character token. Put them to sleep. If this happened before The Spectral Watcher would normally wake, do not wake either The Spectral Watcher again this night. 

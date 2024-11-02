@@ -1,0 +1,30 @@
+Keziah Mason
+Minion
+If you die by execution, all players who voted for your execution are haunted. Each night, a haunted player dies.
+
+reminder 15 Haunted
+reminder 1 Dead
+othernight If there is at least one player with a "Haunted" reminder token, one of them dies and loses their "Haunted" reminder token, even if Keziah Mason is dead.
+wakes other after gossip
+
+attribution
+Icon by Delapouite under CC BY 3.0 from game-icons.net
+
+flavour
+There was much in the Essex County records about Keziah Mason’s trial, and what she had admitted under pressure to the Court of Oyer and Terminer had fascinated Gilman beyond all reason.
+
+overview Keziah Mason, with their dying breath, curses those who condemned them.
+If Keziah Mason is executed and dies, starting from the next night, a player who voted for their execution dies. This includes evil players.
+If Keziah Mason is drunk or poisoned when they die by execution, no one is haunted, and no one will die due to their ability, even if they become sober & healthy later on.
+If, for whatever reason, Keziah Mason is resurrected, they stop killing haunted players.
+
+examples
+Keziah Mason dies by execution. The Zombuul, the Seamstress, the Klutz, and the Gambler voted for this. The next night, the Klutz dies. The night after, the Zombuul "dies" due to Keziah Mason's ability.
+The Courtier has made Keziah Mason drunk. Keziah Mason is executed, and dies. Keziah Mason is drunk, so no one is haunted. No one dies due to their ability, even after they become sober.
+
+howtorun
+If Keziah Mason dies by execution, mark all players who voted for this execution with HAUNTED reminders.
+Each night, a player marked HAUNTED dies - mark them with the DEAD reminder and remove the HAUNTED reminder.
+
+advice
+You most likely should not "kill" dead players with this ability. If killing the Demon would end the game, you should do this if & only if the Demon is the only living haunted player. The evil team knows who is haunted, and can plan around this.

@@ -1,0 +1,36 @@
+Brown Jenkin
+Outsider
+You think you are a Townsfolk, and you have that ability. Information you receive is false. You might register falsely, even if dead.
+
+globalreminder 1 Is Brown Jenkin
+setup
+
+attribution
+Icon by Delapouite under CC BY 3.0 from game-icons.net
+
+flavour
+That object—no larger than a good-sized rat and quaintly called by the townspeople "Brown Jenkin"—seemed to have been the fruit of a remarkable case of sympathetic herd-delusion, for in 1692 no less than eleven persons had testified to glimpsing it. There were recent rumours, too, with a baffling and disconcerting amount of agreement.
+
+overview The Brown Jenkin player believes they are a townsfolk even though they are not, and might appear as something else.
+During setup, the Brown Jenkin token does not go in the bag. Instead, a Townsfolk character token goes in the bag, and the player who draws that token is secretly Brown Jenkin for the whole game. The Storyteller knows. The player does not.
+The player who is Brown Jenkin has the ability of the Townsfolk they think they are.
+If the ability Brown Jenkin has gives any information, that information must always be false.
+If the ability Brown Jenkin has does anything other than give information, those effects work as if Brown Jenkin was that Townsfolk.
+Whenever Brown Jenkin's alignment is detected, the Storyteller chooses whether Brown Jenkin registers as good or evil.
+Whenever Brown Jenkin is targeted by an ability that affects specific characters, the Storyteller chooses whether Brown Jenkin registers as that specific character.
+Brown Jenkin may register as either good or evil, or as any character, at different parts of the same night. The Storyteller chooses whatever is most interesting.
+Brown Jenkin that registers as a particular character does not have this character's ability.
+If Brown Jenkin becomes drunk or poisoned, their ability works identically to if they were that drunk or poisoned Townsfolk.
+If Brown Jenkin must receive sober or healthy information, that information must still be false.
+If Brown Jenkin must receive true information, that information must be true.
+
+examples
+Brown Jenkin thinks they are the Empath. The Grandmother learns that Brown Jenkin is the Empath. Brown Jenkin neighbours two good players, but learns a 1 instead. In a later night, Brown Jenkin neighbours 1 alive evil player, and learns a 0.
+Brown Jenkin is turned evil by the Mezepheles. A sober Village Idiot learns that Brown Jenkin is good. The next day, Brown Jenkin is the only player to nominate. They nominate the Virgin and are executed, but the Pacifist prevents them from dying. That night, the Town Crier learns that a Minion nominated.
+Brown Jenkin believes they are the Gambler. They gamble themselves as the Gambler, and the Storyteller decides to register Brown Jenkin as the Gambler, so they live. The next night, Brown Jenkin gambles the Po as the Seamstress, and dies due to their own Gambler ability.
+
+howtorun
+While setting up the game, before putting character tokens in the bag, remove the Brown Jenkin token and add a Townsfolk character token. Add the IS BROWN JENKIN reminder token to the Grimoire. Put the swapped Townsfolk character token in the bag, not the Brown Jenkin character token.
+While preparing the first night, put the IS BROWN JENKIN reminder token by any Townsfolk character token, changing that player's character to Brown Jenkin. They are now an Outsider, but do still have the ability of this Townsfolk character.
+During the game, Brown Jenkin wakes and acts in the same way as the Townsfolk they think they are, but information they receive must always be false.
+Each time Brown Jenkin is targeted by an ability that detects or affects specific characters, choose which character and alignment Brown Jenkin registers as.

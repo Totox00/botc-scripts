@@ -1,0 +1,26 @@
+Harold Walsted
+Outsider
+When you die, all Townsfolk are drunk until dusk the next day.
+
+reminder 1 Townsfolk Are Drunk
+othernight If Harold Walsted died today or tonight, place the "Townsfolk are drunk" reminder token in the centre of the Grimoire.
+wakes other after sweetheart
+
+attribution
+Icon by Delapouite under CC BY 3.0 from game-icons.net
+
+flavour
+"I tried to stop it, but..." the curator says quietly, his voice quivering. Whatever did this, it’s still nearby...
+
+overview Harold Walsted leaves the town in turmoil if they die.
+When Harold Walsted dies, all Townsfolk are drunk immediately. However, anything that occured before Harold Walsted died is unaffected, even if it happened the night that Harold Walsted died.
+The Drunkenness lasts until dusk the next day, no matter when Harold Walsted died.
+If, for whatever reason, a Townsfolk has Harold Walsted's ability, they will not make themselves drunk with this ability.
+
+examples
+The Shabaloth attacks Harold Walsted, then the Soldier. Both of them die.
+Harold Walsted dies to the Witch. Then, a Townsfolk nominates the Virgin. The Townsfolk is not executed.
+The Lycanthrope kills Harold Walsted. Because the Lycanthrope is now drunk, they do not prevent the Demon from killing someone else that night.
+
+howtorun
+If Harold Walsted dies, all Townsfolk immediately become drunk - place the TOWNSFOLK ARE DRUNK reminder in the center of the Grimoire. At dusk the next day, all Townsfolk made drunk by Harold Walsted become sober - remove the TOWNSFOLK ARE DRUNK reminder.

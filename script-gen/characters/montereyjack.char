@@ -1,0 +1,32 @@
+Monterey Jack
+Townsfolk
+You start knowing a player. Each night, as long as they are alive, choose a player (not yourself): you learn their alignment. If the player you originally learnt is evil, you receive false info.
+
+reminder 1 Hanif
+firstnight Montery Jacks learns a player, mark that player with the Hanif reminder token. Then, Jack chooses a player and learns their alignment.
+othernight If the player with the Hanif reminder token is alive, Jack chooses a player and learns their alignment.
+wakes every after villageidiot
+
+attribution
+Icon by Delapouite under CC BY 3.0 from game-icons.net
+
+flavour
+"Hanif! Get in here! This is an amazing―" Jack turned and abruptly came face to face with Hanif, now wearing a black robe over his suit and an inverted ankh around his neck. "You were a brave man, Jack." Hanif raised his khopesh to Jack's throat. "Your father died bravely as well."
+
+overview Monterey Jack learns the alignments of players, but they need the help of someone who might sabotage the info.
+On their first night, Monterey Jack learns a player. This player's alignment determines whether Monterey Jack's information is true or false. 
+Every night, including the first, if the player they learned at the start is alive, Monterey Jack chooses a player and learns their alignment but if the player they learned at the start is evil, their information must be false.
+If the alignment of the player Monterey Jack learned at the start changes, Monterey Jack's information changes accordingly.
+If Monterey Jack is drunk or poisoned, they receive arbitrary information, even if the player they learned at the start is evil.
+If Monterey Jack must learn false info on night 1, they learn a different player than the player who has the HANIF token.
+
+examples
+In the first night, Monterey Jack is shown the good Gossip. Monterey Jack then chooses Keziah Mason, and correctly learns that they are evil. In the second night, the Gossip dies, so Monterey Jack does not get to choose any more players.
+At the start, Monterey Jack learns Marianna, who is good. In the first two nights, Monterey Jack learns true information. In the third night, Seth Bishop chooses Marianna to become an evil Demon. From now on, Monterey Jack will learn false information.
+
+howtorun
+On the first night, mark a player with the HANIF reminder. Wake Monterey Jack. Point to the player marked HANIF. Then, Monterey Jack points at a player, besides themselves. If the player marked HANIF is good, give a thumbs up or a thumbs down, according to the chosen player's alignment. If the player marked HANIF is evil, show the opposite of the chosen player's alignment instead. Put Monterey Jack to sleep.
+On all other nights, if the player marked HANIF is alive, wake Monterey Jack. They point at a player, besides themselves. Give the signal (thumbs up/thumbs down) according to the alignments of the chosen player and the player marked HANIF. Put Monterey Jack to sleep.
+
+advice
+You should not make a player who could register as both alignments (such as a good Recluse) the Hanif, as this effectively makes Monterey Jack's information arbitrary.

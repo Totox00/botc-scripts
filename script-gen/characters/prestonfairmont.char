@@ -1,0 +1,11 @@
+Preston Fairmont
+Townsfolk
+You are a Minion & register as evil. If the Demon publicly guesses you (once), your team loses, even if dead or if you lose this ability.
+
+globalreminder 1 Is Preston Fairmont
+globalreminder 1 Guess Used
+firstnight Inform Preston Fairmont what Minion they are.
+wakes first before minioninfo
+
+attribution
+Icon by Lorc under CC BY 3.0 from game-icons.net

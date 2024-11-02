@@ -1,0 +1,13 @@
+"Jazz" Mulligan
+Outsider
+You think you are a Townsfolk, but you are not. All players know "Jazz" Mulligan is in play. If the Demon is executed, evil wins. You learn that you were "Jazz" Mulligan when you die.
+
+globalreminder 1 Is "Jazz" Mulligan
+firstnight All players learn that "Jazz" Mulligan is in play.
+othernight If "Jazz" Mulligan died, inform them who they are.
+wakes first after dawn
+wakes other after sage
+setup
+
+attribution
+Icon by Delapouite under CC BY 3.0 from game-icons.net

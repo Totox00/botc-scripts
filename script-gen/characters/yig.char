@@ -1,0 +1,28 @@
+Yig
+Demon
+Each night*, choose a player: they die. Once per game, you may choose to turn the player you kill evil.
+
+reminder 1 Dead
+globalreminder 1 Once
+othernight Yig chooses a player and if that player should turn evil.
+wakes other after imp
+
+attribution
+Icon by Delapouite under CC BY 3.0 from game-icons.net
+
+flavour
+Yig will remake you in his image, and we shall live together in our timeless paradise of Valusia.
+
+overview Yig converts one of its victims into an ally.
+After Yig attacks a player, they may, once, choose to turn them evil.
+The player Yig attacked must actually die for them to turn evil. If the attacked player was protected, was already dead, or Yig is drunk or poisoned when they try to turn them evil, this fails, but Yig cannot attempt to turn another player evil afterwards.
+Yig's once per game ability is global - if Yig tries to turn a player evil, and later in the game, another player becomes Yig, they may not attempt to turn another player evil.
+
+examples
+Yig attacks the Clockmaker, but chooses not to turn them evil. The Clockmaker dies but remains good. The next night, Yig attacks Agnes Baker, and chooses to turn them evil. Agnes Baker dies and becomes evil.
+Yig attacks the Fortune Teller, and chooses to turn them evil. However, the Fortune Teller is protected by Wilson Richards. The Fortune Teller does not die and does not become evil. Yig may not attempt to turn anyone else evil in this game.
+The Gambler gambles incorrectly, and dies. That night, Yig attacks the Gambler and attempts to turn them evil. Because the Gambler was already dead, Yig did not kill them, so the Gambler remains good.
+
+howtorun
+Each night except the first, wake Yig. They point at any player. That player dies - mark them with the DEAD reminder. If the ONCE reminder is placed in the Grimoire, put Yig to sleep. Otherwise, Yig either nods or shake their head. Put Yig to sleep.
+If they nodded, and the player Yig chose died tonight due to Yig's ability, that player also turns evil - turn their character token upside down. Wake that player, show them the YOU ARE info token, then give a thumbs down. Put them to sleep. Place the ONCE reminder in the centre of the Grimoire. (This reminder stays there, even if Yig dies or changes characters.)

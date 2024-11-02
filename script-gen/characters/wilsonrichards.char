@@ -1,0 +1,33 @@
+Wilson Richards
+Townsfolk
+Each night*, choose another player. If they would die tonight, you learn one of the characters that tried to kill them instead. If not, you learn false info.
+
+reminder 1 Protected
+othernight Wilson Richards chooses a player. Mark that player with the "Protected" reminder token. After killing roles act, Wilson Richards wakes again and learns a character.
+wakes every after monk
+
+attribution
+Icon by Skoll under CC BY 3.0 from game-icons.net
+
+flavour
+Still, I knew there was something I had to do in Arkham: a job of sorts. I didn't quite know what it was, and I somehow doubted it paid well, but I couldn't shake the feeling that it could be the most important job of my life. 
+
+overview Wilson Richards protects players and learns who attacked them, but isn't sure whether they were attacked at all.
+Every night except the first, Wilson Richards protects a player. If that player would die that night, Wilson Richards learns who would have killed them.
+If multiple abilities would have killed the protected player, Wilson Richards only learns of one of them. If no-one tried to kill the protected player, Wilson Richards learns an arbitrary character, though the Storyteller will likely show a character with the ability to kill.
+If the protected player was attacked but protected by other means, Wilson Richards does not learn about this attack.
+If, for whatever reason, Wilson Richards must learn true info but no one attacked the protected player, they learn a "no".
+
+examples
+Wilson Richards chooses the Gambler. That night, the Gambler chooses to gamble Wilson Richards as the Po. The Gambler lives, and Wilson Richards learns "Gambler". The next night, Wilson Richards chooses the Gambler again. The Gambler gambles incorrectly, but the Po also chooses to attack the Gambler. The Gambler lives again, but Wilson Richards learns "Po".
+Dan is claiming to be the Lycanthrope who is planning to attack Sarah, but he is actually the Imp. That night, Wilson Richards chooses Sarah. Dan attacks someone else, and no one actually attacks Sarah that night, but Wilson Richards learns "Lycanthrope".
+Wilson Richards chooses the Fang Gu. That night, the Fang Gu attacks an Outsider. The Outsider does not change character or alignment, the Fang Gu lives, and Wilson Richards learns "Fang Gu".
+
+howtorun
+On each night except the first, wake Wilson Richards. They point at a player besides themselves. Mark that player with the PROTECTED reminder. Put Wilson Richards to sleep. The player marked PROTECTED cannot die tonight.
+Later that night, wake Wilson Richards again. If the player marked PROTECTED would have died that night, show Wilson Richards the token of a character who would have killed that player. If the player marked PROTECTED would not have died that night, show any character token.
+Put Wilson Richards to sleep. Remove the PROTECTED reminder.
+You may want to place the "Dead" reminder tokens from characters that try to kill the protected player to remind yourself what to show Wilson Richards later in the night.
+
+advice
+You should not show characters without the ability to kill if the protected player was not attacked, as this effectively confirms to Wilson Richards that that player was not attacked.

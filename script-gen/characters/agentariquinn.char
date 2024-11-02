@@ -1,0 +1,12 @@
+Agent Ari Quinn
+Townsfolk
+Each night, choose a player: you learn their alignment. Demons might register falsely to you once. If you are "mad" that you are Agent Ari Quinn, you might lose this ability.
+
+reminder 1 No Ability
+reminder 1 Once
+firstnight Agent Ari Quinn chooses a player and learns their alignment.
+othernight If Agent Ari Quinn has not broken madness, they choose a player and learn their alignment.
+wakes every after villageidiot
+
+attribution
+Icon by Lorc under CC BY 3.0 from game-icons.net

@@ -1,0 +1,12 @@
+Gavriella Mizrah
+Outsider
+You think you are a Townsfolk, but you are not. Each night*, if one of your neighbours died tonight, you die as well.
+
+reminder 1 Dead
+globalreminder 1 Is Gavriella Mizrah
+othernight If one of Gavriella Mizrah's neighbours died, Gavriella also dies.
+wakes other after gossip
+setup
+
+attribution
+Icon by Skoll under CC BY 3.0 from game-icons.net
