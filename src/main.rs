@@ -1,9 +1,11 @@
 mod character;
+mod patch;
 mod script;
 
 use std::{collections::HashMap, env::args, fs::File, io::Read, path::Path};
 
 use character::Character;
+use patch::read_patches;
 use script::Script;
 
 fn main() {
@@ -19,6 +21,22 @@ fn main() {
         character.official = true;
         character_list.insert(character.id.clone(), character);
     }
+
+    let mut image_list_str = String::new();
+    File::open("official-images")
+        .expect("Official image list not found")
+        .read_to_string(&mut image_list_str)
+        .expect("Failed to read official image list file");
+    let mut image_list = HashMap::new();
+    for image in image_list_str.lines().filter(|str| !str.is_empty()) {
+        let mut iter = image.split(' ');
+        let id = iter.next().unwrap().to_owned();
+        let images: Vec<String> = iter.map(|image| format!("https://botc.app/assets/{image}.webp")).collect();
+
+        image_list.insert(id, images);
+    }
+
+    let patches = read_patches();
 
     if let Ok(dir) = Path::new("script-gen").join("characters").read_dir() {
         for character_entry in dir.flatten() {
@@ -37,13 +55,14 @@ fn main() {
     let out_dir = args.next().expect("No out dir provided");
 
     for source in args {
-        let script = Script::from_source(&source, &character_list);
+        let mut script = Script::from_source(&source, &character_list);
         let mut writer = File::create(Path::new(&out_dir).join(format!(
             "{}.official.json",
             Path::new(&source).file_name().unwrap().to_str().unwrap()
         )))
         .unwrap_or_else(|_| panic!("Failed to create file for script {source}"));
 
+        script.apply_patches(&patches, &image_list);
         script.write_json(&mut writer);
     }
 }

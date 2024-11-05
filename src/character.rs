@@ -9,7 +9,7 @@ use base64::{prelude::BASE64_STANDARD, Engine};
 use serde::{Deserialize, Serialize};
 use serde_json::{Map, Value};
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct Character {
     pub id: String,
     pub name: String,
@@ -45,6 +45,8 @@ pub struct Character {
     pub setup: bool,
     #[serde(default, skip_serializing)]
     pub official: bool,
+    #[serde(default, skip_serializing)]
+    pub patched: bool,
     #[serde(rename = "flavor", default, skip_serializing_if = "String::is_empty")]
     pub flavour: String,
     #[serde(default, skip_serializing)]
@@ -59,7 +61,8 @@ pub struct Character {
     pub advice: String,
     #[serde(default, skip_serializing)]
     pub attribution: String,
-    pub image: Option<String>,
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub image: Vec<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub special: Option<Value>,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
@@ -68,7 +71,7 @@ pub struct Character {
     pub required_fabled: Vec<String>,
 }
 
-#[derive(Debug, Deserialize, Serialize, Default, PartialEq, Eq)]
+#[derive(Debug, Deserialize, Serialize, Default, PartialEq, Eq, Clone)]
 pub enum Team {
     #[serde(rename = "townsfolk")]
     Townsfolk,
@@ -87,7 +90,7 @@ pub enum Team {
     Special,
 }
 
-#[derive(Debug, Deserialize, Serialize, Default)]
+#[derive(Debug, Deserialize, Serialize, Default, Clone)]
 pub struct AppSpecial {
     bag_disabled: bool,
     bag_duplicate: bool,
@@ -97,10 +100,10 @@ pub struct AppSpecial {
     replace_reveal: bool,
 }
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Deserialize, Serialize, Clone)]
 pub struct Jinx {
-    id: String,
-    reason: String,
+    pub id: String,
+    pub reason: String,
 }
 
 impl Character {
@@ -116,9 +119,13 @@ impl Character {
             .unwrap();
         let mut buf = String::new();
         File::open(source_path)
-            .unwrap_or_else(|_| panic!("Failed to open script source file for script {source}",))
+            .unwrap_or_else(|_| {
+                panic!("Failed to open character source file for character {source}",)
+            })
             .read_to_string(&mut buf)
-            .unwrap_or_else(|_| panic!("Failed to read script source file for script {source}",));
+            .unwrap_or_else(|_| {
+                panic!("Failed to read character source file for character {source}",)
+            });
 
         let mut lines = buf.lines();
 
@@ -303,12 +310,12 @@ impl Character {
                 .map(|mut file| file.read_to_end(&mut buf))
                 .is_ok()
             {
-                Some(format!(
+                vec![format!(
                     "data:image/png;base64,{}",
                     BASE64_STANDARD.encode(buf)
-                ))
+                )]
             } else {
-                None
+                vec![]
             };
 
         Character {
@@ -324,6 +331,7 @@ impl Character {
             other_night,
             setup,
             official: false,
+            patched: false,
             flavour: flavour.trim().to_owned(),
             overview_short: overview_short.trim().to_owned(),
             overview_long: overview_long.trim().to_owned(),

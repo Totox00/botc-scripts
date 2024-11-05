@@ -9,17 +9,17 @@ use serde_json::{Map, Value};
 use crate::character::{Character, Team};
 
 #[derive(Debug)]
-pub struct Script<'a> {
+pub struct Script {
     pub name: String,
     pub author: String,
-    pub characters: Vec<&'a Character>,
+    pub characters: Vec<Character>,
 }
 
-impl Script<'_> {
-    pub fn from_source<'a>(
+impl Script {
+    pub fn from_source(
         source: &str,
-        character_list: &'a HashMap<String, Character>,
-    ) -> Script<'a> {
+        character_list: &HashMap<String, Character>,
+    ) -> Script {
         let mut buf = String::new();
         File::open(source)
             .unwrap_or_else(|_| panic!("Failed to open script source file for script {source}"))
@@ -42,7 +42,7 @@ impl Script<'_> {
             if !character.is_empty() {
                 characters.push(character_list.get(character).unwrap_or_else(|| {
                     panic!("Failed to find data for character {character} in script {source}")
-                }))
+                }).clone())
             }
         }
 
@@ -65,11 +65,11 @@ impl Script<'_> {
                 included_fabled.push(character.id.to_owned());
             }
 
-            if character.official {
+            if character.official && !character.patched {
                 out.push(Value::String(character.id.to_owned()));
             } else {
                 out.push(
-                    serde_json::to_value(character).unwrap_or_else(|_| {
+                    serde_json::to_value(&character).unwrap_or_else(|_| {
                         panic!("Failed to serialize character {}", character.id)
                     }),
                 );
