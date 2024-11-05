@@ -5,7 +5,6 @@ use std::{
     path::{Path, PathBuf},
 };
 
-use base64::{prelude::BASE64_STANDARD, Engine};
 use serde::{Deserialize, Serialize};
 use serde_json::{Map, Value};
 
@@ -304,19 +303,16 @@ impl Character {
             }
         }
 
-        let mut buf = vec![];
-        let image =
-            if File::open(Path::new(source_path.parent().unwrap()).join(format!("{source}.png")))
-                .map(|mut file| file.read_to_end(&mut buf))
-                .is_ok()
-            {
-                vec![format!(
-                    "data:image/png;base64,{}",
-                    BASE64_STANDARD.encode(buf)
+        let image = if Path::new(source_path.parent().unwrap())
+            .join(format!("{source}.png"))
+            .exists()
+        {
+            vec![format!(
+                    "https://raw.githubusercontent.com/Totox00/botc-scripts/refs/heads/main/script-gen/characters/{source}.png"
                 )]
-            } else {
-                vec![]
-            };
+        } else {
+            vec![]
+        };
 
         Character {
             id: source,
