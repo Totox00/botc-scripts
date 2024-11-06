@@ -8,3 +8,21 @@ reminder 1 1st Demon
 firstnight The Physician chooses two players (not themselves). :reminder: :reminder:
 othernight The Physician chooses two players (not themselves). :reminder: :reminder: If the Demon killed a *PATIENT* player for the first time, show the Demon's token.
 wakes every after fortuneteller
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"Some patients recover, because they believe in doctors." - Hippocrates of Kos c. 460 B.C. - c. 370 B.C.
+
+overview The Physician ensures their team gets correct information.
+
+examples
+Nyla is the Actor and Jonah is the Trumpeter respectively. During the first day Nyla uses their ability, and guesses 3 players correctly. Additionally, several players claim to be Spartacus, including 1 evil player. On the 2nd night, the Physician protects both Nyla and Jonah, that night they are sober, healthy & get true information. Nyla correctly learns a '3' and Jonah correctly learns a '1'.
+Edgard is a Bad Omen who believes they are the Sculptor and Avery is the Mortician. At night, the Physician protects both Edgard and Avery. On the same night Avery is targeted by Caesar, and dies. The Physician learns this, and is shown the Caesar character token. Additionally, Edgard is woken to learn information. Despite being a Bad Omen, the information they learn tonight must be true as they have been chosen by the Physician.
+Josué is a Bad Omen who believes they are the Scholar. Robert, Jonah, and Sophia are the Merchant, Trumpeter and Glykon respectively. During the first day, Sophia nominates Robert. Robert will register as evil until tomorrow dawn. The same day both Josué and Robert publicly claim to be Spartacus. That night, the Physician chooses to protect Jonah and Robert. The same night, Jonah the Trumpeter wakes to learn the number of evil players that publicly claimed Spartacus. Despite being Physician protected, the miss-registration of Jonah and possibly Josué are still in effect. Jonah learns a '2', as Josué is registering evil as they are the Bad Omen, and Robert is registering as evil due to the Glykon.
+
+howtorun
+Each night, remove any PATIENT reminder tokens, if any. Wake the Physician and ask them to choose two players. Place the PATIENT reminder token next to the two players.
+If a player with a PATIENT reminder token is killed by the Demon, place the 1ST DEMON reminder token next to the Physician. If the 1ST DEMON reminder token is already next to the Physician, do not wake the Physician. Otherwise wake the Physician and show them the Demon token.
+If the Physician is drunk, poisoned or is actually Hannibal their ability has no effect and they learn arbitrary information. If the Physician is a Bad Omen their ability has no effect and they must learn the false Demon token.

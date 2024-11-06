@@ -9,3 +9,23 @@ firstnight The Temptress chooses 2 players. Put the Temptress to sleep. Wake the
 othernight If a player is marked with the *EVIL* reminder, wake them. Show the *YOU ARE* info token and a thumbs down.
 wakes first after godfather
 wakes other after dusk
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"Nothing could part us in life, but now in death, we are likely to change places..." - Cleopatra VII Thea Philopator 69 B.C. - 30 B.C.
+
+overview The Temptress seduces two players to join their team, however only one can become evil...
+
+examples
+Tameka is the Scholar and Talia is the Sculptor. On the 1st night, the Temptress picks Tameka and Talia. That night, Tameka and Talia are woken separately and informed that they have been picked by the Temptress. On the 3rd day, Talia during nominations is executed and dies. That night, Tameka turns evil.
+Bruce is the Standard Bearer and Sophia is the Glykon. On the 1st night, the Temptress picks Bruce and their fellow minion Sophia. One day, during nominations, Sophia is nominated and executed and dies. That night, Bruce turns evil.
+Patrick is the good Emperor, Mack is Spartacus and Laurel is the Blacksmith. On the 1st night, the Temptress picks Mack and Laurel. One day, during nominations, Laurel is nominated and executed, but does not die as Patrick overruled their execution. That night, Mack does not become evil as Laurel did not die by execution.
+
+howtorun
+On the first night, wake the Temptress and ask them to choose two players. Place the SEDUCED reminder token next to the two players. Wake the two players separately showing the 'This character selected you' card, then the Temptress token.
+If a player with the SEDUCED reminder token is executed today and died, remove their SEDUCED reminder token. Wake the player with the remaining SEDUCED reminder token. Show them the 'You are' and then the thumbs down evil signal. They are now evil. Remove their SEDUCED reminder token and replace it with the EVIL reminder token.
+If the Temptress dies, remove the SEDUCED reminder tokens, if any.
+If the Temptress is drunk or poisoned, their ability does not work for that day. If a player with a SEDUCED token is executed whilst the Temptress is drunk or poisoned, remove the SEDUCED tokens. Neither player becomes evil.
+A dead player can still become evil if killed earlier outside of an execution.

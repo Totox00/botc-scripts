@@ -10,3 +10,19 @@ reminder 1 Evil Ability
 othernight Show a character token.
 wakes other after dusk
 requires iamspartacus
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+Let the buyer beware... ...and beware me too!
+
+overview Mercenaries gain abilities dependant on the towns claims, however if one is exiled the other is too.
+
+examples
+Evie and Chris are the good and evil Mercenaries respectively. On the first day Helen the Physician and Brandon the Haruspex publicly claim to be Spartacus, that night Evie gains the Physician ability and Chris gains the Haruspex ability. The following day, Elwyn the Winemaker publicly claims to be Spartacus. That night both Evie and Chris gain the Winemaker ability replacing the abilities they gained yesterday. On the third day, Chris is nominated for exile and gathers enough votes. Both Evie and Chris are exiled simultaneously.
+
+howtorun
+Each night, except from the first, place the GOOD ABILITY reminder token next to a player with a I AM SPARTACUS! Fabled reminder token. Wake the good Mercenary and show them the character token of the player with the GOOD ABILITY reminder token, the good Mercenary has that ability tonight and until dusk. Place the EVIL ABILITY reminder token next to a player with a I AM SPARTACUS! Fabled reminder token. Wake the evil Mercenary and show them the character token of the player with the EVIL ABILITY reminder token, the evil Mercenary has that ability tonight and until dusk.
+If one of the Mercenaries is exiled, exile the other Mercenary simultaneously.
+If a Mercenary uses a public role like Actor, Standard Bearer, Gladiator and tonight gets that role, retroactively give the Mercenary the information pertaining to their public action that day. If you can't remember what their public action consisted of silently wake the Mercenary and ask them, using the available action cards, or a method of written communication, otherwise ask them during the next day. If they receive a public role and did not make a public action that day, do not give the Mercenary the information pertaining to that role.

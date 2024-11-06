@@ -8,3 +8,25 @@ reminder 2 Dead
 firstnight The Cleopatra chooses 2 players. :reminder: :reminder:
 othernight The Cleopatra chooses 2 players. The previously chosen players die if they nominated. :reminder: :reminder:
 wakes every after pukka
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"Fool! Don't you see now that I could have poisoned you a hundred times had I been able to live without you!" - Cleopatra VII Thea Philopator 69 B.C. - 30 B.C.
+
+overview Cleopatra selects two players per night, if they nominate the following day they die. If no one good nominates, Cleopatra wins.
+
+examples
+At night, Cleopatra attacks the Scholar and the Diplomat. Tomorrow they both nominate, that night the Scholar and the Diplomat die.
+At night, Cleopatra attacks the Centurion and the Gladiator. Tomorrow no good players nominate, before sending everyone to sleep, the Storyteller announces that the evil team have won.
+At night, Cleopatra attacks the Sculptor and a Legionary. Tomorrow neither of them nominate, and no one dies.
+At night, Cleopatra attacks the High Priest and the Vestal Virgin. Tomorrow the Vestal Virgin nominates, that night the Vestal Virgin dies.
+Lindsey is the Gladiator who has confirmed themselves to a good player, and most of town. Some players believe that Cleopatra is the in-play Demon and are reluctant to nominate, so town suggest that Lindsey, and only Lindsey nominates today. Lindsey nominates Graham, the Augur, and instantly becomes a Bad Omen. No other nominations are made today, and because of this, the Storyteller elects to register the Bad Omen as evil. Graham the Augur is executed, but the game ends as Cleopatra is in play, and evil wins.
+
+howtorun
+On the first night, wake Cleopatra and ask them to choose two players. Place the CHOSEN reminder token next to the two players.
+If a player marked with the CHOSEN reminder token nominated today, replace the CHOSEN reminder token with a DEAD reminder token. That player dies tonight.
+If a player marked with a CHOSEN reminder token did not nominate today, remove the CHOSEN reminder token from the player.
+Then, wake Cleopatra and ask them to choose two players. Place the CHOSEN reminder token next to the two players.
+If no good players (excluding players that register as evil) nominated today, the game ends and the evil team wins.

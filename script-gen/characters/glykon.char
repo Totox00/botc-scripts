@@ -5,3 +5,20 @@ You might register as good. Until dawn, players you nominate register as the opp
 image https://script.patters.live/for/app_icons/evil/glykon.png https://script.patters.live/for/app_icons/good/glykon.png
 reminder 1 Snake Bite
 reminder 1 Poisoned
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+“When they went in, the thing, of course, seemed to them a miracle, that the formerly tiny snake within a few days had turned into so great a serpent, with a human face, moreover, and tame!” Lucian Of Samosata (125 B.C. – c 180 B.C.) on Alexander of Abonoteichus 'The False Prophet' 
+
+overview The Glykon can misregister players and themselves, even poisoning good players in the process.
+
+examples
+Bruce and Tameka are the Standard Bearer and Scholar respectively. During nominations, Tameka nominates Bruce. In their defence Bruce states "the person who nominated today is evil". The same day the Glykon nominates Tameka. That night, Bruce learns 'True' because Tameka is registering as evil.
+Jonah is the Trumpeter. During nominations, Jonah is nominated by the Glykon. Jonah is registering as evil to other abilities, but tonight they are also poisoned. They learn an arbitrary number pertaining to the number of players who publicly claimed Spartacus.
+Felix and Avery are Caesar and the Mortician respectively. During the day one of Felix's neighbours are executed and die. During the same nomination stage, the Glykon nominates Felix. That night, Avery learns that neither of the recently executed players neighbours are evil. This is because one neighbour is good, and the other is the Demon misregistering due to the Glykon.
+
+howtorun
+If the Glykon nominates a player place the SNAKE BITE reminder token next to that player. That player misregisters as the opposite alignment. If that player is a Townsfolk, place the POISONED reminder token next to that player.
+At the end of the night, remove all SNAKE BITE and POISONED reminder tokens.

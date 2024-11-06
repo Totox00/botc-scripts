@@ -7,3 +7,24 @@ reminder 1 True
 reminder 1 False
 othernight If the Standard Bearer was nominated today, nod or shake your head.
 wakes other after fortuneteller
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"Say not always what you know. But always know what you say." - Tiberius Claudius Caesar Augustus Germanicus 10 B.C - 54 A.D.
+
+overview The Standard Bearer learns whether their public statement is true or false about the player that nominates them.
+
+examples
+Jonah is the Trumpeter. During nominations Jonah nominates the Standard Bearer. As part of their defence the Standard Bearer publicly announces that 'the player who nominated me today is a Townsfolk'. At night, the Standard Bearer learns 'true'.
+Matthew is a Bad Omen but believes they are the Actor. During nominations Matthew nominates the Standard Bearer. During their defence the Standard Bearer publicly announces that 'the player who nominated me today is the Actor'. At night, the Standard Bearer learns 'false'.
+On the first day, when nominated, the Standard Bearer publicly announces that 'the player who nominated me today is evil'. On the second day, during nominations, the Standard Bearer is nominated. The Standard Bearer publicly announces 'the player who nominated me today is good'. At night, the Standard Bearer does not wake as todays public statement was not unique (see "A Piece of Advice")
+
+howtorun
+During nominations, if the Standard Bearer chooses to make a public statement as the Standard Bearer as part of their defence make note. Place the TRUE or FALSE reminder token next to the player if the statement is either 'true' or 'false' about that their nominator respectively.
+Each night, if the Standard Bearer has a TRUE or FALSE reminder token next to them, wake the Standard Bearer. They learn which token is next to them 'true' or 'false' and remove the reminder token. Remove any TRUE or FALSE reminder tokens, if any.
+If the Standard Bearer is drunk, poisoned or is actually Hannibal, they learn arbitrary information. If the Standard Bearer is a Bad Omen, they must learn the opposite of the reminder token. If the Standard Bearer makes a public statement during the day and it is not unique to a previously public statement made by the Standard Bearer, they do not wake that night.
+
+advice
+A unique public statement to be accepted must satisfy a new unique criteria that the Storyteller can check against. Two questions that check either side of a condition are not unique. For example, binary statements can not be asked twice, even if addressing the other side of the criteria. Invalid second statement example: a statement of "This player is good" will warrant the same checks and criteria as "This player is evil".

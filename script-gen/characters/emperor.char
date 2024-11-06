@@ -6,3 +6,19 @@ image https://script.patters.live/for/app_icons/traveller/emperor.png https://sc
 reminder 1 Executed
 othernight If the Emperor did not stop the execution, give a thumb signal.
 wakes other after dusk
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+Which death is preferable to every other? The unexpected.
+
+overview The Emperor decides the outcome of the executions, with a thumbs up or a thumbs down.
+
+examples
+Patrizia is a Bad Omen who believes they are the Standard Bearer. During the day they are nominated and executed, before the execution goes through the Storyteller calls upon the Emperor. The Emperor places their hand out, and shows a thumbs down. Patrizia is executed and dies. That night, the Emperor learns that Patrizia is evil as they are falsely registering as a Bad Omen.
+Gary is Crassus. During the day they are nominated and executed, before the execution goes through the Emperor decides to save Gary by placing their hand out with a thumbs up. Gary is executed and does not die, and the game continues.
+
+howtorun
+Each day, before the execution goes through ask the Emperor whether they will overturn the execution (thumbs up), or go through with the execution (thumbs down). If they overturn the execution the player executed does not die. the game continues and everyone goes to sleep.
+Each night, if the Emperor went through with todays execution (thumbs down), wake the Emperor, they learn their alignment. If good, tell them 'good' (thumbs up) otherwise tell them 'evil (thumbs down).

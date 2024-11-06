@@ -8,3 +8,25 @@ reminder 1 Nominated
 firstnight Point to the *SCULPTURE* player.
 othernight Either give a thumbs up or a thumbs down.
 wakes every after fortuneteller
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"The sculptor's hand can only break the spell to free the figures slumbering in the stone." - Michelangelo (1501)
+
+overview The Sculptor learns the alignment of players that their sculpture has nominated during the day.
+
+examples
+Nyla is the Actor, and Anne is the Temptress. On the first night the Sculptor is shown Nyla. During nominations Nyla nominates Anne. That night the Sculptor is woken and is shown a thumbs down as Anne is evil.
+Jack is Cleopatra, and Julian is the Bad Omen who believes they are the Physician. On the first night the Sculptor is shown Jack. During nominations Jack nominates Julian. That night the Sculptor is woken and is shown a thumbs down, as Julian is the Bad Omen who might register as evil.
+Bruce is the Standard Bearer. On the first night the Sculptor is shown Bruce. During nominations Bruce does not nominate anyone. That night the Sculptor is not woken as they have no information to receive.
+
+howtorun
+On the Sculptor's first night, wake the Sculptor and point to a player, place the SCULPTURE reminder token next to the shown player. The shown player can be of any alignment.
+Each day, during nominations, if the player that the Sculptor was shown nominates, place the NOMINATED reminder token next to the nominated player. If a NOMINATED reminder token is already on the grimoire, remove it, and place it next to the nominated player.
+Each night, If a player has the NOMINATED reminder token next to them, wake the Sculptor. The Sculptor learns the alignment the player with the NOMINATED token next to them. If no players have the NOMINATED token next to them, the Sculptor is not woken and does not learn anything at night.
+If the Sculptor is drunk, poisoned or is actually Hannibal, they learn arbitrary information about the nominated player. If the Sculptor is a Bad Omen, the Sculptor must learn false information, therefore learning the opposing alignment of the player.
+
+advice
+The Sculptor can be shown any player, of any alignment, on the first night. For longevity it may be suitable to show the Sculptor a character that is likely to live longer that others. The Sculptor can be shown an evil player, which can create quite a fun dynamic.

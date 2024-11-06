@@ -7,3 +7,22 @@ reminder 1 Learns
 firstnight Show 1 good & 1 evil character token, one of which is the *LEARNS* player and the other is not in-play.
 othernight If the player with *LEARNS* died today, show 1 good & 1 evil character token, one of which is the *LEARNS* player and the other is not in-play. :reminder:
 wakes every after fortuneteller
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"Some are of the opinion that these vestals had no other business than the preservation of the sacred fire; but others conceive that they were keepers of other divine secrets, concealed from all but themselves." - Lucius Mestrius 'Plutarch' Plutarchus c. 49 A.D. - 119 A.D.
+
+overview The Vestal Virgin learns an in-play and out of play characters. They learn more if the in-play character dies.
+
+examples
+Graham is the Augur. On the first night the Vestal Virgin learns the Actor and the Augur. Graham is executed today. As the Augur died today, that night, the Vestal Virgin learns the Physician and Cleopatra, one of which is in play.
+Tameka is the Scholar. On the first night the Vestal Virgin learns the Scholar and Hannibal. Tameka died during night. As the Scholar died today, during the same night, the Vestal Virgin learns the Trumpeter and Glykon, one of which is in play.
+
+howtorun
+On the Vestal Virgins first night, wake the player and show them one good character and one evil character, one of which is in-play. Place the LEARNS reminder token next to the player with the in-play character.
+Each night, if the in-play character is dead, wake the Vestal Virgin and show them one good and one evil character, one of which is-in play. If the in-play character is alive, do not wake the Vestal Virgin.
+If the Vestal Virgin is drunk, poisoned or is actually Hannibal the Storyteller may show the player correct information, two in-play characters, or two out of play characters. If the Vestal Virgin learns arbitrary information from being drunk, poisoned or they are actually Hannibal the Storyteller may place the LEARNS reminder token next to any player. If that player dies, the Vestal Virgin is shown two new characters.
+If the Vestal Virgin is a Bad Omen, they must be shown either, two in-play characters, or two out of play characters. For the former, the reminder token can be placed next to any of the two players. For the latter, the reminder token can be placed next to any player. Again, if that player dies, the Vestal Virgin is shown two new characters.
+If the player with the in-play character changes character (e.g. a learned Outsider is changed into a Townsfolk by the Scholar), the LEARNS reminder token remains. If that player dies, the Vestal Virgin is still shown two new characters.

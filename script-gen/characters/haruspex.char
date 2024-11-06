@@ -12,3 +12,26 @@ wakes first after godfather
 wakes other after assassin
 setup
 requires spartacus
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"...but it is in and by means of piety and religion, and this especial wisdom of perceiving that all things are governed and managed by the divine power of the immortal gods, that we have been and are superior to all other countries and nations." - Marcus Tullius Cicero 106 B.C - 46 B.C.
+
+overview The Haruspex learns a player and their character one day at a time. On a single occasion the Haruspex gets to kill a player that they have learnt.
+
+examples
+Talia is the Sculptor. At night, the Haruspex chooses Talia and is shown the Sculptor.
+Kenneth, Jonah and Helen are the Vestal Virgin, Trumpeter and Physician respectively. So far the Haruspex has chosen Kenneth, Jonah and Helen, and learnt their respective characters. On the fourth night, the Haruspex chooses Jonah. The Haruspex again learns that Jonah is the Trumpeter and Jonah dies.
+Seth is a Bad Omen who believes that they are the Physician. At night, the Haruspex chooses Seth and learns that they are a Bad Omen. A few nights later, the Haruspex chooses Seth again as they believe that Seth may have been changed into a Townsfolk by the Scholar. The Haruspex learns that Seth is now the Actor and Seth dies.
+
+howtorun
+During setup if the Haruspex is in play add the Spartacus character token to bag. Spartacus can either replace an Outsider or a Townsfolk.
+Each night, wake the Haruspex and ask them to choose a player:
+If this is the first time the Haruspex has selected this player, place the FORETOLD reminder token next to the chosen player and show the Haruspex the chosen players character.
+If the chosen player already has a FORETOLD reminder token, show the Haruspex that players character and swap the FORETOLD reminder token with the DEAD reminder token, the chosen player dies and place the CAN'T KILL reminder token next to the Haruspex.
+If a player has a DEAD token by them from the Haruspex, the Haruspex can no longer kill any more players. The Haruspex is still woken to choose players. If a player is safe from the Demon when chosen for the second time by the Haruspex, the player still dies. If the Haruspex is poisoned, they learn an arbitrary character for the chosen player. If the Haruspex chooses Spartacus, if Spartacus has the ability to register as a Townsfolk, Haruspex learns an arbitrary Townsfolk.
+
+advice
+If Haruspex picks a player with the Spartacus character token, and Spartacus has upheld their public claims of being Spartacus. Register the player as a Townsfolk. During the day in case this interaction happens listen to the Spartacus player to see what Townsfolk they are pretending to be. If they are incidentally pretending to be a Demon Bluff, show them as a different Townsfolk.

@@ -8,3 +8,22 @@ reminder 1 Dead
 reminder 1 No Ability
 othernight The Gladiator and the player they chose They play roshambo (rock-paper-scissors) silently until one loses. :reminder:
 wakes other before gossip
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"Forgive me. I was trained with swords! Not with words." - Crixus 72 B.C.
+
+overview The Gladiator challenges players to a fight to the death.
+
+examples
+Jack and Lindsey are Cleopatra and the Gladiator respectively. During the day Lindsey publicly claims Gladiator and chooses Jack (for a duel). That night, Lindsey is still alive, so both Jack and Lindsey wake and silently play roshambo. Jack picks rock whilst Lindsey also picks rock, so they play again. After another game, Lindsey wins roshambo. Lindsey therefore lives and Jack dies. The game is over as the Demon is dead.
+Sophia and Cirillo are the Glykon and the Gladiator respectively. During the day Cirillo publicly claims to be the Gladiator challenging Sophia to a duel. That night, Cirillo is killed by the Demon. Sophia and Cirillo do not wake as the Gladiator is now dead.
+Ellie and Anne are the Gladiator and the Temptress respectively. During the day, Ellie publicly claims to be the Gladiator challenging Anne to a duel. That same day, Anne is executed and dies. That night, Ellie is still alive, so both Ellie and Anne wake and silently play roshambo, even though Anne is already dead. Ellie picks paper whilst Anne picks scissors, and wins rochambo. Ellie loses rochambo, and dies.
+
+howtorun
+During the day, if the Gladiator publicly claims Gladiator and chooses a player, place the DUEL token next to that player.
+Each night, if a player has the DUEL token next to them wake both that player and the Gladiator at the same time. Have both players silently play roshambo, each choosing rock, paper or scissors. If both players choose the same, have them play again until someone wins. Place the DEAD reminder token next to the player that lost, they die. Place the NO ABILITY token next to the Gladiator.
+A drunk or poisoned Gladiator who challenges a player during the day, and then is sober that night, will wake for the duel.
+A player who makes a gladiator challenge during the day and then becomes the gladiator that night, will for the duel. This is a retroactive action.

@@ -7,3 +7,25 @@ globalreminder 8 Is a Bad Omen
 setup
 bagdisabled
 replacereveal
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"Beware the Ides of March." - Gaius Julius Caesar 100 B.C. - 44 B.C.
+
+overview A Bad Omen thinks that they are a Townsfolk, they have no idea that they are actually a Bad Omen.
+
+examples
+Edgard believes that they are the Sculptor, they are actually a Bad Omen. Edgard is shown a player on the first night. During nominations that shown player nominates. That night, Edgard learns the false alignment of the nominated player.
+Merlyn believes that they are the Centurion, they are actually a Bad Omen. Merlyn nominates themselves to be executed to test their ability. Merlyn is executed and dies as their ability malfunctions.
+Jonah is the Trumpeter and Graham is the Augur. During nominations they nominate Graham. Jonah instantly becomes a Bad Omen. That night, Jonah learns false information.
+
+howtorun
+During setup if the Bad Omen is in play add a Townsfolk to the bag instead of the Bad Omen token.
+If a player is a Bad Omen, place the IS A BAD OMEN reminder token next to the player. The player's ability malfunctions and/or receives false information. The player might register as evil to other abilities.
+If a Bad Omen is drunk, their ability continues to malfunction as if they were a Bad Omen.
+A Bad Omen can detect anything but the truth. A Bad Omen cannot be influenced by other Bad Omen misregistrations, when receiving their false information. A player nominated by the Glykon must register as the opposite alignment, therefore this effects the answers given to a Bad Omen. As the Glykon themselves may falsely register alkignments, do not consider this when collating the true information. Review what information is the truth not considering potential misregistration of alignments, and then provide any information that is not that truth.
+
+advice
+A Bad Omen can register as evil, however they do not register as a Minion or Demon.

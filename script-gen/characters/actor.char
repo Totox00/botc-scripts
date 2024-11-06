@@ -7,3 +7,20 @@ reminder 3 Correct
 reminder 1 No Ability
 othernight Give a finger signal.
 wakes other after fortuneteller
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"Have I played the part well? Then applaud me as I exit!" - Caesar Augustus 63 B.C. - 14 A.D.
+
+overview The Actor publicly guesses the character types of three people learning how many they got right that night.
+
+examples
+Helen, Victoria and Bruce are the Physician, The Twins and Standard Bearer respectively. During the first day, the Actor guesses that Helen is a Townsfolk, Victoria is an Outsider and Bruce is a Minion. That night, the Actor learns a '2', meaning that two of their guesses were correct.
+Tameka, Anne and Jack are the Scholar, the Temptress and Cleopatra respectively. On the 3rd night, Spartacus is turned into the Actor by the Scholar. The next day, the Actor guesses that Elliot is the Demon, Anne is a Minion and Tameka is a Townsfolk. That night, the Actor learns a '3', meaning that all of their guesses were correct.
+
+howtorun
+Before nominations, if the Actor decides to publicly guess 3 players characters type, place a CORRECT reminder token next to each player they correctly guess.
+That night, wake the Actor. The Actor learns the number equal to the number of CORRECT reminder tokens on the grimoire then place the NO ABILITY reminder token.
+If the Actor is drunk, poisoned or is actually Hannibal, they learn arbitrary information. If the Actor is a Bad Omen, they must learn any number other than the correct number. If a player switches character types during the night, the Actor learns if they were correct at the point they made the public statement.

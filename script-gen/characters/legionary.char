@@ -7,3 +7,20 @@ everynight Give a finger signal (exclusive of the next Legionary).
 wakes every after fortuneteller
 setup
 bagduplicate
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"We find that the Romans owed the conquest of the world to no other cause than continual military training, exact observance of discipline in their camps, and unwearied cultivation of the other arts of war." - Publius Flavius Vegetius Renatus c.385 A.D. - c. 450 A.D.
+
+overview Legionaries may come as many. Together they learn the number of evils sitting between them.
+
+examples
+Murphy, Ruth and Gabriel are Legionaries. On the first night, Murphy is woken and learns a '3'. 3 evil players are sat clockwise from Murphy to Ruth. Ruth too wakes, and learns a '1'. 1 evil player is sat clockwise from Ruth to Gabriel, lastly Gabriel wakes and learns '0', no evil players are sat between Gabriel and Murphy - in this case Gabriel and Murphy neighbour each other. A few nights later, Ruth & Gabriel have died. Murphy wakes and learns a '4'. 4 living evils are sat clockwise from Murphy to themselves as they are the only living Legionary.
+
+howtorun
+During setup if Legionary is in play the Storyteller may add an additional 1 or 2 Legionary tokens to the bag in place of a Townsfolk, or choose to add none.
+Each night, wake the Legionaries separately. They learn the number of clockwise evil players sitting between them (if they are the only Legionary, they learn clockwise to themselves).
+If a Legionary dies and there are other Legionaries alive, you still wake the living Legionaries. They learn the number of living evils (they learn the number of clockwise living evils sat between themselves and the next living Legionary, which can be themselves).
+If a Legionary is drunk, poisoned or is actually Hannibal, that Legionary gains arbitrary information. The other Legionary is not effected by the others condition. If a Legionary is a Bad Omen they must learn any number not equal to the number of evil aligned players. If a Legionary starts as or becomes a Bad Omen they do not register as a living Legionary to other Legionaries, the same applies to Legionaries that are actually Hannibal.

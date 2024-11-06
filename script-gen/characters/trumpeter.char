@@ -7,3 +7,22 @@ reminder 8 Evil Claim
 othernight Give a finger signal.
 wakes other after fortuneteller
 requires iamspartacus
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"I have done everything that I should, but the outcome is in the hand of fortune." - Nero Claudius Caesar 37 A.D. - 68 A.D.
+
+overview The Trumpeter learns how many of the Spartacus claims are evil.
+
+examples
+Sophia, Robert and Felix are the Glykon, Merchant and Caesar respectively. During the day Sophia, Robert and Felix all publicly claim that they are Spartacus. That night, the Trumpeter wakes and learns a '2', 2 evil players publicly claimed to be Spartacus today.
+Avery, Tameka and Seth are the Mortician, Scholar and a Bad Omen respectively. During the day Avery, Tameka and Seth all publicly claim that they are Spartacus. That night, the Trumpeter wakes and learns a '1' as the Bad Omen is registering as evil.
+The Trumpeter is actually a Bad Omen. Greg is Hannibal and Anne is the Temptress. During the day Greg and Anne all publicly claim that they are Spartacus. That night, the Trumpeter wakes and learns a '0', as they are receiving false information.
+
+howtorun
+At the start of each night, if an evil player publicly claimed to be Spartacus today, place a EVIL CLAIM reminder token next to the player alongside the I AM SPARTACUS! fabled reminder token.
+Each night, wake the Trumpeter. The Trumpeter learns the number equal to the number of EVIL CLAIM reminder tokens. If none are present they learn a '0'. Remove any EVIL CLAIM reminder tokens.
+If the Trumpeter is drunk, poisoned or is actually Hannibal, they learn arbitrary information. If the Trumpeter is a Bad Omen, they must learn the false information. If a players alignment switches during the day, the Trumpeter learns information in accordance to their alignment at the start of the night.
+EVIL CLAIM reminder tokens are somewhat optional as the I AM SPARTACUS! fabled reminder tokens can be used in place. The EVIL CLAIM reminder tokens are useful to use when putting together the number for the Trumpeter, taking into consideration misregistrations and alignment changes.

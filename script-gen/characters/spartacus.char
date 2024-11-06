@@ -5,3 +5,27 @@ If an evil player guesses you (once), your team loses. You might register as a T
 image https://script.patters.live/for/app_icons/good/spartacus.png https://script.patters.live/for/app_icons/evil/spartacus.png
 reminder 1 Guess Used
 requires iamspartacus
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"A man must not accept his fate. Or he will be destroyed by it." - Spartacus c. 103 B.C. - 71 B.C.
+
+overview Spartacus has to hide from the evil team, otherwise they risk losing the game for good.
+
+examples
+Mack is Spartacus and Robert is the Evil Merchant, having been turned by the Temptress. During the day Robert publicly claims to be evil and guesses that Mack is Spartacus. Evil guessed Spartacus correctly and win the game.
+Bruce is the Standard Bearer. During the day Bruce publicly claims to be evil and guesses a player. As Bruce is good, evils guess it not used.
+Helen is the Physician and Anne is the Temptress. During the day Anne publicly claims to be evil and guesses that Helen is Spartacus. Evil guessed Spartacus incorrectly and lose their guess.
+
+howtorun
+On the first night, Spartacus might register as a Townsfolk.
+Each night, other than the first, if Spartacus has a I AM SPARTACUS! reminder token next to them, they might register as a Townsfolk. Otherwise: they register as an Outsider and as Spartacus.
+Each day, if an evil player publicly claims to be evil and chooses a player as Spartacus, place the GUESS USED reminder token next to Spartacus. If the player they chose was Spartacus, evil wins. If the GUESS USED reminder token was already next to Spartacus, that public claim is not valid.
+If Spartacus is drunk or poisoned, their ability malfunctions and they register as an Outsider and as Spartacus. If an evil player publicly claims to be evil and chooses a player as Spartacus, whilst Spartacus is drunk or poisoned, the guess is used. Place the GUESS USED reminder token next to Spartacus.
+The Storyteller may refuse to acknowledge a Spartacus guess if they feel the player is using it against their own will, and is being pressured by other players. The Storyteller can judge whether the player is purposely and with intent, with their teams best wishes in mind, making a Spartacus guess.
+If Spartacus is guessed by an evil player for the first time, having claimed Spartacus that day, the evil team still wins.
+
+advice
+On the first night if Spartacus is picked by the Haruspex show the Haruspex a Townsfolk role (other than the Demon Bluffs). During the day, listen to what Spartacus is claiming. If picked by the Haruspex on a night other than the first, provide the Haruspex the Townsfolk role Spartacus is pretending to be, given that Spartacus publicly claimed to be Spartacus today.

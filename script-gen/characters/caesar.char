@@ -8,3 +8,23 @@ reminder 1 Kill Used
 reminder 2 Dead
 othernight The Caesar chooses a player. :reminder: If the first evil player was executed today, The Caesar chooses another player. :reminder:
 wakes other after imp
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"I came, I saw, I conquered." - Gaius Julius Caesar 100 B.C. - 44 B.C.
+
+overview Caesar kills a player each night and if a Minion died by execution today, they kill another.
+
+examples
+Kennith is the Vestal Virgin. At the end of nominations, Kennith is executed and dies. At night, Caesar chooses 1 player, they die.
+Brandon is the Haruspex. At the end of nominations, Brandon is executed and dies. At night, Caesar chooses 2 players, they both die.
+Avery is the evil Mortician, after being turned by the Temptress. At the end of nominations, Avery is executed and dies. At night, Caesar chooses 1 players, they die. Because Avery is now evil, they can grant Caesar an extra kill that night.
+
+howtorun
+The 1st time an evil player is executed and dies, place the BETRAYAL reminder token next to Caesar.
+Each night, If a good player died by execution today or no one died by execution, ask Caesar to choose a player. Mark the chosen player with the DEAD reminder token. They die.
+Each night, If an evil player died by execution today, ask Caesar to choose two players. Mark the chosen players with the DEAD reminder token. They die. Place the KILL USED reminder token next o Caesar, and remove any BETRAYAL reminder tokens.
+If a good player was nominated by the Glykon and executed that day, and they are the first 'evil' player to be executed. Caesar gets an extra kill that night. If a Bad Omen was executed that day, and they could be the first 'evil' player to be executed, you may choose to give Caesar the extra kill, or not. If the latter, do not place the BETRAYAL reminder token next to Caesar.
+If Caesar becomes the in-play Demon the same day an evil player is executed for the 1st time, place the BETRAYAL reminder token next to Caesar. This is a retroactive action.

@@ -4,3 +4,19 @@ If a Townsfolk nominates you, they immediately become a Bad Omen.
 
 image https://script.patters.live/for/app_icons/evil/augur.png https://script.patters.live/for/app_icons/good/augur.png
 requires badomen
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"That everything in war and in peace, at home and abroad, was done only after taking the auspices?" - Titus 'Livy' Livius 59 B.C. - 17 A.D.
+
+overview The Augur turns Townsfolk into Outsiders, specifically the Bad Omen.
+
+examples
+Lindsey is the Gladiator. During nominations Lindsey nominates the Augur. Lindsey instantly becomes a Bad Omen. Lindsey does not learn this.
+Victoria is The Twins. During nominations Victoria nominates the Augur. Nothing happens as Victoria is an Outsider.
+
+howtorun
+During nominations, if the Augur is nominated by a Townsfolk, place a IS A BAD OMEN reminder token by the player. They instantaneously become a Bad Omen.
+If the Augur is executed the same day a Townsfolk has nominated them, the Townsfolk still remains a Bad Omen. If the Augur dies, all players that have become a Bad Omen remain as a Bad Omen. If the Augur is drunk or poisoned and is nominated by a Townsfolk, nothing happens.

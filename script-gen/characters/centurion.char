@@ -5,3 +5,22 @@ If you nominate & execute a living player, their team loses. You are safe from t
 image https://script.patters.live/for/app_icons/good/centurion.png https://script.patters.live/for/app_icons/evil/centurion.png
 reminder 1 Drunk
 requires iamspartacus
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"It is easier to find men who will volunteer to die, than to find those who are willing to endure pain with patience." - Gaius Julius Caesar 100 B.C. - 44 B.C.
+
+overview The Centurion can end the game at any point with their nomination.
+
+examples
+Brandon is the Haruspex. During nominations, the Centurion nominates Brandon and gathers enough votes to put them on the block. That day, Brandon is executed. The game ends, and the good team have won.
+Robert is the Merchant. During nominations, the Centurion nominates Robert and with enough votes, puts them on the block. Before the day closes, the Centurion publicly claims to be Spartacus. That day, Robert is executed and the game continues. During the night, the Centurion is targeted by a Demon, Crassus in particular, that night the Centurion dies as they are drunk.
+Misty is the Bad Omen who believes they are the Vestal Virgin. During nominations, the Centurion nominates Misty and and that same day Misty is executed. The game ends, and the good team loses, after all Misty is a good player who might register as evil.
+Phoebe and Graham are the Centurion and the Augur. During the day, Phoebe does not claim to be Spartacus and nominates Graham. Graham is executed and dies. The game continues, because Phoebe is now a Bad Omen.
+
+howtorun
+During the day, if the Centurion claimed to be Spartacus today, place the DRUNK reminder token next to the Centurion alongside the I AM SPARTACUS! fabled reminder token.
+If the Centurion nominated a player, and the nominated player is executed that day whilst the Centurion is sober & healthy. The game ends & the executed player's team loses.
+If the Centurion is sober and they are targeted by the Demon and would normally die, they don't.

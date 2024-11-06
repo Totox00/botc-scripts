@@ -6,3 +6,24 @@ image https://script.patters.live/for/app_icons/good/mortician.png https://scrip
 reminder 2 Executed
 othernight If a player was executed today, nod or shake your head.
 wakes other after fortuneteller
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"Let no one weep for me, or celebrate my funeral with mourning; for I still live, as I pass to and fro through the mouths of men." - Quintus Ennius 239 B.C. - 169 B.C.
+
+overview The Mortician learns if a players living neighbours are evil when the player dies by execution.
+
+examples
+Phoebe is the Centurion and Patrick is the evil Emperor Traveller. During nominations, Phoebe is executed but does not die as Patrick overruled their execution. That night, the Mortician does not wake.
+Helen is the Physician and Elwyn is the Winemaker. During nominations the player sat between both Helen and Elwyn is executed and dies. That night, the Mortician learns a 'no'.
+Seth is a Bad Omen and Mack is Spartacus. During nominations the player sat between both Seth and Mack is executed and dies. That night, the Mortician learns a 'yes' as the Bad Omen is registering as evil.
+Kohav is the Sibyl. On the 2nd day, a player is executed and dies, and the Storyteller jesters to Kohav as to whether they would like to choose a dead player. They choose a dead player who subsequently nominates, and gets that player executed, they also die. That night, the Mortician wakes and learns information about both executed players. The Storyteller clarifies which player they are talking about by pointing to the executed player and then providing the associated information.
+
+howtorun
+During nominations, if a player is executed and dies, place the RECENTLY EXECUTED reminder token by the player.
+Each night, if a RECENTLY EXECUTED reminder token is next to a player, wake the Mortician, the learn if the player neighbours an evil player and remove the RECENTLY EXECUTED reminder token. If they neighbour 1 or 2 evil players tell the Mortician 'yes', otherwise tell the player 'no'.
+If no player has a RECENTLY EXECUTED reminder token next to them, do not wake the Mortician.
+If a Sibyl is in play and uses their ability, executing and killing a player place the second RECENTLY EXECUTED reminder token next to the player. If there are now 2 RECENTLY EXECUTED reminder tokens on the grimoire, wake the Mortician as normal. Clarify which piece of information they are receiving first by pointing to the associated player with the RECENTLY EXECUTED reminder token.
+If the Mortician is drunk, poisoned or is actually Hannibal, they learn arbitrary information. If the Mortician is a Bad Omen, they must learn the opposite answer to the correct information.

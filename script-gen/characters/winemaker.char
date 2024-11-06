@@ -9,3 +9,21 @@ reminder 2 Drunk
 firstnight Choose *ODD* or *EVEN* days for the Winemaker to be drunk. If *EVEN*, then place *DRUNK* tokens on the nearest Townsfolk neighbours. :reminder: :reminder: :reminder:
 othernight Either place *DRUNK* tokens on the nearest Townsfolk neighbours, or remove them if already present. :reminder: :reminder:
 wakes every after poisoner
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"In wine, there's truth." - Pliny the Elder 23 A.D. - 79 A.D.
+
+overview Every other day the Winemaker drunk their closest Townsfolk neighbours... but they don't know which day it starts.
+
+examples
+Nyla is the Actor and Phoebe is the Centurion. The Winemakers closest Townsfolk neighbours are Nyla and Phoebe. The Winemaker is drunk on the first night and sober on the second. During the second night, Nyla and Phoebe are drunk, Nyla gets arbitrary information and Phoebe is not safe from the Demon tonight.
+Murphy and Ruth are the Legionaries. The Winemaker is neighbouring both Murphy and Ruth. On the first night the Winemaker is drunk. On the same night Murphy and Ruth learn arbitrary information.
+
+howtorun
+On the first night, place the ODD or EVEN reminder token next to the Winemaker. If an ODD reminder token, the Winemaker is drunk on all of the odd nights (first, third, fifth...). If an EVEN reminder token, the Winemaker is drunk on all of the even nights (second, fourth, sixth...).
+On odd nights, if the EVEN reminder token is next to the Winemaker place the DRUNK reminder token next to the Winemakers Townsfolk neighbours. Otherwise: remove all DRUNK reminder tokens.
+On even nights, if the ODD reminder token is next to the Winemaker place the DRUNK reminder token next to the Winemakers Townsfolk neighbours. Otherwise: remove all DRUNK reminder tokens.
+If the the Winemaker is poisoned or drunk, their ability malfunctions. Remove all DRUNK reminder tokens. The ODD and EVEN reminder tokens remain.

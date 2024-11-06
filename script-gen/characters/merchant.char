@@ -7,3 +7,20 @@ reminder 15 Nominated
 reminder 1 No Ability
 othernight The Merchant might use their ability. Show in random order each character token that has *NOMINATED* the Merchant (but not which players).
 wakes other after fortuneteller
+
+attribution
+Originally part of Fall of Rome by Alex S
+
+flavour
+"Greed is but a word jealous men inflict upon the ambitious." - Marcus Licinius Crassus 115 B.C. - 53 B.C.
+
+overview The Merchant chooses when to learn all the characters that have nominated them.. but only once.
+
+examples
+Sophia is the Glykon. During nominations Sophia nominates the Merchant. That night, the Merchant wakes and uses their ability. They learn the Glykon.
+Laurel, Victoria and Jack are the Blacksmith, The Twins and Cleopatra respectively. Over the next three days Laurel, Victoria and Jack nominate the Merchant. On the 4th Night, the Merchant wakes and uses their ability. They learn the Blacksmith, The Twins and Cleopatra in no particular order.
+
+howtorun
+Each day, if a player nominated the Merchant, place a NOMINATED reminder token next to the that player.
+Each night, other than the first, if the Merchant has a NO ABILITY reminder token next to them, do not wake them. Otherwise: ask the Merchant if they would like to use their ability. If yes, show the character tokens of any players with the NOMINATED reminder tokens.
+If the Merchant is drunk, poisoned or is actually Hannibal, they learn arbitrary information. If the Merchant is a Bad Omen, they must learn all false information, such that any true character token must not be shown to the Merchant.
