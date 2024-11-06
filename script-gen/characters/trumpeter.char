@@ -1,0 +1,9 @@
+Trumpeter
+Townsfolk
+Each night*, you learn how many evil players publicly claimed to be Spartacus today.
+
+image https://script.patters.live/for/app_icons/good/trumpeter.png https://script.patters.live/for/app_icons/evil/trumpeter.png
+reminder 8 Evil Claim
+othernight Give a finger signal.
+wakes other after fortuneteller
+requires iamspartacus

@@ -1,0 +1,11 @@
+The Twins
+Outsider
+You start knowing a player: if either of you are executed, all Townsfolk are drunk until dusk tomorrow.
+
+image https://script.patters.live/for/app_icons/good/thetwins.png https://script.patters.live/for/app_icons/evil/thetwins.png
+reminder 1 Remus
+reminder 1 Townsfolk Drunk
+firstnight Point to the *REMUS* player.
+othernight Check if The Twins or the *REMUS* player was executed. :reminder:
+wakes first after fortuneteller
+wakes other after poisoner

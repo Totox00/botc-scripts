@@ -1,0 +1,11 @@
+High Priest
+Traveller
+Each day, publicly choose a unique living player to bless: if a majority of players agree, tomorrow they may learn a statement. Tonight, choose if it's true.
+
+image https://script.patters.live/for/app_icons/traveller/highpriest_alt.png https://script.patters.live/for/app_icons/good/highpriest_alt.png https://script.patters.live/for/app_icons/evil/highpriest_alt.png
+reminder 8 Blessed
+reminder 8 Failed
+reminder 1 True
+reminder 1 False
+othernight If the High Priest successfully blessed a player today, the High Priest gives a thumb signal.
+wakes other after dusk

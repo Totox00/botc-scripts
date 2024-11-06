@@ -1,0 +1,10 @@
+Sculptor
+Townsfolk
+You start knowing a player. Each night*, you learn the alignment of their most recent nomination.
+
+image https://script.patters.live/for/app_icons/good/sculptor.png https://script.patters.live/for/app_icons/evil/sculptor.png
+reminder 1 Sculpture
+reminder 1 Nominated
+firstnight Point to the *SCULPTURE* player.
+othernight Either give a thumbs up or a thumbs down.
+wakes every after fortuneteller

@@ -1,0 +1,9 @@
+Actor
+Townsfolk
+Once per game, during the day, publicly guess 3 players' character types (not yourself, 1 guess per type). That night, you learn how many you got correct.
+
+image https://script.patters.live/for/app_icons/good/actor.png https://script.patters.live/for/app_icons/evil/actor.png
+reminder 3 Correct
+reminder 1 No Ability
+othernight Give a finger signal.
+wakes other after fortuneteller

@@ -1,0 +1,6 @@
+Augor
+Minion
+If a Townsfolk nominates you, they immediately become a Bad Omen.
+
+image https://script.patters.live/for/app_icons/evil/augur.png https://script.patters.live/for/app_icons/good/augur.png
+requires badomen

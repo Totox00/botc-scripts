@@ -1,0 +1,10 @@
+Caesar
+Demon
+Each night*, choose a player: they die. The 1st time an evil player dies by execution, that night, choose an additional player: they die.
+
+image https://script.patters.live/for/app_icons/evil/caesar.png https://script.patters.live/for/app_icons/good/caesar.png
+reminder 1 Betrayal
+reminder 1 Kill Used
+reminder 2 Dead
+othernight The Caesar chooses a player. :reminder: If the first evil player was executed today, The Caesar chooses another player. :reminder:
+wakes other after imp

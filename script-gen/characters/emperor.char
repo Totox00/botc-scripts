@@ -1,0 +1,8 @@
+Emperor
+Traveller
+Each day, choose the 1st execution's outcome. If you choose to protect today's execution: they survive. Otherwise, tonight you learn their alignment.
+
+image https://script.patters.live/for/app_icons/traveller/emperor.png https://script.patters.live/for/app_icons/good/emperor.png https://script.patters.live/for/app_icons/evil/emperor.png
+reminder 1 Executed
+othernight If the Emperor did not stop the execution, give a thumb signal.
+wakes other after dusk

@@ -1,0 +1,7 @@
+Spartacus
+Outsider
+If an evil player guesses you (once), your team loses. You might register as a Townsfolk; each day, if you did not publicly claim to be Spartacus, you don't.
+
+image https://script.patters.live/for/app_icons/good/spartacus.png https://script.patters.live/for/app_icons/evil/spartacus.png
+reminder 1 Guess Used
+requires iamspartacus

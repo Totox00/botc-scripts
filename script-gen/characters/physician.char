@@ -1,0 +1,10 @@
+Physician
+Townsfolk
+Each night, choose two players (not yourself): they are sober, healthy & get true info tonight. The 1st time the Demon kills one, you learn the Demon type.
+
+image https://script.patters.live/for/app_icons/good/physician.png https://script.patters.live/for/app_icons/evil/physician.png
+reminder 2 Patient
+reminder 1 1st Demon
+firstnight The Physician chooses two players (not themselves). :reminder: :reminder:
+othernight The Physician chooses two players (not themselves). :reminder: :reminder: If the Demon killed a *PATIENT* player for the first time, show the Demon's token.
+wakes every after fortuneteller

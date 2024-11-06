@@ -1,0 +1,9 @@
+Legionary
+Townsfolk
+Each night, you learn how many living evil players are sat clockwise between yourself and a living Legionary. [+0 to +2 Legionary]
+
+image https://script.patters.live/for/app_icons/good/legionary.png https://script.patters.live/for/app_icons/evil/legionary.png
+everynight Give a finger signal (exclusive of the next Legionary).
+wakes every after fortuneteller
+setup
+bagduplicate

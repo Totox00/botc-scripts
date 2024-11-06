@@ -1,0 +1,9 @@
+Merchant
+Townsfolk
+Once per game, at night, choose to learn the characters of players that have nominated you.
+
+image https://script.patters.live/for/app_icons/good/merchant.png https://script.patters.live/for/app_icons/evil/merchant.png
+reminder 15 Nominated
+reminder 1 No Ability
+othernight The Merchant might use their ability. Show in random order each character token that has *NOMINATED* the Merchant (but not which players).
+wakes other after fortuneteller

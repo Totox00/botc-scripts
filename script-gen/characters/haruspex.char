@@ -1,0 +1,14 @@
+Haruspex
+Minion
+Each night, choose a player:you learn their character. The 1st player you choose twice in this way, dies. [+ Spartacus]
+
+image https://script.patters.live/for/app_icons/evil/haruspex.png https://script.patters.live/for/app_icons/good/haruspex.png
+reminder 15 Foretold
+reminder 1 Dead
+reminder 1 Can't Kill
+firstnight The Haruspex points to a player. Show that player's character token. :reminder:
+othernight The Haruspex points to a player. Show that player's character token, and that player might die. :reminder:
+wakes first after godfather
+wakes other after assassin
+setup
+requires spartacus

@@ -1,0 +1,9 @@
+Blacksmith
+Townsfolk
+The 1st time the Demon kills you, you live & gain a not-in-play Townsfolk ability.
+
+image https://script.patters.live/for/app_icons/good/blacksmith.png https://script.patters.live/for/app_icons/evil/blacksmith.png
+globalreminder 1 Is The Blacksmith
+othernight If the Demon killed the Blacksmith for the first time, show them a character token.
+wakes other after sage
+replacereveal

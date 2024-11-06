@@ -1,0 +1,10 @@
+Crassus
+Demon
+Each night*, choose a player: they die. If the 1st Crassus publicly claims to be Spartacus & dies with 5 or more players alive, an evil player becomes Crassus.
+
+image https://script.patters.live/for/app_icons/evil/crassus.png https://script.patters.live/for/app_icons/good/crassus.png
+reminder 1 Dead
+reminder 1 1st Crassus
+othernight If an evil player became The Crassus today, show them the *YOU ARE* & Crassus tokens. The Crassus chooses a player. :reminder:
+wakes other after imp
+requires iamspartacus

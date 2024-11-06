@@ -1,0 +1,13 @@
+Hannibal
+Demon
+You think you are a good character, but you are not. Minions learn 3 bluffs. Each night*, a player might die. The 1st Hannibal to die, becomes good. [+1 Hannibal]
+
+image https://script.patters.live/for/app_icons/evil/hannibal.png https://script.patters.live/for/app_icons/good/hannibal.png
+reminder 2 Dead
+globalreminder 2 Is Hannibal
+firstnight Wake all Minions: Show the *THIS IS THE DEMON* info token. Point to both players with *IS HANNIBAL*. Show 3 not-in-play good character tokens. Skip Demon Info.
+othernight A player might die. :reminder: If a player with *IS HANNIBAL* died today, wake them and show the *YOU ARE* & Hannibal tokens, and give a thumbs up.
+wakes every after imp
+setup
+bagdisabled
+replacereveal

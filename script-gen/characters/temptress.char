@@ -1,0 +1,11 @@
+Temptress
+Minion
+On your 1st night choose two players: they learn that they were chosen. The 1st time one of them dies by execution, the other becomes evil that night.
+
+image https://script.patters.live/for/app_icons/evil/temptress.png https://script.patters.live/for/app_icons/good/temptress.png
+reminder 2 Seduced
+reminder 1 Evil
+firstnight The Temptress chooses 2 players. Put the Temptress to sleep. Wake the targets one at a time and show the *THIS CHARACTER SELECTED YOU* & Temptress tokens.
+othernight If a player is marked with the *EVIL* reminder, wake them. Show the *YOU ARE* info token and a thumbs down.
+wakes first after godfather
+wakes other after dusk

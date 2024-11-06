@@ -62,6 +62,7 @@ fn main() {
         )))
         .unwrap_or_else(|_| panic!("Failed to create file for script {source}"));
 
+        script.resolve_required(&character_list);
         script.apply_patches(&patches, &image_list);
         script.write_json(&mut writer);
     }

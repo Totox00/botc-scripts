@@ -1,0 +1,8 @@
+Mortician
+Townsfolk
+Each night*, if a player died by execution today you learn if either of their living neighbours are evil.
+
+image https://script.patters.live/for/app_icons/good/mortician.png https://script.patters.live/for/app_icons/evil/mortician.png
+reminder 2 Executed
+othernight If a player was executed today, nod or shake your head.
+wakes other after fortuneteller

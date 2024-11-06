@@ -1,0 +1,11 @@
+Winemaker
+Outsider
+Your Townsfolk neighbours are drunk, but every other night, you are drunk until dusk, even if you are dead.
+
+image https://script.patters.live/for/app_icons/good/winemaker.png https://script.patters.live/for/app_icons/evil/winemaker.png
+reminder 1 Odd
+reminder 1 Even
+reminder 2 Drunk
+firstnight Choose *ODD* or *EVEN* days for the Winemaker to be drunk. If *EVEN*, then place *DRUNK* tokens on the nearest Townsfolk neighbours. :reminder: :reminder: :reminder:
+othernight Either place *DRUNK* tokens on the nearest Townsfolk neighbours, or remove them if already present. :reminder: :reminder:
+wakes every after poisoner

@@ -1,0 +1,9 @@
+Standard Bearer
+Townsfolk
+When you are nominated, you may make a unique public statement about the nominator (not yourself). Tonight, you learn if the statement was true.
+
+image https://script.patters.live/for/app_icons/good/standardbearer.png https://script.patters.live/for/app_icons/evil/standardbearer.png
+reminder 1 True
+reminder 1 False
+othernight If the Standard Bearer was nominated today, nod or shake your head.
+wakes other after fortuneteller

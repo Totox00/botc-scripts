@@ -1,0 +1,10 @@
+Gladiator
+Townsfolk
+Once per game, during the day, publicly choose a living player. Tonight, you and they wake & silently play roshambo: whoever loses dies (someone must lose).
+
+image https://script.patters.live/for/app_icons/good/gladiator.png https://script.patters.live/for/app_icons/evil/gladiator.png
+reminder 1 Duel
+reminder 1 Dead
+reminder 1 No Ability
+othernight The Gladiator and the player they chose They play roshambo (rock-paper-scissors) silently until one loses. :reminder:
+wakes other before gossip

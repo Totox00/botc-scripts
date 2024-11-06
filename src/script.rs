@@ -6,7 +6,7 @@ use std::{
 
 use serde_json::{Map, Value};
 
-use crate::character::{Character, Team};
+use crate::character::Character;
 
 #[derive(Debug)]
 pub struct Script {
@@ -16,10 +16,7 @@ pub struct Script {
 }
 
 impl Script {
-    pub fn from_source(
-        source: &str,
-        character_list: &HashMap<String, Character>,
-    ) -> Script {
+    pub fn from_source(source: &str, character_list: &HashMap<String, Character>) -> Script {
         let mut buf = String::new();
         File::open(source)
             .unwrap_or_else(|_| panic!("Failed to open script source file for script {source}"))
@@ -40,9 +37,16 @@ impl Script {
 
         for character in lines {
             if !character.is_empty() {
-                characters.push(character_list.get(character).unwrap_or_else(|| {
-                    panic!("Failed to find data for character {character} in script {source}")
-                }).clone())
+                characters.push(
+                    character_list
+                        .get(character)
+                        .unwrap_or_else(|| {
+                            panic!(
+                                "Failed to find data for character {character} in script {source}"
+                            )
+                        })
+                        .clone(),
+                )
             }
         }
 
@@ -53,18 +57,41 @@ impl Script {
         }
     }
 
+    pub fn resolve_required(&mut self, character_list: &HashMap<String, Character>) {
+        let mut to_add = vec![];
+
+        for character in &self.characters {
+            for required in &character.required_characters {
+                if !self
+                    .characters
+                    .iter()
+                    .any(|character| character.id == *required)
+                {
+                    if let Some(required) = character_list.get(required) {
+                        to_add.push(required.to_owned());
+                    } else {
+                        panic!(
+                            "Could not find required character {required} for {}",
+                            character.id
+                        )
+                    }
+                }
+            }
+        }
+
+        if !to_add.is_empty() {
+            self.characters.extend(to_add);
+            self.resolve_required(character_list);
+        }
+    }
+
     pub fn write_json<T>(self, writer: &mut T)
     where
         T: Write,
     {
         let mut out: Vec<Value> = vec![self.meta()];
-        let mut included_fabled = vec![];
 
         for character in self.characters {
-            if character.team == Team::Fabled {
-                included_fabled.push(character.id.to_owned());
-            }
-
             if character.official && !character.patched {
                 out.push(Value::String(character.id.to_owned()));
             } else {
@@ -73,13 +100,6 @@ impl Script {
                         panic!("Failed to serialize character {}", character.id)
                     }),
                 );
-            }
-
-            for fabled in &character.required_fabled {
-                if !included_fabled.contains(fabled) {
-                    included_fabled.push(fabled.to_owned());
-                    out.push(Value::String(fabled.to_owned()));
-                }
             }
         }
 

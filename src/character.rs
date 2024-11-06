@@ -67,7 +67,7 @@ pub struct Character {
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub jinxes: Vec<Jinx>,
     #[serde(skip)]
-    pub required_fabled: Vec<String>,
+    pub required_characters: Vec<String>,
 }
 
 #[derive(Debug, Deserialize, Serialize, Default, PartialEq, Eq, Clone)]
@@ -157,7 +157,17 @@ impl Character {
         let mut attribution = String::new();
         let mut special = AppSpecial::default();
         let mut jinxes = vec![];
-        let mut required_fabled = vec![];
+        let mut required_characters = vec![];
+        let mut image = if Path::new(source_path.parent().unwrap())
+            .join(format!("{source}.png"))
+            .exists()
+        {
+            vec![format!(
+                    "https://raw.githubusercontent.com/Totox00/botc-scripts/refs/heads/main/script-gen/characters/{source}.png"
+                )]
+        } else {
+            vec![]
+        };
 
         while let Some(line) = lines.next() {
             match line {
@@ -238,6 +248,7 @@ impl Character {
                                     }
                                 }
                             }
+                            "image" => image = value.split(' ').map(String::from).collect(),
                             "firstnight" => first_night_reminder = value.to_owned(),
                             "othernight" => other_night_reminder = value.to_owned(),
                             "everynight" => {
@@ -284,7 +295,7 @@ impl Character {
                                     }
                                 }
                             }
-                            "requires" => required_fabled.push(value.to_owned()),
+                            "requires" => required_characters.push(value.to_owned()),
                             "card" => special.cards.push(value.to_owned()),
                             "jinx" => {
                                 if let Some((id, reason)) = value.split_once(' ') {
@@ -302,17 +313,6 @@ impl Character {
                 }
             }
         }
-
-        let image = if Path::new(source_path.parent().unwrap())
-            .join(format!("{source}.png"))
-            .exists()
-        {
-            vec![format!(
-                    "https://raw.githubusercontent.com/Totox00/botc-scripts/refs/heads/main/script-gen/characters/{source}.png"
-                )]
-        } else {
-            vec![]
-        };
 
         Character {
             id: source,
@@ -336,7 +336,7 @@ impl Character {
             advice: advice.trim().to_owned(),
             attribution: attribution.trim().to_owned(),
             image,
-            required_fabled,
+            required_characters,
             special: if special.any() {
                 Some(special.as_serializable())
             } else {

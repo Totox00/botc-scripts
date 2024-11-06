@@ -1,0 +1,9 @@
+High Priest
+Traveller
+Each day, publicly choose a unique living player to bless: if a majority of players agree, something good happens to them.
+
+image https://script.patters.live/for/app_icons/traveller/highpriest.png https://script.patters.live/for/app_icons/good/highpriest.png https://script.patters.live/for/app_icons/evil/highpriest.png
+reminder 8 Blessed
+reminder 8 Failed
+othernight If the High Priest successfully blessed a player today, something good happens to that player and/or their team.
+wakes other after dusk

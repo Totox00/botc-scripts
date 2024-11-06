@@ -1,0 +1,10 @@
+Cleopatra
+Demon
+Each night, choose two players: if they nominate tomorrow, they die that night. Each day, if a good player (Travellers don't count) does not nominate, evil wins.
+
+image https://script.patters.live/for/app_icons/evil/cleopatra.png https://script.patters.live/for/app_icons/good/cleopatra.png
+reminder 2 Chosen
+reminder 2 Dead
+firstnight The Cleopatra chooses 2 players. :reminder: :reminder:
+othernight The Cleopatra chooses 2 players. The previously chosen players die if they nominated. :reminder: :reminder:
+wakes every after pukka

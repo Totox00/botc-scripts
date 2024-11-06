@@ -1,0 +1,12 @@
+Mercenary
+Traveller
+Each night*, gain the ability of a player who publicly claimed Spartacus today. If a Mercenary is exiled, you are exiled too. [+1 Mercenary of opposing alignment]
+
+image https://script.patters.live/for/app_icons/traveller/mercenary.png https://script.patters.live/for/app_icons/good/mercenary.png https://script.patters.live/for/app_icons/evil/mercenary.png
+reminder 1 Good
+reminder 1 Evil
+reminder 1 Good Ability
+reminder 1 Evil Ability
+othernight Show a character token.
+wakes other after dusk
+requires iamspartacus

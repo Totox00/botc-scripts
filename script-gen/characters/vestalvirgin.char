@@ -1,0 +1,9 @@
+Vestal Virgin
+Townsfolk
+You start knowing 1 good & 1 evil character, 1 of which is in-play. When they die, that night you learn 1 good & 1 evil character, 1 of which is in-play.
+
+image https://script.patters.live/for/app_icons/good/vestalvirgin.png https://script.patters.live/for/app_icons/evil/vestalvirgin.png
+reminder 1 Learns
+firstnight Show 1 good & 1 evil character token, one of which is the *LEARNS* player and the other is not in-play.
+othernight If the player with *LEARNS* died today, show 1 good & 1 evil character token, one of which is the *LEARNS* player and the other is not in-play. :reminder:
+wakes every after fortuneteller

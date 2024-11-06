@@ -1,0 +1,9 @@
+Bad Omen
+Outsider
+You do not know you are a Bad Omen. You think you are a Townsfolk, but you receive false information. You might register as evil, even if dead.
+
+image https://script.patters.live/for/app_icons/good/badomen.png https://script.patters.live/for/app_icons/evil/badomen.png
+globalreminder 8 Is a Bad Omen
+setup
+bagdisabled
+replacereveal

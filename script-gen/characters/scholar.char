@@ -1,0 +1,9 @@
+Scholar
+Townsfolk
+The 1st time you nominate a living Outsider, they immediately become a not-in-play Townsfolk. [+1 Outsider]
+image https://script.patters.live/for/app_icons/good/scholar.png https://script.patters.live/for/app_icons/evil/scholar.png
+reminder 1 Lectured
+reminder 1 No Ability
+othernight If the Scholar nominated an Outsider, wake the Outsider and show them the *YOU ARE* info token and their new character token.
+wakes other after dusk
+setup

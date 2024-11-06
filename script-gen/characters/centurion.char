@@ -1,0 +1,7 @@
+Centurion
+Townsfolk
+If you nominate & execute a living player, their team loses. You are safe from the Demon. If you publicly claimed to be Spartacus today, you are drunk until dawn.
+
+image https://script.patters.live/for/app_icons/good/centurion.png https://script.patters.live/for/app_icons/evil/centurion.png
+reminder 1 Drunk
+requires iamspartacus
