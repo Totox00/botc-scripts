@@ -1,9 +1,4 @@
-use std::{
-    collections::HashMap,
-    fs::File,
-    io::Read,
-    path::{Path, PathBuf},
-};
+use std::{collections::HashMap, fs::File, io::Read, path::Path};
 
 use serde::{Deserialize, Serialize};
 use serde_json::{Map, Value};
@@ -107,7 +102,7 @@ pub struct Jinx {
 
 impl Character {
     pub fn from_source(
-        source_path: &PathBuf,
+        source_path: &Path,
         character_list: &HashMap<String, Character>,
     ) -> Character {
         let source = source_path

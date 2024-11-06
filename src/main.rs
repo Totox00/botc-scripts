@@ -2,7 +2,13 @@ mod character;
 mod patch;
 mod script;
 
-use std::{collections::HashMap, env::args, fs::File, io::Read, path::Path};
+use std::{
+    collections::HashMap,
+    env::args,
+    fs::File,
+    io::Read,
+    path::{Path, PathBuf},
+};
 
 use character::Character;
 use patch::read_patches;
@@ -31,25 +37,19 @@ fn main() {
     for image in image_list_str.lines().filter(|str| !str.is_empty()) {
         let mut iter = image.split(' ');
         let id = iter.next().unwrap().to_owned();
-        let images: Vec<String> = iter.map(|image| format!("https://botc.app/assets/{image}.webp")).collect();
+        let images: Vec<String> = iter
+            .map(|image| format!("https://botc.app/assets/{image}.webp"))
+            .collect();
 
         image_list.insert(id, images);
     }
 
     let patches = read_patches();
 
-    if let Ok(dir) = Path::new("script-gen").join("characters").read_dir() {
-        for character_entry in dir.flatten() {
-            if character_entry
-                .path()
-                .extension()
-                .is_some_and(|ext| ext == "char")
-            {
-                let character = Character::from_source(&character_entry.path(), &character_list);
-                character_list.insert(character.id.clone(), character);
-            }
-        }
-    }
+    load_dir(
+        &Path::new("script-gen").join("characters"),
+        &mut character_list,
+    );
 
     let mut args = args().skip(1);
     let out_dir = args.next().expect("No out dir provided");
@@ -65,5 +65,22 @@ fn main() {
         script.resolve_required(&character_list);
         script.apply_patches(&patches, &image_list);
         script.write_json(&mut writer);
+    }
+}
+
+fn load_dir(path: &Path, character_list: &mut HashMap<String, Character>) {
+    if let Ok(dir) = path.read_dir() {
+        for character_entry in dir.flatten() {
+            if character_entry.file_type().is_ok_and(|f| f.is_dir()) {
+                load_dir(&character_entry.path(), character_list);
+            } else if character_entry
+                .path()
+                .extension()
+                .is_some_and(|ext| ext == "char")
+            {
+                let character = Character::from_source(&character_entry.path(), character_list);
+                character_list.insert(character.id.clone(), character);
+            }
+        }
     }
 }
