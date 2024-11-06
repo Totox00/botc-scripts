@@ -2,8 +2,34 @@ Harvey Walters
 Townsfolk
 Each night, choose a player: if they were chosen by an evil player tonight, you learn an in-play character.
 
+reminder 1 Assistant
+reminder 1 Chosen
 everynight Harvey Walters chooses a player. If the chosen player was chosen by an evil player tonight, Harvey learns an in-play character.
 wakes every before chambermaid
 
 attribution
 Icon by Delapouite under CC BY 3.0 from game-icons.net
+
+flavour
+Was it morally defensible to expose an innocent young mind to such truths? Harvey dismissed the thought, refusing to be drawn into an ethical rabbit hole from which there was no way out. Charles's next answer would reveal whether the young man had the potential Harvey sought ― and after that, he would either stand or fall on his own abilities.
+
+overview Harvey Walters learns information if they can predict what the evil team will do.
+Every night, Harvey Walters chooses a player. If any evil players choose that player that night, Harvey Walters learns an in-play character.
+If multiple evil players chose that player that night, Harvey Walters still only learns 1 character.
+If no evil players chose them that night, Harvey Walters learns nothing.
+Harvey Walters may choose themselves.
+Evil players that were drunk or poisoned when choosing the player Harvey Walters chose count.
+Evil players which choose that player with an ability they think they have (but don't) also count.
+Evil Townsfolk or Outsiders count as well, good Minions or Demons do not.
+Evil players that learn information about the player Harvey Walters chose, or interact with them in some other way without choosing them, do not count.
+
+examples
+Harvey Walters chooses the Chef. The Pukka also chooses the Chef that night. Harvey Walters learns that there is an Exorcist in play.
+On the first night, Harvey Walters chooses the Cerenovus. The Cerenovus chooses Harvey Walters. The next night, Harvey Walters chooses themselves, anticipating that the Cerenovus will also choose them again. The Cerenovus does so, and Harvey Walters learns that there is a Lleech in play.
+Harvey Walters chooses William Yorick. That night, Hastur kills William Yorick. Harvey Walters does not learn anything, becasue Hastur did not choose William Yorick. The next night, Harvey Walters chooses Leo Anderson. A Hastur player, who thinks they are the Innkeeper, also chooses Leo Anderson. That night, Harvey Walters learns that Hastur is in play.
+
+howtorun
+Each night, wake Harvey Walters. They point at a player. Mark that player with the ASSISTANT reminder. Put Harvey Walters to sleep.
+If an evil player chooses the player marked ASSISTANT with their own ability, mark the player marked with the ASSISTANT reminder with the CHOSEN reminder as well.
+If the player marked ASSISTANT is also marked CHOSEN, wake Harvey Walters again. Show them any in-play character token. Put Harvey Walters to sleep.
+At dawn, remove the ASSISTANT reminder and the CHOSEN reminder.

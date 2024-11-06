@@ -9,3 +9,21 @@ setup
 
 attribution
 Icon by Lorc under CC BY 3.0 from game-icons.net
+
+flavour
+Oliver Thomas, the proprietor of the Curiositie Shoppe, has informed you that a new client has taken a keen interest in a mysterious mask...
+
+overview Victoria Devereux poisons someone if the town kills an Outsider.
+Whenever an Outsider dies during the day for any reason, Victoria Devereux poisons a player that night.
+Victoria Devereux only poisons a player if an Outsider dies during the day. Outsiders which die at night or are executed but live don't count.
+If multiple Outsiders die during one day, Victoria Devereux still only poisons one player that night.
+If Victoria Devereux is in play, an extra Outsider is also in play.
+
+examples
+The Moonchild dies by execution and chooses the Exorcist player. That night, Victoria Devereux chooses to poison the Moonchild, and the Exorcist lives.
+The Lunatic is executed but lives due to the Tea Lady. Victoria Devereux does not wake to poison a player that night.
+The Golem nominates themselves and dies, the Alchemist-Witch kills the Recluse, the Tinker dies to their own ability, and the Klutz dies to the Harpy. That night, Victoria Devereux chooses only one player to poison.
+
+howtorun
+When setting up the game, before putting the character tokens in the bag, remove one Townsfolk and add one Outsider.
+If an Outsider dies during the day, mark them with the DIED TODAY reminder. That night, wake Victoria Devereux. They point at any player. Put Victoria Devereux to sleep. The chosen player is poisoned - mark them with the POISONED reminder.

@@ -12,3 +12,25 @@ replacereveal
 
 attribution
 Icon by Skoll under CC BY 3.0 from game-icons.net
+
+flavour
+Gavriella stumbles out of the mist, her eyes bloodshot and her voice strained. "Where am I?... Who are you?"
+
+overview Gavriella Mizrah thinks they are a Townsfolk even though they are not, and die if one of their neighbours dies as well.
+Gavriella Mizrah draws a Townsfolk token from the bag, but is secretly an Outsider.
+The good ability that Gavriella Mizrah thinks they have doesn’t work, but the Storyteller pretends it does. It is just as if this player is the Drunk.
+If either one of Gavriella Mizrah's neighbours dies at night, Gavriella Mizrah dies as well. Only their immediate neighbours are considered for this, not necessarily their alive neighbours.
+If one of Gavriella Mizrah's neighbours would die at night but is protected somehow, nothing happens.
+If one of Gavriella Mizrah's neighbours dies at night but Gavriella Mizrah is drunk or poisoned, or protected for some reason, nothing else happens.
+If one of Gavriella Mizrah's neighbours dies during the day, nothing else happens.
+
+examples
+Marcus is Gavriella Mizrah but thinks he is the Exorcist. He chooses the Demon, who wakes that night regardless. The next night, one of Markus's neighbours, the Gambler, dies to their own ability. Markus still wakes to make a choice tonight, then dies, because the Exorcist wakes before Gavriella Mizrah dies to their own ability.
+5 players are alive at the start of the night. The Demon kills a player. The Assassin, who is still alive, neighbours Gavriella Mizrah, who is also still alive. The Assassin kills themselves, so Gavriella Mizrah also dies, and evil wins.
+Gavriella Mizrah neighbours Luke Robinson, who is attacked by the Demon but lives. Gavriella Mizrah also lives. The next night, Luke Robinson is attacked by the Demon and dies, but Gavriella Mizrah is protected by the Innkeeper, and lives. The next night, the Innkeeper protects Gavriella Mizrah again. The Demon attacks and kills Gavriella Mizrah's other neighbour, then the Innkeeper. Gavriella Mizrah dies later that night.
+
+howtorun
+While setting up the game, before putting character tokens in the bag, remove the Gavriella Mizrah token and add a Townsfolk character token.
+While preparing the first night, mark a Townsfolk player with the IS GAVRIELLA MIZRAH reminder.
+Treat Gavriella Mizrah as if they were drunk. They wake when their Townsfolk character would wake, may get false information etc.
+Each night except the first, if one of Gavriella Mizrah's neighbours died that night, Gavriella Mizrah also dies - mark them with the DEAD reminder.

@@ -9,3 +9,24 @@ wakes other after assassin
 
 attribution
 Icon by Lorc under CC BY 3.0 from game-icons.net
+
+flavour
+Drew is a longtime patient at Arkham Asylum. Rumor has it he was locked up for committing cannibalism several years ago. He is considered extremely dangerous.
+
+overview "Wolf-Man" Drew can kill at a Demon's pace, but leaves damning evidence when they do.
+Each night except the first, "Wolf-Man" Drew may choose to attack a player.
+When someone else chooses the player "Wolf-Man" Drew attacked in the same night, they learn which player is "Wolf-Man" Drew. This happens even if the chosen player did not die for some reason, or if they were already dead when "Wolf-Man" Drew attacked them.
+Players do not learn who "Wolf-Man" Drew is retroactively - If someone chooses a player, then "Wolf-Man" Drew chooses that same player later that night, no one will learn who "Wolf-Man" Drew is.
+If "Wolf-Man" Drew is drunk or poisoned, no one else can learn who they are due to "Wolf-Man" Drew's ability.
+If a player is drunk or poisoned and chooses the player "Wolf-Man" Drew chose, they learn who "Wolf-Man" Drew is.
+
+examples
+Peter, who is "Wolf-Man" Drew, chooses the Dreamer, who dies. No one else chooses the Dreamer that night. The next night, Peter decides to play it safe and not attack anyone. The night after, Peter attacks a Village Idiot. That night, the Seamstress also chooses this Village Idiot, so they learn that Peter is "Wolf-Man" Drew. 
+The Innkeeper chooses the Steward and the Fortune Teller (the latter becomes drunk). Chris, who is "Wolf-Man" Drew, attacks the Steward. The Fortune Teller also chooses the Steward, and learns that Chris is "Wolf-Man" Drew. The Innkeeper does not learn anything.
+"Wolf-Man" Drew chooses the Goon and becomes drunk. The Chambermaid chooses the Goon later that night and does not learn about "Wolf-Man" Drew. The next night, "Wolf-Man" Drew attacks themselves, and dies. A Village Idiot chooses "Wolf-Man" Drew, and learns that they are evil, but not that they are "Wolf-Man" Drew.
+
+howtorun
+Each night except the first, wake "Wolf-Man" Drew. They either shake their head or point at a player. Put "Wolf-Man" Drew to sleep.
+If they shake their head no, nothing happens.
+If they point at a player, that player dies - mark them with the DEAD reminder and the EVIDENCE reminder. If another player chooses the player marked EVIDENCE, show them the THIS PLAYER IS info token, then the "Wolf-Man" Drew token, then point at the "Wolf-Man" Drew player. Continue the night as normal.
+At dawn, remove the EVIDENCE reminder.

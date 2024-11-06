@@ -4,6 +4,26 @@ Each night*, choose a dead player: you learn their character type.
 
 othernight William Yorick chooses a dead player.
 wakes other after undertaker
+card Townsfolk
+card Outsider
+card Minion
+card Demon
 
 attribution
 Icon by Lorc under CC BY 3.0 from game-icons.net
+
+flavour
+"All the world's a stage, and all the men and women merely players; they have their entrances and their exits, and one man in his time plays many parts." I am but a poor player, set to strut and fret my hour upon the stage of like, and make sure someone else manages to find a good death.
+
+overview William Yorick learns about the dead.
+Each night except the first, William Yorick chooses a dead player, and learns their character type. The Storyteller may communicate the character type using numbers (1 for Townsfolk, 2 for Outsider...), or using some other method. 
+William Yorick may not choose alive players, or players which were alive at dusk. If they do, the Storyteller prompts them to choose again.
+If no one is dead at dusk, or no one who was dead at dusk is still dead when William Yorick would wake, they don't.
+
+examples
+The Baron dies by execution. William Yorick chooses them that night, and learns "Minion". That same night, Umôrdhoth kills the Drunk, who believes they are the Gambler. The next night, William Yorick chooses the Drunk, and learns "Outsider".
+The Vigormortis kills the Pit-Hag. The next night, William Yorick chooses the Pit-Hag and learns "Minion". That same night, the Pit-Hag creates a new Demon, and the Vigormortis dies. William Yorick chooses the Vigormortis and learns "Demon".
+William Yorick chooses the Exorcist. However, that night, the Exorcist was resurrected by the Professor, so William Yorick is prompted to choose again. They choose the dead Imp neighbouring Jeremiah Pierce, and learn "Townsfolk".
+
+howtorun
+Each night except the first, if at least one player was dead at dusk and is still dead, wake William Yorick. They point to a dead player. (If they point to an alive player, shake your head and prompt them to choose again.) Show the chosen player's character type. Put William Yorick to sleep.

@@ -1,6 +1,6 @@
 Luke Robinson
 Townsfolk
-The 1st time you would die in the night, you instead learn a Minion player.
+The 1st time you die at night, you learn a Minion player instead.
 
 reminder 1 No Ability
 othernight If Luke Robinson would have died this night, wake them and tell them a player that is a Minion.
@@ -8,3 +8,21 @@ wakes other after sage
 
 attribution
 Icon by Delapouite under CC BY 3.0 from game-icons.net
+
+flavour
+It was a sound from above that compelled me to move again. The unmistakable mew of a cat echoed down the stairs, and at that comforting, wholesome sound I renewed my climb.
+
+overview Luke Robinson learns who is a Minion if they are attacked.
+If Luke Robinson is protected from death in any way besides their own ability, they do not learn anything.
+Luke Robinson can learn the name of a good Minion player, if one is in play.
+If Luke Robinson is saved by their own ability, they receive their info immediately.
+If Luke Robinson is drunk or poisoned, they will not survive if attacked at night. If they are attacked and die, the Storyteller may choose to wake them and have them learn a player - or not.
+If Luke Robinson is drunk or poisoned, they may learn a player even though they were not attacked. If they are later attacked & protected by their own ability while sober & healthy, they once again wake to learn a Minion player.
+
+examples
+Anne, the Godfather, attacks Luke Robinson. Luke Robinson learns Anne.
+The Poisoner poisons Luke Robinson. Even though no one attacked them tonight, they learn that Jean is a Minion player. The next night, Luke Robinson is sober & healthy, and is attacked by the Demon. They learn that Ben is a Minion player.
+The Monk protects Luke Robinson. That night, the Zombuul attacks Luke Robinson, but Luke Robinson does not learn anything. The next night, the Zombuul attacks Luke Robinson again, and Lita Chandler attacks Luke Robinson. Luke Robinson dies but they still learn a Minion player.
+
+howtorun
+If Luke Robinson would die and is not marked with the NO ABILITY reminder, wake them. Point to a player who is a minion. Put Luke Robinson to sleep. Luke Robinson loses their ability - mark them with the NO ABILITY reminder.

@@ -1,11 +1,36 @@
 Dr. Francis Morgan
 Townsfolk
-If you would die due to another ability, you learn this & die the next night instead unless evil is executed after.
+If you would die at night due to another ability, you learn this & die the next night instead unless evil is executed after.
 
 reminder 1 On The Brink 
 othernight If Dr. Francis Morgan has the "On the Brink" reminder token on them, they die.
-wakes other before gossip
+wakes other before gambler
 
 attribution
 Ability originally part of Homebrews by Luis.
 Icon by Skoll under CC BY 3.0 from game-icons.net
+
+flavour
+"Those creatures ― I haven't seen anything like that since..." He trails off, and you can tell that his mind is racing. His eyes widen with realization and his face pales. "I may not be in the best shape, but I'll help with your investigation. Whatever it takes."
+
+overview Dr. Francis Morgan gets a chance to save themselves before they die.
+If Dr. Francis Morgan is attacked at night and would die due to this, they live and learn that they would have died. Then, if an evil player is executed on the next day, nothing happens. Otherwise, Dr. Francis Morgan dies the next night.
+The executed evil player does not need to die for Dr. Francis Morgan to survive the next night.
+If Dr. Francis Morgan is protected from death in any way besides their own ability, they do not wake to learn that they were attacked, and will not die due to their own ability in the next night (even if no evil player is executed).
+Dr. Francis Morgan is unaffected by abilities that force them to learn false info.
+Dr. Francis Morgan cannot die due to their own ability if they are drunk or poisoned, but they also do not protect themselves from death.
+If Dr. Francis Morgan is drunk or poisoned, they may learn that they were attacked at night, even though they were not. If this happens, and they become sober & healthy the next night, they do not die due to their own ability, even if no evil player was executed.
+Dr. Francis Morgan does not learn that they were attacked if they die.
+If Dr. Francis Morgan is attacked multiple times during the same night, they survive but only learn once that they would have died.
+If Dr. Francis Morgan would die during the day, their own ability does not protect them.
+
+examples
+The Imp attacks Dr. Francis Morgan, who lives and learns that they were attacked. The next day, the Baron dies by execution. Dr. Francis Morgan does not die the next night due to their own ability. That night, Lita Chandler attacks Dr. Francis Morgan, who again learns that they were attacked. The next day, the Lleech is executed and lives, and Dr. Francis Morgan does not die the next night, either.
+The Vortox attacks Dr. Francis Morgan, who lives. The next day, the Witch dies because they cursed themselves, and the Golem kills the Goblin. No one is executed, and Dr. Francis Morgan dies the next night due to their own ability.
+The Pukka poisons Dr. Francis Morgan, who learns that they were attacked, even though they were not. Mara, the Devil's Advocate claiming to be the Sailor, who protected themselves that night, is executed and lives. Dr. Francis Morgan dies the next night, and concludes that Mara is good.
+
+howtorun
+Each night, if Dr. Francis Morgan was marked with the ON THE BRINK reminder last night and it was not removed since then, they die - mark them with the DEAD reminder.
+If Dr. Francis Morgan would die at night due to another character's ability, they survive. If this happens, mark them with the ON THE BRINK reminder.
+Each night, if Dr. Francis Morgan is marked with the ON THE BRINK reminder, wake them and inform them that they would have died. (You may do this by showing them a "1", indicating that they have 1 day left to live.)
+During the day, if an evil player is executed, and Dr. Francis Morgan is marked with the ON THE BRINK reminder, remove this reminder.

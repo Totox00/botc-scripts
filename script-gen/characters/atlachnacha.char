@@ -11,3 +11,25 @@ wakes every after pukka
 
 attribution
 Icon by Lorc under CC BY 3.0 from game-icons.net
+
+flavour
+The dark form ran toward him with incredible swiftness. When it came near he saw that there was a kind of face on the squat ebon body, low down amid the several-jointed legs. The face peered up with a weird expression of doubt and inquiry; and terror crawled through the veins of the bold huntsman as he met the small, crafty eyes that were circled about with hair.
+
+overview Atlach-Nacha poisons and ensnares its victims, then kills them simultaneously later on.
+When Atlach-Nacha attacks, its target is poisoned and webbed immediately. The poison wears off at dusk, but the webbing remains, even after that player dies.
+Unlike most other Demons, Atlach-Nacha acts during the first night.
+If two webbed players neighbour one another, both die. This does not consider alive neighbours, so if an alive webbed player neighbours a dead webbed player, both die. Conversely, if two alive webbed players are only seperated by a dead player that is not webbed, they do not die.
+Webbed players are killed only once per night, right after Atlach-Nacha acts (or would have acted). If, for some reason, a webbed player that neighbours another webbed player lives, Atlach-Nacha will not attempt to kill them again until the next night.
+If multiple players die due to Atlach-Nacha at once, the order in which they die is arbitrary.
+If Atlach-Nacha is drunk or poisoned when they choose someone, that player is neither poisoned nor webbed, even if Atlach-Nacha becomes sober & healthy later on.
+Atlach-Nacha may choose a player that is already webbed.
+If a webbed player becomes "safe" from Atlach-Nacha for some reason, they are no longer webbed, even if they are no longer "safe" from Atlach-Nacha later on.
+
+examples
+The Gambler sits between the Clockmaker and the Fool. The first night, Atlach-Nacha chooses the Clockmaker, who receives false information. The next night, Atlach-Nacha chooses the Fool. The third night, Atlach-Nacha chooses the Gambler. The Clockmaker and the Gambler die, and the Fool, who was not yet saved by their own ability, lives, because they are no longer poisoned by Atlach-Nacha. Unless they are protected from death again, the Fool will die the next night because they are still webbed, and neighbour a webbed player. 
+The Investigator sits between the Empath and the Fortune Teller. Atlach-Nacha chooses the Empath, who falsely learns a "1". The Investigator is executed and dies. The next night, Atlach-Nacha chooses the Fortune Teller. Neither the Fortune Teller nor the Empath dies to Atlach-Nacha's ability that night. The next night, Atlach-Nacha chooses the Investigator, and the Empath and the Fortune Teller both die.
+
+howtorun
+Each night, wake Atlach-Nacha. They point at any player. Put Atlach-Nacha to sleep. The chosen player is poisoned and webbed - mark them with the POISONED reminder and a WEBBED reminder.
+Each night, if a player marked WEBBED neighbours another player marked WEBBED, both die - mark them with DEAD reminders. (Do not remove the WEBBED reminders.)
+At dusk, remove the POISONED reminder.

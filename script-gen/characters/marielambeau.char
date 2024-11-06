@@ -9,3 +9,22 @@ wakes every before cultleader
 
 attribution
 Icon by Delapouite under CC BY 3.0 from game-icons.net
+
+flavour
+The smile fell from her face as she watched his hands clap together, and the noise of the audience seemed distant and faint, drowned out by the sound of clacking hooves. She opened her mouth to sing, but she couldn't remember a single song ― none but those from her dreams.
+
+overview Marie Lambeau learns the alignments of other players, but in the process, might become evil themselves.
+Each night, Marie Lambeau chooses an alive player and becomes their alignment.
+Marie Lambeau may not choose the same player twice over the course of the game. If they are drunk or poisoned, Marie Lambeau does not change alignment but they are not allowed to choose that player again.
+Marie Lambeau may not choose themselves or dead players. If they accidentally do so anyways, the Storyteller prompts them to choose again.
+If Marie Lambeau has chosen every living player (besides themselves), they no longer wake. On the night they chose the last possible player, Marie Lambeau becomes that player's alignment as usual, but on all subsequent nights, Marie Lambeau simply becomes good instead of waking.
+If Marie Lambeau has stopped waking, but for whatever reason, a player Marie Lambeau did not choose before can now be chosen (for example, if that player is resurrected), Marie Lambeau wakes again.
+
+examples
+Marie Lambeau, Penny White, the Innkeeper, Lita Chantier, and the Lleech are still alive. Marie Lambeau is currently good, and has already chosen Penny White, the Innkeeper, and Lita Chantier. Marie Lambeau must choose the Lleech, and Marie Lambeau becomes evil. The next night, Marie Lambeau does not choose a player, and becomes good.
+Marie Lambeau is evil, and is the first player to choose the good Goon tonight. The Goon becomes evil, Marie Lambeau becomes drunk, and therefore remains evil.
+
+howtorun
+Each night, if at least one alive player besides Marie Lambeau is not marked CHOSEN, wake Marie Lambeau. They point to any alive player they have not chosen before. Mark the chosen player with a CHOSEN reminder. Marie Lambeau becomes their alignment - if Marie Lambeau's alignment has changed because of this, rotate their character token - right side up for good, upside-down for evil - then show them the YOU ARE info token, and give a thumbs-up or a thumbs-down to indicate their new alignment. Put Marie Lambeau to sleep. 
+If Marie Lambeau did not wake because all alive players besides Marie Lambeau are marked CHOSEN, Marie Lambeau becomes good - turn their character token right side up. If Marie Lambeau's alignment changed because of this, wake them, show them the YOU ARE info token, then give a thumbs up. Put Marie Lambeau to sleep.
+If there is no way for a dead player marked CHOSEN to become alive for the rest of the game, you may remove their CHOSEN reminder to reduce clutter in the Grimoire.

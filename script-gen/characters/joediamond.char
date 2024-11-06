@@ -11,3 +11,27 @@ wakes other after fortuneteller
 
 attribution
 Icon by Skoll under CC BY 3.0 from game-icons.net
+
+flavour
+That was three months ago. The case still itches my brain, but it's resolved to a dull ache that occasionally flares up right before I fall asleep.
+
+overview Joe Diamond can uncover how their target was dispatched, but must be careful to not make themselves known.
+On their first night, Joe Diamond learns an in-play good character - a Townsfolk or an Outsider.
+The Storyteller chooses which character this is.
+Joe Diamond does not learn which player is this character.
+This player may be evil (as long as they are the corresponding good character).
+If the character Joe Diamond learnt dies at night, Joe Diamond learns which character is responsible for their death.
+If the character is attacked but doesn't die, Joe Diamond learns nothing.
+If Joe Diamond, publicly or privately, attempts to convince a player that they are Joe Diamond, the Storyteller may decide that they lose their ability. If this happens, Joe Diamond does not learn this.
+If, for whatever reason, Joe Diamond must learn false information on their first night, they learn an out of play character, however, if a specific in-play good character (decided at the start by the Storyteller) dies, Joe Diamond learns which character killed them.
+
+examples
+On the first night, Joe Diamond learns that the Gambler is in play. Later in the game, the Gambler gambles incorrectly, and dies. The Imp also attacks the (now dead) Gambler later that night. Joe Diamond learns "Gambler".
+Joe Diamond learns "Fool" in the first night. The next night, the Shabaloth attacks the Fool, and the Gossip kills them. Joe Diamond learns "Gossip".
+There is a Vortox in play. Joe Diamond learns "Drunk", even though there is no Drunk in play. If there was no Vortox in play, Joe Diamond would have learnt "Empath". The night the Vortox kills the Empath, Joe Diamond learns "Assassin".
+
+howtorun
+When preparing the first night, mark a player with a good character with the VICTIM reminder.
+During their first night, wake Joe Diamond. Show the character of the player marked VICTIM. Put Joe Diamond to sleep.
+At any time, if you believe Joe Diamond is mad that they are Joe Diamond, you can decide that they lose their ability. If this happens, mark them with the NO ABILITY reminder. Joe Diamond does not learn that this happened.
+If Joe Diamond is not marked with the NO ABILITY reminder, and the player marked VICTIM dies at night, wake Joe Diamond. Show the token of the character responsible for the death of that player. Put Joe Diamond to sleep.

@@ -1,6 +1,6 @@
 Leo Anderson
 Townsfolk
-On your 1st night, choose any number of players. Once all chosen players are dead, you learn 1 alive non-Demon player for each chosen player.
+On your 1st night, choose any number of players. Once per game, at night, if all chosen players are dead: you learn 1 alive non-Demon player for each chosen player.
 
 reminder 8 Expedition Member
 firstnight Leo Anderson chooses any number of players. Mark each chosen player with a "Expedition Member" reminder token.
@@ -10,3 +10,22 @@ wakes other after sage
 
 attribution
 Icon by Lorc under CC BY 3.0 from game-icons.net
+
+flavour
+Of all my expeditions, the price of this one has been high. Dr Phillip's precious knowledge was bought in blood.
+
+overview Leo Anderson learns who is not the Demon - if they can survive long enough.
+Leo Anderson can choose however many players they like, but the players they choose must all be alive.
+If all players Leo Anderson chose at the start are dead, Leo Anderson learns an equal number of players, none of whom are the Demon.
+If Leo Anderson dies before the last player they chose, they do not learn anything.
+If Leo Anderson dies in the same night as their last chosen player, they do not learn anything.
+If Leo Anderson should learn more alive non-Demon players than there are, they learn all alive non-Demon players.
+
+examples
+Leo Anderson chooses the Steward and the Savant. In the second night, the Shabaloth kills both of them. Leo Anderson learns to wake 2 players, who are the Banshee and the High Priestess.
+Leo Anderson chooses the Exorcist and the Artist. The Po may attack 3 players tonight, and attacks the Artist, then the Exorcist, then Leo Anderson. Leo Anderson does not wake.
+Leo Anderson chooses 3 players which are all Legion. When all of them are dead, 3 good players, including Leo Anderson themselves, are still alive. Leo Anderson learns all 3 of them.
+
+howtorun
+On their first night, wake Leo Anderson. They point to any number of living players. (If they accidentally point to a dead player, shake your head no and prompt them to choose again.) When Leo Anderson has chosen all the players they want to choose, they nod to indicate this. Put Leo Anderson to sleep. Mark all chosen players with an EXPEDITION MEMBER reminder.
+If all players marked EXPEDITION MEMBER are dead, wake Leo Anderson. For every player marked EXPEDITION MEMBER, point to an alive player that is not the Demon. (If there are not enough players left for you to show, show as many as you can - this includes Leo Anderson themselves.) Put Leo Anderson to sleep.
