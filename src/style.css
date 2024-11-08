@@ -1,0 +1,106 @@
+body {
+  background-color: darkgray;
+}
+
+.page {
+  position: relative;
+  break-after: page;
+  padding: 1rem;
+  background-image: url(https://www.bloodstar.xyz/img/paper.png);
+  width: 210mm;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-separator {
+  height: 4rem;
+}
+
+.intro {
+  font-family: "MedievalSharp", cursive;
+  color: #933;
+  font-size: 16pt;
+}
+
+.team {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.char-image {
+  display: block;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name {
+  text-align: center;
+  font-family: "Dumbledor1", cursive;
+  text-transform: uppercase;
+}
+
+.ability {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flavour {
+  text-align: center;
+  font-family: "MedievalSharp", cursive;
+  font-size: 10pt;
+  max-width: 40%;
+  color: #933;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.townsfolk h2,
+.townsfolk h3,
+.townsfolk .team,
+.townsfolk .ability {
+  color: darkblue;
+}
+
+.outsider h2,
+.outsider h3,
+.outsider .team,
+.outsider .ability {
+  color: cyan;
+}
+
+.minion h2,
+.minion h3,
+.minion .team,
+.minion .ability {
+  color: orange;
+}
+
+.demon h2,
+.demon h3,
+.demon .team,
+.demon .ability {
+  color: red;
+}
+
+.traveller h2,
+.traveller h3,
+.traveller .team,
+.traveller .ability {
+  color: purple;
+}
+
+.fabled h2,
+.fabled h3,
+.fabled .team,
+.fabled .ability {
+  color: gold;
+}

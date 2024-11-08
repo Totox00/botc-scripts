@@ -93,10 +93,6 @@ impl Script {
 
                 patched_character_ids.push(character.id.clone());
                 character.patched = true;
-                if let Some(images) = image_list.get(&character.id) {
-                    character.image = images.to_owned();
-                }
-
                 character.id = format!("patched_{}", character.id);
 
                 for jinx in &patch.jinxes {

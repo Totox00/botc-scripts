@@ -1,33 +1,15 @@
+mod almanac;
 mod character;
 mod patch;
 mod script;
 
-use std::{
-    collections::HashMap,
-    env::args,
-    fs::File,
-    io::Read,
-    path::{Path, PathBuf},
-};
+use std::{collections::HashMap, env::args, fs::File, io::Read, path::Path};
 
 use character::Character;
 use patch::read_patches;
 use script::Script;
 
 fn main() {
-    let mut character_list_str = String::new();
-    File::open("characters.json")
-        .expect("Character list not found")
-        .read_to_string(&mut character_list_str)
-        .expect("Failed to read character list file");
-    let mut character_list = HashMap::new();
-    for mut character in serde_json::from_str::<Vec<Character>>(&character_list_str)
-        .expect("Failed to parse character list json")
-    {
-        character.official = true;
-        character_list.insert(character.id.clone(), character);
-    }
-
     let mut image_list_str = String::new();
     File::open("official-images")
         .expect("Official image list not found")
@@ -43,6 +25,21 @@ fn main() {
 
         image_list.insert(id, images);
     }
+    let mut character_list_str = String::new();
+    File::open("characters.json")
+        .expect("Character list not found")
+        .read_to_string(&mut character_list_str)
+        .expect("Failed to read character list file");
+    let mut character_list = HashMap::new();
+    for mut character in serde_json::from_str::<Vec<Character>>(&character_list_str)
+        .expect("Failed to parse character list json")
+    {
+        character.official = true;
+        if let Some(image) = image_list.get(&character.id) {
+            character.image = image.clone();
+        }
+        character_list.insert(character.id.clone(), character);
+    }
 
     let patches = read_patches();
 
@@ -56,15 +53,21 @@ fn main() {
 
     for source in args {
         let mut script = Script::from_source(&source, &character_list);
-        let mut writer = File::create(Path::new(&out_dir).join(format!(
+        let mut json_writer = File::create(Path::new(&out_dir).join(format!(
             "{}.official.json",
             Path::new(&source).file_name().unwrap().to_str().unwrap()
         )))
-        .unwrap_or_else(|_| panic!("Failed to create file for script {source}"));
+        .unwrap_or_else(|_| panic!("Failed to create script file for script {source}"));
+        let mut html_writer = File::create(Path::new(&out_dir).join(format!(
+            "{}.html",
+            Path::new(&source).file_name().unwrap().to_str().unwrap()
+        )))
+        .unwrap_or_else(|_| panic!("Failed to create almanac file for script {source}"));
 
         script.resolve_required(&character_list);
         script.apply_patches(&patches, &image_list);
-        script.write_json(&mut writer);
+        script.write_json(&mut json_writer);
+        script.write_html(&mut html_writer);
     }
 }
 

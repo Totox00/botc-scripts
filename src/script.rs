@@ -6,13 +6,14 @@ use std::{
 
 use serde_json::{Map, Value};
 
-use crate::character::Character;
+use crate::{almanac::AlmanacFields, character::Character};
 
 #[derive(Debug)]
 pub struct Script {
     pub name: String,
     pub author: String,
     pub characters: Vec<Character>,
+    pub almanac: AlmanacFields,
 }
 
 impl Script {
@@ -33,11 +34,21 @@ impl Script {
             .next()
             .unwrap_or_else(|| panic!("Script {source} does not have an author"))
             .to_owned();
+        let mut almanac = AlmanacFields::default();
         let mut characters = vec![];
 
-        for character in lines {
-            if !character.is_empty() {
-                characters.push(
+        while let Some(character) = lines.next() {
+            match character {
+                "intro" => {
+                    for line in lines.by_ref() {
+                        if line.is_empty() {
+                            break;
+                        }
+                        almanac.intro.push(line.to_string());
+                    }
+                }
+                "" => (),
+                _ => characters.push(
                     character_list
                         .get(character)
                         .unwrap_or_else(|| {
@@ -46,7 +57,7 @@ impl Script {
                             )
                         })
                         .clone(),
-                )
+                ),
             }
         }
 
@@ -54,6 +65,7 @@ impl Script {
             name,
             author,
             characters,
+            almanac,
         }
     }
 
@@ -85,18 +97,18 @@ impl Script {
         }
     }
 
-    pub fn write_json<T>(self, writer: &mut T)
+    pub fn write_json<T>(&self, writer: &mut T)
     where
         T: Write,
     {
         let mut out: Vec<Value> = vec![self.meta()];
 
-        for character in self.characters {
+        for character in &self.characters {
             if character.official && !character.patched {
                 out.push(Value::String(character.id.to_owned()));
             } else {
                 out.push(
-                    serde_json::to_value(&character).unwrap_or_else(|_| {
+                    serde_json::to_value(character).unwrap_or_else(|_| {
                         panic!("Failed to serialize character {}", character.id)
                     }),
                 );

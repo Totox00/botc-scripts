@@ -46,15 +46,15 @@ pub struct Character {
     #[serde(default, skip_serializing)]
     pub overview_short: String,
     #[serde(default, skip_serializing)]
-    pub overview_long: String,
+    pub overview_long: Vec<String>,
     #[serde(default, skip_serializing)]
-    pub examples: String,
+    pub examples: Vec<String>,
     #[serde(default, skip_serializing)]
-    pub how_to_run: String,
+    pub how_to_run: Vec<String>,
     #[serde(default, skip_serializing)]
-    pub advice: String,
+    pub advice: Vec<String>,
     #[serde(default, skip_serializing)]
-    pub attribution: String,
+    pub attribution: Vec<String>,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub image: Vec<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -145,21 +145,22 @@ impl Character {
         let mut setup = false;
         let mut flavour = String::new();
         let mut overview_short = String::new();
-        let mut overview_long = String::new();
-        let mut examples = String::new();
-        let mut how_to_run = String::new();
-        let mut advice = String::new();
-        let mut attribution = String::new();
+        let mut overview_long = vec![];
+        let mut examples = vec![];
+        let mut how_to_run = vec![];
+        let mut advice = vec![];
+        let mut attribution = vec![];
         let mut special = AppSpecial::default();
         let mut jinxes = vec![];
         let mut required_characters = vec![];
-        let mut image = if Path::new(source_path.parent().unwrap())
-            .join(format!("{source}.png"))
-            .exists()
-        {
+        let img_path = Path::new(source_path.parent().unwrap()).join(format!("{source}.png"));
+        let mut image = if img_path.exists() {
+            let mut components = img_path.components();
+            components.next();
+            components.next();
             vec![format!(
-                    "https://raw.githubusercontent.com/Totox00/botc-scripts/refs/heads/main/script-gen/characters/{source}.png"
-                )]
+                "https://raw.githubusercontent.com/Totox00/botc-scripts/refs/heads/main/script-gen/characters/{}", components.as_path().to_str().unwrap()
+            )]
         } else {
             vec![]
         };
@@ -177,8 +178,7 @@ impl Character {
                         if line.is_empty() {
                             break;
                         } else {
-                            attribution.push_str(line);
-                            attribution.push('\n');
+                            attribution.push(line.to_string());
                         }
                     }
                 }
@@ -197,8 +197,7 @@ impl Character {
                         if line.is_empty() {
                             break;
                         } else {
-                            examples.push_str(line);
-                            examples.push('\n');
+                            examples.push(line.to_string());
                         }
                     }
                 }
@@ -207,8 +206,7 @@ impl Character {
                         if line.is_empty() {
                             break;
                         } else {
-                            how_to_run.push_str(line);
-                            how_to_run.push('\n');
+                            how_to_run.push(line.to_string());
                         }
                     }
                 }
@@ -217,8 +215,7 @@ impl Character {
                         if line.is_empty() {
                             break;
                         } else {
-                            advice.push_str(line);
-                            advice.push('\n');
+                            advice.push(line.to_string());
                         }
                     }
                 }
@@ -285,8 +282,7 @@ impl Character {
                                     if line.is_empty() {
                                         break;
                                     } else {
-                                        overview_long.push_str(line);
-                                        overview_long.push('\n');
+                                        overview_long.push(line.to_string());
                                     }
                                 }
                             }
@@ -325,11 +321,11 @@ impl Character {
             patched: false,
             flavour: flavour.trim().to_owned(),
             overview_short: overview_short.trim().to_owned(),
-            overview_long: overview_long.trim().to_owned(),
-            examples: examples.trim().to_owned(),
-            how_to_run: how_to_run.trim().to_owned(),
-            advice: advice.trim().to_owned(),
-            attribution: attribution.trim().to_owned(),
+            overview_long,
+            examples,
+            how_to_run,
+            advice,
+            attribution,
             image,
             required_characters,
             special: if special.any() {
