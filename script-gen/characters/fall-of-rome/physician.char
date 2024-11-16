@@ -7,7 +7,7 @@ reminder 2 Patient
 reminder 1 1st Demon
 firstnight The Physician chooses two players (not themselves). :reminder: :reminder:
 othernight The Physician chooses two players (not themselves). :reminder: :reminder: If the Demon killed a *PATIENT* player for the first time, show the Demon's token.
-wakes every after fortuneteller
+wakes every before courtier
 
 attribution
 Originally part of Fall of Rome by Alex S
