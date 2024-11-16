@@ -119,6 +119,11 @@ impl Script {
                 write!(writer, "<p>{}</p>", line).unwrap();
             }
         }
+        if !character.advice.is_empty() {
+            for line in &character.advice {
+                write!(writer, "<p class=\"advice\">{}</p>", line).unwrap();
+            }
+        }
         if !character.attribution.is_empty() {
             write!(writer, "<h3>ATTRIBUTION</h3>").unwrap();
             for line in &character.attribution {
