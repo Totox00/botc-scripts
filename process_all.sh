@@ -1,1 +1,1 @@
-cargo run -- ./script-gen/dist/ ./script-gen/source/*
+cargo run --release -- ./script-gen/dist/ ./script-gen/source/*
