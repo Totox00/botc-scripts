@@ -75,7 +75,7 @@ pub enum Team {
     Minion,
     #[serde(rename = "demon")]
     Demon,
-    #[serde(rename = "traveller", alias = "traveler")]
+    #[serde(rename = "traveller")]
     Traveller,
     #[serde(rename = "fabled")]
     Fabled,
