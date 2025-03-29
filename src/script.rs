@@ -13,6 +13,7 @@ pub struct Script {
     pub name: String,
     pub author: String,
     pub characters: Vec<Character>,
+    pub bootlegger_rules: Vec<String>,
     pub almanac: AlmanacFields,
 }
 
@@ -36,28 +37,34 @@ impl Script {
             .to_owned();
         let mut almanac = AlmanacFields::default();
         let mut characters = vec![];
+        let mut bootlegger_rules = vec![];
 
-        while let Some(character) = lines.next() {
-            match character {
-                "intro" => {
-                    for line in lines.by_ref() {
-                        if line.is_empty() {
-                            break;
-                        }
-                        almanac.intro.push(line.to_string());
-                    }
+        while let Some(line) = lines.next() {
+            match line.split_once(' ') {
+                Some(("bootlegger", rule)) => {
+                    bootlegger_rules.push(rule.to_string());
                 }
-                "" => (),
-                _ => characters.push(
-                    character_list
-                        .get(character)
-                        .unwrap_or_else(|| {
-                            panic!(
-                                "Failed to find data for character {character} in script {source}"
-                            )
-                        })
-                        .clone(),
-                ),
+                _ => match line {
+                    "intro" => {
+                        for line in lines.by_ref() {
+                            if line.is_empty() {
+                                break;
+                            }
+                            almanac.intro.push(line.to_string());
+                        }
+                    }
+                    "" => (),
+                    _ => characters.push(
+                        character_list
+                            .get(line)
+                            .unwrap_or_else(|| {
+                                panic!(
+                                    "Failed to find data for character {line} in script {source}"
+                                )
+                            })
+                            .clone(),
+                    ),
+                },
             }
         }
 
@@ -65,6 +72,7 @@ impl Script {
             name,
             author,
             characters,
+            bootlegger_rules,
             almanac,
         }
     }
@@ -128,6 +136,18 @@ impl Script {
             String::from("author"),
             Value::String(self.author.to_owned()),
         );
+        if !self.bootlegger_rules.is_empty() {
+            map.insert(
+                String::from("bootlegger"),
+                Value::Array(
+                    self.bootlegger_rules
+                        .iter()
+                        .cloned()
+                        .map(Value::String)
+                        .collect(),
+                ),
+            );
+        }
 
         Value::Object(map)
     }
