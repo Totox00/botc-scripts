@@ -1,13 +1,12 @@
 Finn Edwards
 Townsfolk
-You start knowing an in-play Minion that chooses players. If chosen by them, you are unaffected by them and learn who they are. [A Minion that chooses players is in play]
+Each night, choose a player, you learn if they were drunk or poisoned last night, this night, or both.
 
-reminder 1 Geezer
-firstnight Place the "Geezer" reminder token on a Minion. Finn Edwards learns their character.
-othernight If Finn Edwards was chosen by the player with the "Geezer" reminder token, Finn learns who they are.
-wakes first after washerwoman
+reminder 10 Smells of Booze
+firstnight Finn Edwards chooses a player. If they are drunk or poisoned, Finn Edwards learns they are drunk this night. Then, add a "Smells of Booze" reminder token to each player who is drunk or poisoned.
+othernight Finn Edwards chooses a player. If they have a "Smells of Booze" reminder token on them, Finn Edwards learns they were drunk last night. If they are drunk or poisoned, Finn Edwards learns they are drunk this night. Then, remove all "Smells of Booze" reminder tokens and add a "Smells of Booze" reminder token to each player who is drunk or poisoned.
+wakes first before chambermaid
 wakes other before chambermaid
-setup
 
 attribution
 Icon by Delapouite under CC BY 3.0 from game-icons.net
