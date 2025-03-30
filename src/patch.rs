@@ -97,7 +97,15 @@ impl Script {
 
                 for jinx in &patch.jinxes {
                     if character_ids.contains(&jinx.id) {
-                        character.jinxes.push(jinx.to_owned())
+                        if let Some(existing_idx) = character
+                            .jinxes
+                            .iter()
+                            .position(|existing| existing.id == jinx.id)
+                        {
+                            character.jinxes[existing_idx] = jinx.to_owned();
+                        } else {
+                            character.jinxes.push(jinx.to_owned());
+                        }
                     }
                 }
 
