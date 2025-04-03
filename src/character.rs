@@ -65,7 +65,7 @@ pub struct Character {
     pub required_characters: Vec<String>,
 }
 
-#[derive(Debug, Deserialize, Serialize, Default, PartialEq, Eq, Clone)]
+#[derive(Debug, Deserialize, Serialize, Default, PartialEq, Eq, Clone, PartialOrd, Ord)]
 pub enum Team {
     #[serde(rename = "townsfolk")]
     Townsfolk,

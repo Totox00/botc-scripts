@@ -17,6 +17,44 @@ pub struct Script {
     pub almanac: AlmanacFields,
 }
 
+static SORT_ORDER: [&str; 35] = [
+    "You start knowing",
+    "Each night",
+    "Each night*",
+    "Each day",
+    "Once per day",
+    "Once per game, at night",
+    "Once per game, at night*",
+    "Once per game, during the day",
+    "Once per game",
+    "On your 1st night",
+    "On your 1st day",
+    "You think",
+    "You are",
+    "You have",
+    "You do not know",
+    "You might",
+    "You",
+    "When you die",
+    "When you learn that you died",
+    "When",
+    "If you die",
+    "If you died",
+    "If you are \"mad\"",
+    "If you",
+    "If the Demon dies",
+    "If the Demon kills",
+    "If the Demon",
+    "If both",
+    "If there are 5 or more players alive",
+    "If",
+    "All players",
+    "All",
+    "The 1st time",
+    "The",
+    "Minions",
+];
+
 impl Script {
     pub fn from_source(source: &str, character_list: &HashMap<String, Character>) -> Script {
         let mut buf = String::new();
@@ -38,6 +76,7 @@ impl Script {
         let mut almanac = AlmanacFields::default();
         let mut characters = vec![];
         let mut bootlegger_rules = vec![];
+        let mut sort_characters = true;
 
         while let Some(line) = lines.next() {
             match line.split_once(' ') {
@@ -53,6 +92,9 @@ impl Script {
                             almanac.intro.push(line.to_string());
                         }
                     }
+                    "keeporder" => {
+                        sort_characters = false;
+                    }
                     "" => (),
                     _ => characters.push(
                         character_list
@@ -66,6 +108,34 @@ impl Script {
                     ),
                 },
             }
+        }
+
+        if sort_characters {
+            characters.sort_unstable_by(|a, b| {
+                let cmp = a.team.cmp(&b.team);
+                if cmp.is_ne() {
+                    return cmp;
+                }
+
+                let a_idx = get_sort_idx(&a.ability);
+                let b_idx = get_sort_idx(&b.ability);
+                let cmp = a_idx.cmp(&b_idx);
+                if cmp.is_ne() {
+                    return cmp;
+                }
+
+                let cmp = a.ability.len().cmp(&b.ability.len());
+                if cmp.is_ne() {
+                    return cmp;
+                }
+
+                let cmp = a.name.len().cmp(&b.name.len());
+                if cmp.is_ne() {
+                    return cmp;
+                }
+
+                return a.name.cmp(&b.name);
+            });
         }
 
         Script {
@@ -151,4 +221,20 @@ impl Script {
 
         Value::Object(map)
     }
+}
+
+fn get_sort_idx(ability: &str) -> usize {
+    for idx in 0..SORT_ORDER.len() {
+        if ability.starts_with(SORT_ORDER[idx]) {
+            if let Some(next) = SORT_ORDER.get(idx + 1) {
+                if !ability.starts_with(next) {
+                    return idx;
+                }
+            } else {
+                return idx;
+            }
+        }
+    }
+
+    SORT_ORDER.len()
 }
