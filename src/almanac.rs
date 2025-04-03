@@ -11,6 +11,7 @@ pub struct AlmanacFields {
 }
 
 const STYLE: &str = include_str!("style.css");
+const INDEX_STYLE: &str = include_str!("index_style.css");
 
 impl Script {
     pub fn write_html<T>(
@@ -265,4 +266,21 @@ impl Team {
             Team::Special => "special",
         }
     }
+}
+
+pub fn write_index<T>(writer: &mut T, entries: &[(String, String)])
+where
+    T: Write,
+{
+    write!(
+        writer,
+        "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Toto's Script Index</title><style>{INDEX_STYLE}</style></head><body>",
+    )
+    .unwrap();
+
+    for (id, name) in entries {
+        write!(writer, "<div class=\"entry\"><a class=\"almanac\" href=\"/{id}.html\">{name}</a><a class=\"json\" href=\"/{id}.official.json\">Json</a></div>").unwrap();
+    }
+
+    write!(writer, "</body>").unwrap();
 }

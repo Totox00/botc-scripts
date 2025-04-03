@@ -12,6 +12,7 @@ use std::{
     path::Path,
 };
 
+use almanac::write_index;
 use character::Character;
 use patch::read_patches;
 use script::Script;
@@ -69,6 +70,8 @@ fn main() {
     let out_dir = args.next().expect("No out dir provided");
     create_dir_all(&out_dir).expect("Failed to create out dir");
 
+    let mut index_entries = vec![];
+
     for source in args {
         let mut script = Script::from_source(&source, &character_list);
         let mut json_writer = File::create(Path::new(&out_dir).join(format!(
@@ -86,7 +89,11 @@ fn main() {
         script.apply_patches(&patches, &image_list);
         script.write_json(&mut json_writer);
         script.write_html(&mut html_writer, &first_night_special, &other_night_special);
+        index_entries.push((source, script.name));
     }
+
+    let mut index_writer = File::create(Path::new(&out_dir).join("index.html")).expect("Failed to create index file");
+    write_index(&mut index_writer, &index_entries);
 }
 
 fn load_dir(path: &Path, character_list: &mut HashMap<String, Character>) {

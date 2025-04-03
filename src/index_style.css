@@ -1,0 +1,23 @@
+body {
+  background-color: darkgray;
+  display: flex;
+  flex-direction: column;
+}
+
+.entry {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.almanac {
+  flex: 1;
+  text-align: right;
+  margin: 10px;
+}
+
+.json {
+  flex: 1;
+  text-align: left;
+  margin: 10px;
+}
