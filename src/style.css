@@ -2,6 +2,62 @@ body {
   background-color: darkgray;
 }
 
+aside {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: calc(50% + 110mm);
+  width: fit-content;
+  height: fit-content;
+  max-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  flex: 1;
+  width: 100%;
+  padding: 0.1rem;
+}
+
+a.intro,
+a.night-order {
+  color: black;
+  background-color: darkgray;
+}
+
+a.townsfolk {
+  color: white;
+  background-color: darkblue;
+}
+
+a.outsider {
+  color: black;
+  background-color: #088;
+}
+
+a.minion {
+  color: white;
+  background-color: #c60;
+}
+
+a.demon {
+  color: black;
+  background-color: red;
+}
+
+a.traveller {
+  color: white;
+  background-color: purple;
+}
+
+a.fabled {
+  color: black;
+  background-color: gold;
+}
+
 .page {
   position: relative;
   break-after: page;
@@ -13,11 +69,51 @@ body {
   margin-right: auto;
 }
 
+#night-order h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.night-order-container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.night-order-list {
+  flex: 1;
+}
+
+.night-order-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.night-order-entry {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+}
+
+.night-order-entry img,
+.night-order-entry div {
+  height: 60px;
+  width: 60px;
+}
+
+.night-order-entry p {
+  flex: 1;
+  font-size: 12pt;
+}
+
 .page-separator {
   height: 4rem;
 }
 
-.intro {
+p.intro {
   font-family: "MedievalSharp", cursive;
   color: #933;
   font-size: 16pt;
@@ -83,14 +179,14 @@ body {
 .outsider h3,
 .outsider .team,
 .outsider .ability {
-  color: cyan;
+  color: #088;
 }
 
 .minion h2,
 .minion h3,
 .minion .team,
 .minion .ability {
-  color: orange;
+  color: #c60;
 }
 
 .demon h2,
@@ -111,5 +207,15 @@ body {
 .fabled h3,
 .fabled .team,
 .fabled .ability {
-  color: gold;
+  color: #b90;
+}
+
+@media print {
+  aside {
+    display: none;
+  }
+
+  .page {
+    background-image: none;
+  }
 }

@@ -2,12 +2,14 @@ mod almanac;
 mod character;
 mod patch;
 mod script;
+mod special_characters;
 
 use std::{collections::HashMap, env::args, fs::File, io::Read, path::Path};
 
 use character::Character;
 use patch::read_patches;
 use script::Script;
+use special_characters::{special_characters, SpecialCharacters};
 
 fn main() {
     let mut image_list_str = String::new();
@@ -41,6 +43,15 @@ fn main() {
         character_list.insert(character.id.clone(), character);
     }
 
+    let SpecialCharacters {
+        dusk,
+        minions,
+        demon,
+        dawn,
+    } = special_characters();
+    let first_night_special = [&dusk, &minions, &demon, &dawn];
+    let other_night_special = [&dusk, &dawn];
+
     let patches = read_patches();
 
     load_dir(
@@ -67,7 +78,7 @@ fn main() {
         script.resolve_required(&character_list);
         script.apply_patches(&patches, &image_list);
         script.write_json(&mut json_writer);
-        script.write_html(&mut html_writer);
+        script.write_html(&mut html_writer, &first_night_special, &other_night_special);
     }
 }
 
