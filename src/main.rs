@@ -4,7 +4,13 @@ mod patch;
 mod script;
 mod special_characters;
 
-use std::{collections::HashMap, env::args, fs::File, io::Read, path::Path};
+use std::{
+    collections::HashMap,
+    env::args,
+    fs::{create_dir_all, File},
+    io::Read,
+    path::Path,
+};
 
 use character::Character;
 use patch::read_patches;
@@ -61,6 +67,7 @@ fn main() {
 
     let mut args = args().skip(1);
     let out_dir = args.next().expect("No out dir provided");
+    create_dir_all(&out_dir).expect("Failed to create out dir");
 
     for source in args {
         let mut script = Script::from_source(&source, &character_list);
