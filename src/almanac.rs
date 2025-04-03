@@ -279,7 +279,7 @@ where
     .unwrap();
 
     for (id, name) in entries {
-        write!(writer, "<div class=\"entry\"><a class=\"almanac\" href=\"/{id}.html\">{name}</a><a class=\"json\" href=\"/{id}.official.json\">Json</a></div>").unwrap();
+        write!(writer, "<div class=\"entry\"><a class=\"almanac\" href=\"/botc-scripts/{id}.html\">{name}</a><a class=\"json\" href=\"/botc-scripts/{id}.official.json\">Json</a></div>").unwrap();
     }
 
     write!(writer, "</body>").unwrap();

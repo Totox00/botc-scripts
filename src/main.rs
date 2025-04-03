@@ -89,7 +89,7 @@ fn main() {
         script.apply_patches(&patches, &image_list);
         script.write_json(&mut json_writer);
         script.write_html(&mut html_writer, &first_night_special, &other_night_special);
-        index_entries.push((source, script.name));
+        index_entries.push((Path::new(&source).file_name().unwrap().to_str().unwrap().to_string(), script.name));
     }
 
     let mut index_writer = File::create(Path::new(&out_dir).join("index.html")).expect("Failed to create index file");
