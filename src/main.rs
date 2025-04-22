@@ -73,26 +73,31 @@ fn main() {
     let mut index_entries = vec![];
 
     for source in args {
+        let file_name = Path::new(&source).file_name().unwrap().to_str().unwrap();
         let mut script = Script::from_source(&source, &character_list);
-        let mut json_writer = File::create(Path::new(&out_dir).join(format!(
-            "{}.official.json",
-            Path::new(&source).file_name().unwrap().to_str().unwrap()
-        )))
-        .unwrap_or_else(|_| panic!("Failed to create script file for script {source}"));
-        let mut html_writer = File::create(Path::new(&out_dir).join(format!(
-            "{}.html",
-            Path::new(&source).file_name().unwrap().to_str().unwrap()
-        )))
-        .unwrap_or_else(|_| panic!("Failed to create almanac file for script {source}"));
+        let mut json_writer =
+            File::create(Path::new(&out_dir).join(format!("{file_name}.official.json",)))
+                .unwrap_or_else(|_| panic!("Failed to create script file for script {source}"));
+        let mut html_writer = File::create(Path::new(&out_dir).join(format!("{file_name}.html",)))
+            .unwrap_or_else(|_| panic!("Failed to create almanac file for script {source}"));
 
         script.resolve_required(&character_list);
         script.apply_patches(&patches, &image_list);
-        script.write_json(&mut json_writer);
+        script.write_json(&mut json_writer, file_name);
         script.write_html(&mut html_writer, &first_night_special, &other_night_special);
-        index_entries.push((Path::new(&source).file_name().unwrap().to_str().unwrap().to_string(), script.name));
+        index_entries.push((
+            Path::new(&source)
+                .file_name()
+                .unwrap()
+                .to_str()
+                .unwrap()
+                .to_string(),
+            script.name,
+        ));
     }
 
-    let mut index_writer = File::create(Path::new(&out_dir).join("index.html")).expect("Failed to create index file");
+    let mut index_writer =
+        File::create(Path::new(&out_dir).join("index.html")).expect("Failed to create index file");
     write_index(&mut index_writer, &index_entries);
 }
 

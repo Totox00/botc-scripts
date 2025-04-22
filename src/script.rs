@@ -175,11 +175,11 @@ impl Script {
         }
     }
 
-    pub fn write_json<T>(&self, writer: &mut T)
+    pub fn write_json<T>(&self, writer: &mut T, file_name: &str)
     where
         T: Write,
     {
-        let mut out: Vec<Value> = vec![self.meta()];
+        let mut out: Vec<Value> = vec![self.meta(file_name)];
 
         for character in &self.characters {
             if character.official && !character.patched {
@@ -197,7 +197,7 @@ impl Script {
             .unwrap_or_else(|_| panic!("Failed to generate json for script {}", self.name))
     }
 
-    fn meta(&self) -> Value {
+    fn meta(&self, file_name: &str) -> Value {
         let mut map = Map::new();
 
         map.insert(String::from("id"), Value::String(String::from("_meta")));
@@ -205,6 +205,12 @@ impl Script {
         map.insert(
             String::from("author"),
             Value::String(self.author.to_owned()),
+        );
+        map.insert(
+            String::from("almanac"),
+            Value::String(format!(
+                "https://totox00.github.io/botc-scripts/{file_name}.html"
+            )),
         );
         if !self.bootlegger_rules.is_empty() {
             map.insert(
