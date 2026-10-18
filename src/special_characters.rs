@@ -29,10 +29,10 @@ pub fn special_characters() -> SpecialCharacters {
         .expect("Failed to parse night order json");
 
     SpecialCharacters {
-        dusk: special_character("DUSK", "Dusk", &night_order),
-        minions: special_character("MINION", "Minion Info", &night_order),
-        demon: special_character("DEMON", "Demon Info", &night_order),
-        dawn: special_character("DAWN", "Dawn", &night_order),
+        dusk: special_character("dusk", "Dusk", &night_order),
+        minions: special_character("minioninfo", "Minion Info", &night_order),
+        demon: special_character("demoninfo", "Demon Info", &night_order),
+        dawn: special_character("dawn", "Dawn", &night_order),
     }
 }
 

@@ -79,6 +79,8 @@ pub enum Team {
     Traveller,
     #[serde(rename = "fabled")]
     Fabled,
+    #[serde(rename = "loric")]
+    Loric,
     #[default]
     #[serde(rename = "special")]
     Special,

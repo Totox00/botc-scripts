@@ -59,6 +59,11 @@ fn main() {
     let first_night_special = [&dusk, &minions, &demon, &dawn];
     let other_night_special = [&dusk, &dawn];
 
+    character_list.insert(String::from("dusk"), dusk.clone());
+    character_list.insert(String::from("minioninfo"), minions.clone());
+    character_list.insert(String::from("demoninfo"), demon.clone());
+    character_list.insert(String::from("dawn"), dawn.clone());
+
     let patches = read_patches();
 
     load_dir(

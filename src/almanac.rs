@@ -263,6 +263,7 @@ impl Team {
             Team::Demon => "demon",
             Team::Traveller => "traveller",
             Team::Fabled => "fabled",
+            Team::Loric => "loric",
             Team::Special => "special",
         }
     }
