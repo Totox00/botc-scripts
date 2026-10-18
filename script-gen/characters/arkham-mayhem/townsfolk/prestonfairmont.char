@@ -1,12 +1,12 @@
 Preston Fairmont
 Townsfolk
-You are a Minion & register as evil. If the Demon publicly guesses you (once), your team loses, even if dead or if you lose this ability.
+You start knowing a word. Each night*, you learn the character of one other player who publically said the word yesterday.
 
-globalreminder 1 Is Preston Fairmont
-globalreminder 1 Guess Used
-firstnight Inform Preston Fairmont what Minion they are.
-wakes first before minioninfo
-replacereveal
+reminder 15 Connected
+firstnight Show the secret word.
+othernight If any player publically said the word yesterday, show Preston Fairmont the character of one of those players.
+wakes first after pixie
+wakes other after empath
 
 attribution
 Icon by Lorc under CC BY 3.0 from game-icons.net
