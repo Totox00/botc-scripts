@@ -62,11 +62,7 @@ pub fn read_patches() -> HashMap<String, Patch> {
 }
 
 impl Script {
-    pub fn apply_patches(
-        &mut self,
-        patches: &HashMap<String, Patch>,
-        image_list: &HashMap<String, Vec<String>>,
-    ) {
+    pub fn apply_patches(&mut self, patches: &HashMap<String, Patch>) {
         if self
             .characters
             .iter()
@@ -140,10 +136,6 @@ impl Script {
                         patched_character_ids.push(character.id.clone());
                         character.patched = true;
                         require_iter = true;
-                        if let Some(images) = image_list.get(&character.id) {
-                            character.image = images.to_owned();
-                        }
-
                         character.id = format!("patched_{}", character.id);
                     }
 

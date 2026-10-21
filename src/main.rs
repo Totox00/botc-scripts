@@ -18,22 +18,9 @@ use patch::read_patches;
 use script::Script;
 use special_characters::{special_characters, SpecialCharacters};
 
-fn main() {
-    let mut image_list_str = String::new();
-    File::open("official-images")
-        .expect("Official image list not found")
-        .read_to_string(&mut image_list_str)
-        .expect("Failed to read official image list file");
-    let mut image_list = HashMap::new();
-    for image in image_list_str.lines().filter(|str| !str.is_empty()) {
-        let mut iter = image.split(' ');
-        let id = iter.next().unwrap().to_owned();
-        let images: Vec<String> = iter
-            .map(|image| format!("https://botc.app/assets/{image}.webp"))
-            .collect();
+use crate::character::Team;
 
-        image_list.insert(id, images);
-    }
+fn main() {
     let mut character_list_str = String::new();
     File::open("characters.json")
         .expect("Character list not found")
@@ -44,8 +31,47 @@ fn main() {
         .expect("Failed to parse character list json")
     {
         character.official = true;
-        if let Some(image) = image_list.get(&character.id) {
-            character.image = image.clone();
+        if let Some(edition) = &character.edition {
+            character.image = match character.team {
+                Team::Townsfolk | Team::Outsider => vec![
+                    format!(
+                        "https://release.botc.app/resources/characters/{}/{}_g.webp",
+                        edition, character.id
+                    ),
+                    format!(
+                        "https://release.botc.app/resources/characters/{}/{}_e.webp",
+                        edition, character.id
+                    ),
+                ],
+                Team::Minion | Team::Demon => vec![
+                    format!(
+                        "https://release.botc.app/resources/characters/{}/{}_e.webp",
+                        edition, character.id
+                    ),
+                    format!(
+                        "https://release.botc.app/resources/characters/{}/{}_g.webp",
+                        edition, character.id
+                    ),
+                ],
+                Team::Traveller => vec![
+                    format!(
+                        "https://release.botc.app/resources/characters/{}/{}.webp",
+                        edition, character.id
+                    ),
+                    format!(
+                        "https://release.botc.app/resources/characters/{}/{}_g.webp",
+                        edition, character.id
+                    ),
+                    format!(
+                        "https://release.botc.app/resources/characters/{}/{}_e.webp",
+                        edition, character.id
+                    ),
+                ],
+                Team::Fabled | Team::Loric | Team::Special => vec![format!(
+                    "https://release.botc.app/resources/characters/{}/{}.webp",
+                    edition, character.id
+                )],
+            };
         }
         character_list.insert(character.id.clone(), character);
     }
@@ -87,7 +113,7 @@ fn main() {
             .unwrap_or_else(|_| panic!("Failed to create almanac file for script {source}"));
 
         script.resolve_required(&character_list);
-        script.apply_patches(&patches, &image_list);
+        script.apply_patches(&patches);
         script.write_json(&mut json_writer, file_name);
         script.write_html(&mut html_writer, &first_night_special, &other_night_special);
         index_entries.push((

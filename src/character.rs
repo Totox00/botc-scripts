@@ -8,6 +8,8 @@ pub struct Character {
     pub id: String,
     pub name: String,
     #[serde(default)]
+    pub edition: Option<String>,
+    #[serde(default)]
     pub team: Team,
     #[serde(default)]
     pub ability: String,
@@ -310,6 +312,7 @@ impl Character {
         Character {
             id: source,
             name,
+            edition: None,
             team: Team::from(team.as_str()),
             ability,
             reminders,

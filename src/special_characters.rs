@@ -40,6 +40,7 @@ fn special_character(id: &str, name: &str, night_order: &NightOrder) -> Characte
     Character {
         id: String::from(id),
         name: String::from(name),
+        edition: None,
         team: Team::Special,
         ability: String::new(),
         reminders: vec![],
