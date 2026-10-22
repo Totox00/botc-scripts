@@ -1,8 +1,4 @@
-use std::{fs::File, io::Read};
-
-use serde::Deserialize;
-
-use crate::character::{Character, Team};
+use crate::{character::{Character, Team}, night_order::NightOrder};
 
 pub struct SpecialCharacters {
     pub dusk: Character,
@@ -11,28 +7,12 @@ pub struct SpecialCharacters {
     pub dawn: Character,
 }
 
-#[derive(Debug, Deserialize)]
-struct NightOrder {
-    #[serde(rename = "firstNight")]
-    first_night: Vec<String>,
-    #[serde(rename = "otherNight")]
-    other_night: Vec<String>,
-}
-
-pub fn special_characters() -> SpecialCharacters {
-    let mut night_order_str = String::new();
-    File::open("night-order.json")
-        .expect("Night order not found")
-        .read_to_string(&mut night_order_str)
-        .expect("Failed to read night order file");
-    let night_order = serde_json::from_str::<NightOrder>(&night_order_str)
-        .expect("Failed to parse night order json");
-
+pub fn special_characters(night_order: &NightOrder) -> SpecialCharacters {
     SpecialCharacters {
-        dusk: special_character("dusk", "Dusk", &night_order),
-        minions: special_character("minioninfo", "Minion Info", &night_order),
-        demon: special_character("demoninfo", "Demon Info", &night_order),
-        dawn: special_character("dawn", "Dawn", &night_order),
+        dusk: special_character("dusk", "Dusk", night_order),
+        minions: special_character("minioninfo", "Minion Info", night_order),
+        demon: special_character("demoninfo", "Demon Info", night_order),
+        dawn: special_character("dawn", "Dawn", night_order),
     }
 }
 
@@ -47,18 +27,8 @@ fn special_character(id: &str, name: &str, night_order: &NightOrder) -> Characte
         reminders_global: vec![],
         first_night_reminder: String::new(),
         other_night_reminder: String::new(),
-        first_night: night_order
-            .first_night
-            .iter()
-            .position(|other| other == id)
-            .map(|pos| pos + 1)
-            .unwrap_or(0) as f32,
-        other_night: night_order
-            .other_night
-            .iter()
-            .position(|other| other == id)
-            .map(|pos| pos + 1)
-            .unwrap_or(0) as f32,
+        first_night: night_order.first_night(id).unwrap_or(0.0),
+        other_night: night_order.other_night(id).unwrap_or(0.0),
         setup: false,
         official: true,
         patched: false,

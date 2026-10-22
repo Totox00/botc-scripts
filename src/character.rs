@@ -7,7 +7,7 @@ use serde_json::{Map, Value};
 pub struct Character {
     pub id: String,
     pub name: String,
-    #[serde(default)]
+    #[serde(default, skip_serializing_if = "Option::is_none")]
     pub edition: Option<String>,
     #[serde(default)]
     pub team: Team,
@@ -34,9 +34,9 @@ pub struct Character {
     )]
     pub other_night_reminder: String,
     #[serde(rename = "firstNight", default, skip_serializing_if = "is_zero")]
-    pub first_night: f32,
+    pub first_night: f64,
     #[serde(rename = "otherNight", default, skip_serializing_if = "is_zero")]
-    pub other_night: f32,
+    pub other_night: f64,
     #[serde(default, skip_serializing_if = "is_false")]
     pub setup: bool,
     #[serde(default, skip_serializing)]
@@ -144,8 +144,8 @@ impl Character {
         let mut reminders_global = vec![];
         let mut first_night_reminder = String::new();
         let mut other_night_reminder = String::new();
-        let mut first_night = 0f32;
-        let mut other_night = 0f32;
+        let mut first_night = 0.0;
+        let mut other_night = 0.0;
         let mut setup = false;
         let mut flavour = String::new();
         let mut overview_short = String::new();
@@ -442,8 +442,8 @@ impl AppSpecial {
     }
 }
 
-fn is_zero(n: &f32) -> bool {
-    *n == 0f32
+fn is_zero(n: &f64) -> bool {
+    *n == 0f64
 }
 
 fn is_false(b: &bool) -> bool {

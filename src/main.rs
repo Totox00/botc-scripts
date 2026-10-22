@@ -1,5 +1,6 @@
 mod almanac;
 mod character;
+mod night_order;
 mod patch;
 mod script;
 mod special_characters;
@@ -18,9 +19,11 @@ use patch::read_patches;
 use script::Script;
 use special_characters::{special_characters, SpecialCharacters};
 
-use crate::character::Team;
+use crate::{character::Team, night_order::NightOrder};
 
 fn main() {
+    let night_order = NightOrder::read();
+
     let mut character_list_str = String::new();
     File::open("characters.json")
         .expect("Character list not found")
@@ -73,6 +76,12 @@ fn main() {
                 )],
             };
         }
+        if let Some(first_night) = night_order.first_night(&character.id) {
+            character.first_night = first_night;
+        }
+        if let Some(other_night) = night_order.other_night(&character.id) {
+            character.other_night = other_night;
+        }
         character_list.insert(character.id.clone(), character);
     }
 
@@ -81,7 +90,7 @@ fn main() {
         minions,
         demon,
         dawn,
-    } = special_characters();
+    } = special_characters(&night_order);
     let first_night_special = [&dusk, &minions, &demon, &dawn];
     let other_night_special = [&dusk, &dawn];
 
