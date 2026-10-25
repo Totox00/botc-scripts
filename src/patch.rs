@@ -89,7 +89,7 @@ impl Script {
 
                 patched_character_ids.push(character.id.clone());
                 character.patched = true;
-                character.id = format!("patched_{}", character.id);
+                character.id = format!("patched{}", character.id);
 
                 for jinx in &patch.jinxes {
                     if character_ids.contains(&jinx.id) {
